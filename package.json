@@ -1,0 +1,44 @@
+{
+  "name": "Quran Pulaar",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "android": "react-native run-android",
+    "ios": "react-native run-ios",
+    "start": "react-native start",
+    "test": "jest",
+    "lint": "eslint ."
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^1.2.34",
+    "@fortawesome/free-regular-svg-icons": "^5.15.2",
+    "@fortawesome/free-solid-svg-icons": "^5.15.2",
+    "@fortawesome/react-native-fontawesome": "^0.2.6",
+    "babel-plugin-react-native-classname-to-style": "^1.2.2",
+    "babel-plugin-react-native-platform-specific-extensions": "^1.1.1",
+    "native-base": "^2.15.2",
+    "node-sass": "^5.0.0",
+    "react": "16.13.1",
+    "react-native": "0.63.4",
+    "react-native-restart": "0.0.20",
+    "react-native-sass-transformer": "^1.4.0",
+    "react-native-sound-player": "^0.10.6",
+    "react-native-svg": "^12.1.0",
+    "react-native-vector-icons": "^7.1.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.8.4",
+    "@babel/runtime": "^7.8.4",
+    "@react-native-community/eslint-config": "^1.1.0",
+    "babel-jest": "^25.1.0",
+    "eslint": "^6.5.1",
+    "jest": "^25.1.0",
+    "metro-react-native-babel-preset": "^0.59.0",
+    "react-test-renderer": "16.13.1",
+    "@expo/vector-icons": "^10.0.0",
+    "react-native-gesture-handler": "~1.6.0"
+  },
+  "jest": {
+    "preset": "react-native"
+  }
+}
