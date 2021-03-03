@@ -1,7 +1,7 @@
 import React from 'react';
 import { 
   Image, Animated, Text, View, Dimensions, I18nManager,
-  StyleSheet, ImageBackground, ScrollView, SafeAreaView
+  StyleSheet, ImageBackground, ScrollView, SafeAreaView, TouchableOpacity
 } from 'react-native';
 import { FontAwesomeIcon } from '@fortawesome/react-native-fontawesome';
 import { faBook , faBookmark, faTools, faInfoCircle, faPlay, faPauseCircle} from '@fortawesome/free-solid-svg-icons';
@@ -67,9 +67,14 @@ const QuranPulaarApp = () => {
                 <ScrollView>
                   {item.ayat.map(ayat => {
                     return <View style={styles.ayat_content}>
-                        <Text style={styles.ayat_text}>{ayat.ar_ayat}</Text>
-                        <Text style={styles.ayat_text}>{ayat.pr_ayat}</Text>
-                        <Image source={ayat.img} style={styles.ayat_image}/>
+                        <TouchableOpacity
+                          style={styles.touchable_ayat}
+                          //onPress={onPress}
+                        >
+                          <Text selectable={true} style={styles.ayat_text}>{ayat.ar_ayat}</Text>
+                          <Text selectable={true} style={styles.ayat_text}>{ayat.pr_ayat}</Text>
+                          <Image source={ayat.img} style={styles.ayat_image}/>
+                        </TouchableOpacity>
                       </View>;
                   })}
                 </ScrollView>
@@ -152,6 +157,9 @@ const styles = StyleSheet.create({
  ayat_image: {
   width: 30,
   height: 30,
+ },
+ touchable_ayat: { 
+  alignItems: "center",
  },
  ayat_text: { 
   fontSize: 18,
