@@ -2,14 +2,16 @@ import React, { Component } from 'react';
 import { View, StyleSheet } from 'react-native';
 import { FontAwesomeIcon } from '@fortawesome/react-native-fontawesome';
 import { faBook , faBookmark, faTools, faInfoCircle, faPlay, faPauseCircle} from '@fortawesome/free-solid-svg-icons';
-import SoundPlayer from 'react-native-sound-player'
+import SoundPlayer from 'react-native-sound-player';
+import Spinner from 'react-native-loading-spinner-overlay';
 
 
 class AppHeader extends Component{
     constructor(){
         super();
         this.state = {
-            isPlaying: false
+            isPlaying: false,
+            spinner: false
         }
         this.setButton = this.setButton.bind(this);
       }
@@ -19,6 +21,9 @@ class AppHeader extends Component{
 
     playSong = () => {
         try {
+          this.setState({
+            spinner: true
+          });
           // play the file tone.mp3
           //SoundPlayer.playSoundFile('tone', 'mp3')
           // or play from url
@@ -27,18 +32,18 @@ class AppHeader extends Component{
           this.setState({
             isPlaying: true
           });
-          //alert(this.state.isPlaying)
         } catch (e) {
             alert(`cannot play the sound file`, e)
         }
     }
 
     _onFinishedPlayingSubscription = null;
+    _onFinishedLoadingURLSubscription = null;
     componentWillUnmount() {
-        _onFinishedPlayingSubscription.remove()
+        this._onFinishedPlayingSubscription.remove()
         _onFinishedLoadingSubscription.remove()
-        _onFinishedLoadingURLSubscription.remove()
         _onFinishedLoadingFileSubscription.remove()
+        this._onFinishedLoadingURLSubscription.remove()
       }
 
     componentDidMount() {
@@ -54,8 +59,10 @@ class AppHeader extends Component{
         _onFinishedLoadingFileSubscription = SoundPlayer.addEventListener('FinishedLoadingFile', ({ success, name, type }) => {
           console.log('finished loading file', success, name, type)
         })
-        _onFinishedLoadingURLSubscription = SoundPlayer.addEventListener('FinishedLoadingURL', ({ success, url }) => {
-          console.log('finished loading url', success, url)
+        this._onFinishedLoadingURLSubscription = SoundPlayer.addEventListener('FinishedLoadingURL', ({ success, url }) => {
+          this.setState({
+            spinner: false
+        });
         })
     }
 
@@ -77,6 +84,12 @@ class AppHeader extends Component{
           <FontAwesomeIcon icon={faBookmark} size={25} color={"#24561F"}/>
           <FontAwesomeIcon icon={faBook} size={25} color={"#24561F"}/>
           <FontAwesomeIcon icon={faTools} size={25} color={"#24561F"}/>
+
+          <Spinner
+          visible={this.state.spinner}
+          textContent={'Loading...'}
+          textStyle={styles.spinnerTextStyle}
+        />
         </View>
       );
     }
@@ -94,5 +107,8 @@ class AppHeader extends Component{
       paddingHorizontal: 25,
       flexDirection: 'row',
       justifyContent: 'space-between',
-    }
+    },
+    spinnerTextStyle: {
+      color: '#FFF'
+    },
   })

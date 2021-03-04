@@ -4,10 +4,9 @@ import {
   StyleSheet, ImageBackground, ScrollView, SafeAreaView, TouchableOpacity
 } from 'react-native';
 import { FontAwesomeIcon } from '@fortawesome/react-native-fontawesome';
-import { faBook , faBookmark, faTools, faInfoCircle, faPlay, faPauseCircle} from '@fortawesome/free-solid-svg-icons';
+import { faBookmark, faPlay, faPauseCircle} from '@fortawesome/free-solid-svg-icons';
 import RNRestart from 'react-native-restart';
 import sourates from './sourates';
-import SoundPlayer from 'react-native-sound-player';
 import AppHeader from './screens/AppHeader';
 
 
@@ -25,9 +24,8 @@ const QuranPulaarApp = () => {
           StyleSheet.absoluteFillObject
         ]}
     >
-      {sourates.map((image, index) => {
+      {sourates.map(() => {
         return <Image 
-          key={'image-${index}'}
           source={require('./images/background.png')}
           style={styles.image}
           blurRadius={50}
@@ -41,7 +39,7 @@ const QuranPulaarApp = () => {
           [{nativeEvent: {contentOffset: {x: scrollX}}}],
           {useNativeDriver: true}
         )}
-        keyExtractor={(_, index) => index.toString}
+        keyExtractor={(_, index) => index}
         horizontal
         pagingEnabled
         renderItem={({item}) => {
