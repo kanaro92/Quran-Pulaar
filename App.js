@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Component } from 'react';
 import { 
   Image, Animated, Text, View, Dimensions, I18nManager,
   StyleSheet, ImageBackground, ScrollView, SafeAreaView, TouchableOpacity
@@ -14,11 +14,21 @@ const { width, height } = Dimensions.get('screen');
 const imageW = width * 1;
 const imageH = imageW ;
 
-const QuranPulaarApp = () => {
-  I18nManager.forceRTL(true);
+
+class QuranPulaarApp extends Component{
+    constructor(){
+        super();
+        this.state = {
+            isPlaying: false,
+            spinner: false,
+        }
+      }
+
+     //const scrollX = React.useRef(new Animated.Value(0)).current
   //RNRestart.Restart();
-  const scrollX = React.useRef(new Animated.Value(0)).current;
-  return ( <SafeAreaView style={styles.container}>
+  render(){
+    return( 
+    <SafeAreaView style={styles.container}>
     <View 
         style={[
           StyleSheet.absoluteFillObject
@@ -35,10 +45,6 @@ const QuranPulaarApp = () => {
     <AppHeader />
     <Animated.FlatList
         data={sourates}
-        onScroll={Animated.event(
-          [{nativeEvent: {contentOffset: {x: scrollX}}}],
-          {useNativeDriver: true}
-        )}
         keyExtractor={(_, index) => index}
         horizontal
         pagingEnabled
@@ -88,7 +94,7 @@ const QuranPulaarApp = () => {
         }}
       />
   </SafeAreaView>
-  )
+  );}
 }
 
 const styles = StyleSheet.create({
