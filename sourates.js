@@ -7,6 +7,7 @@ export default[
     "surat_title": "Udditirnde - الفاتحة",
     "ayat_number": 7,
     "ayat_img": require("./images/ayat/7.png"),
+    "ayat_url": "http://abousy.com/audios/coran/An%20nas.mp3",
     "page_number": 1,
     "ayat": [
       {
@@ -75,6 +76,7 @@ export default[
     "surat_title": "Kumpitaali - النباء",
     "ayat_number": 40,
     "ayat_img": require("./images/ayat/40.png"),
+    "ayat_url": "",
     "page_number": 2,
     "ayat": [
       {
@@ -415,6 +417,7 @@ export default[
     "surat_title": "Ɗoofooji/Ɗuggitooji - النازعات",
     "ayat_number": 46,
     "ayat_img": require("./images/ayat/46.png"),
+    "ayat_url": "",
     "page_number": 3,
     "ayat": [
       {
@@ -803,6 +806,7 @@ export default[
     "surat_title": "Ɗuurnaare - عبس",
     "ayat_number": 42,
     "ayat_img": require("./images/ayat/42.png"),
+    "ayat_url": "",
     "page_number": 4,
     "ayat": [
       {
@@ -1159,6 +1163,7 @@ export default[
     "surat_title": "Fiilaama Niɓɓere - التكوير",
     "ayat_number": 29,
     "ayat_img": require("./images/ayat/29.png"),
+    "ayat_url": "",
     "page_number": 5,
     "ayat": [
       {
@@ -1411,6 +1416,7 @@ export default[
     "surat_title": "Fiilaama Niɓɓere - التكوير",
     "ayat_number": 29,
     "ayat_img": require("./images/ayat/29.png"),
+    "ayat_url": "",
     "page_number": 5,
     "ayat": [
       {
