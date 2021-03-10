@@ -33,36 +33,37 @@
 21-->E:\kane\projects\quran-pulaar\android\app\src\main\AndroidManifest.xml:8:7-39
 22        android:roundIcon="@mipmap/ic_launcher_round"
 22-->E:\kane\projects\quran-pulaar\android\app\src\main\AndroidManifest.xml:10:7-52
-23        android:theme="@style/AppTheme"
-23-->E:\kane\projects\quran-pulaar\android\app\src\main\AndroidManifest.xml:12:7-38
-24        android:usesCleartextTraffic="true" >
-24-->E:\kane\projects\quran-pulaar\android\app\src\debug\AndroidManifest.xml:7:18-53
-25        <activity
-25-->E:\kane\projects\quran-pulaar\android\app\src\main\AndroidManifest.xml:13:7-23:18
-26            android:name="com.quran.MainActivity"
-26-->E:\kane\projects\quran-pulaar\android\app\src\main\AndroidManifest.xml:14:9-37
-27            android:configChanges="keyboard|keyboardHidden|orientation|screenSize|uiMode"
-27-->E:\kane\projects\quran-pulaar\android\app\src\main\AndroidManifest.xml:16:9-86
-28            android:label="@string/app_name"
-28-->E:\kane\projects\quran-pulaar\android\app\src\main\AndroidManifest.xml:15:9-41
-29            android:launchMode="singleTask"
-29-->E:\kane\projects\quran-pulaar\android\app\src\main\AndroidManifest.xml:17:9-40
-30            android:windowSoftInputMode="adjustResize" >
-30-->E:\kane\projects\quran-pulaar\android\app\src\main\AndroidManifest.xml:18:9-51
-31            <intent-filter>
-31-->E:\kane\projects\quran-pulaar\android\app\src\main\AndroidManifest.xml:19:9-22:25
-32                <action android:name="android.intent.action.MAIN" />
-32-->E:\kane\projects\quran-pulaar\android\app\src\main\AndroidManifest.xml:20:13-65
-32-->E:\kane\projects\quran-pulaar\android\app\src\main\AndroidManifest.xml:20:21-62
-33
-34                <category android:name="android.intent.category.LAUNCHER" />
-34-->E:\kane\projects\quran-pulaar\android\app\src\main\AndroidManifest.xml:21:13-73
-34-->E:\kane\projects\quran-pulaar\android\app\src\main\AndroidManifest.xml:21:23-70
-35            </intent-filter>
-36        </activity>
-37        <activity android:name="com.facebook.react.devsupport.DevSettingsActivity" />
-37-->E:\kane\projects\quran-pulaar\android\app\src\main\AndroidManifest.xml:24:7-84
-37-->E:\kane\projects\quran-pulaar\android\app\src\main\AndroidManifest.xml:24:17-81
-38    </application>
-39
-40</manifest>
+23        android:testOnly="true"
+24        android:theme="@style/AppTheme"
+24-->E:\kane\projects\quran-pulaar\android\app\src\main\AndroidManifest.xml:12:7-38
+25        android:usesCleartextTraffic="true" >
+25-->E:\kane\projects\quran-pulaar\android\app\src\debug\AndroidManifest.xml:7:18-53
+26        <activity
+26-->E:\kane\projects\quran-pulaar\android\app\src\main\AndroidManifest.xml:13:7-23:18
+27            android:name="com.quran.MainActivity"
+27-->E:\kane\projects\quran-pulaar\android\app\src\main\AndroidManifest.xml:14:9-37
+28            android:configChanges="keyboard|keyboardHidden|orientation|screenSize|uiMode"
+28-->E:\kane\projects\quran-pulaar\android\app\src\main\AndroidManifest.xml:16:9-86
+29            android:label="@string/app_name"
+29-->E:\kane\projects\quran-pulaar\android\app\src\main\AndroidManifest.xml:15:9-41
+30            android:launchMode="singleTask"
+30-->E:\kane\projects\quran-pulaar\android\app\src\main\AndroidManifest.xml:17:9-40
+31            android:windowSoftInputMode="adjustResize" >
+31-->E:\kane\projects\quran-pulaar\android\app\src\main\AndroidManifest.xml:18:9-51
+32            <intent-filter>
+32-->E:\kane\projects\quran-pulaar\android\app\src\main\AndroidManifest.xml:19:9-22:25
+33                <action android:name="android.intent.action.MAIN" />
+33-->E:\kane\projects\quran-pulaar\android\app\src\main\AndroidManifest.xml:20:13-65
+33-->E:\kane\projects\quran-pulaar\android\app\src\main\AndroidManifest.xml:20:21-62
+34
+35                <category android:name="android.intent.category.LAUNCHER" />
+35-->E:\kane\projects\quran-pulaar\android\app\src\main\AndroidManifest.xml:21:13-73
+35-->E:\kane\projects\quran-pulaar\android\app\src\main\AndroidManifest.xml:21:23-70
+36            </intent-filter>
+37        </activity>
+38        <activity android:name="com.facebook.react.devsupport.DevSettingsActivity" />
+38-->E:\kane\projects\quran-pulaar\android\app\src\main\AndroidManifest.xml:24:7-84
+38-->E:\kane\projects\quran-pulaar\android\app\src\main\AndroidManifest.xml:24:17-81
+39    </application>
+40
+41</manifest>
