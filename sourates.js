@@ -2,11 +2,12 @@ export default[
   {
     "surat_number": 1,
     "juzz": "الجزء Tumbutere 30",
-    "surat": "سورة الفاتحة Simoore Udditirde",
+    "surat": "سورة الفاتحة Simoore Udditirnde",
     "juzz_number": 30,
-    "surat_title": "Udditirde - الفاتحة",
+    "surat_title": "Udditirnde - الفاتحة",
     "ayat_number": 7,
     "ayat_img": require("./images/ayat/7.png"),
+    "ayat_url": "http://abousy.com/audios/coran/An%20nas.mp3",
     "page_number": 1,
     "ayat": [
       {
@@ -75,6 +76,7 @@ export default[
     "surat_title": "Kumpitaali - النباء",
     "ayat_number": 40,
     "ayat_img": require("./images/ayat/40.png"),
+    "ayat_url": "",
     "page_number": 2,
     "ayat": [
       {
@@ -415,6 +417,7 @@ export default[
     "surat_title": "Ɗoofooji/Ɗuggitooji - النازعات",
     "ayat_number": 46,
     "ayat_img": require("./images/ayat/46.png"),
+    "ayat_url": "",
     "page_number": 3,
     "ayat": [
       {
@@ -803,6 +806,7 @@ export default[
     "surat_title": "Ɗuurnaare - عبس",
     "ayat_number": 42,
     "ayat_img": require("./images/ayat/42.png"),
+    "ayat_url": "",
     "page_number": 4,
     "ayat": [
       {
@@ -920,7 +924,7 @@ export default[
       {
         "number": 14,
         "ar_ayat": "مَّرْفُوعَةٍ مُّطَهَّرَةٍ",
-        "pr_ayat": "Toownaaɗi laɓɓinaaɗ",
+        "pr_ayat": "Toownaaɗi laɓɓinaaɗi",
         "img": require("./images/ayat/14.png"),
         "startTime": 1,
         "endTime": 2
@@ -960,7 +964,7 @@ export default[
       {
         "number": 19,
         "ar_ayat": "مِن نُّطْفَةٍ خَلَقَهُ فَقَدَّرَهُ",
-        "pr_ayat": "Iwde toɓɓere o tagiri ɗum, o hoddirani ɗim",
+        "pr_ayat": "Iwde toɓɓere o tagiri ɗum, o hoddirani ɗum",
         "img": require("./images/ayat/19.png"),
         "startTime": 1,
         "endTime": 2
@@ -1159,6 +1163,7 @@ export default[
     "surat_title": "Fiilaama Niɓɓere - التكوير",
     "ayat_number": 29,
     "ayat_img": require("./images/ayat/29.png"),
+    "ayat_url": "",
     "page_number": 5,
     "ayat": [
       {
@@ -1411,6 +1416,7 @@ export default[
     "surat_title": "Fiilaama Niɓɓere - التكوير",
     "ayat_number": 29,
     "ayat_img": require("./images/ayat/29.png"),
+    "ayat_url": "",
     "page_number": 5,
     "ayat": [
       {

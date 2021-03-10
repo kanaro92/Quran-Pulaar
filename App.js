@@ -1,6 +1,6 @@
-import React from 'react';
+import React, { Component } from 'react';
 import { 
-  Image, Animated, Text, View, Dimensions, I18nManager,
+  Image, Animated, Text, View, Dimensions,
   StyleSheet, ImageBackground, ScrollView, SafeAreaView, TouchableOpacity
 } from 'react-native';
 import { FontAwesomeIcon } from '@fortawesome/react-native-fontawesome';
@@ -8,17 +8,30 @@ import { faBookmark, faPlay, faPauseCircle} from '@fortawesome/free-solid-svg-ic
 import RNRestart from 'react-native-restart';
 import sourates from './sourates';
 import AppHeader from './screens/AppHeader';
+import SoundPlayer from 'react-native-sound-player';
+import Spinner from 'react-native-loading-spinner-overlay';
+import { Badge } from 'react-native-elements'
 
 
 const { width, height } = Dimensions.get('screen');
 const imageW = width * 1;
 const imageH = imageW ;
 
-const QuranPulaarApp = () => {
-  I18nManager.forceRTL(true);
+
+class QuranPulaarApp extends Component{
+    constructor(){
+        super();
+        this.state = {
+            isPlaying: false,
+            spinner: false,
+        }
+      }
+
+     //const scrollX = React.useRef(new Animated.Value(0)).current
   //RNRestart.Restart();
-  const scrollX = React.useRef(new Animated.Value(0)).current;
-  return ( <SafeAreaView style={styles.container}>
+  render(){
+    return( 
+    <SafeAreaView style={styles.container}>
     <View 
         style={[
           StyleSheet.absoluteFillObject
@@ -35,10 +48,6 @@ const QuranPulaarApp = () => {
     <AppHeader />
     <Animated.FlatList
         data={sourates}
-        onScroll={Animated.event(
-          [{nativeEvent: {contentOffset: {x: scrollX}}}],
-          {useNativeDriver: true}
-        )}
         keyExtractor={(_, index) => index}
         horizontal
         pagingEnabled
@@ -50,6 +59,12 @@ const QuranPulaarApp = () => {
             </View>
             <View style={styles.body}>
             <ImageBackground source={require('./images/background.png')} style={styles.backGroundImage}>
+              <View style={styles.play_icon}>
+                {this.state.isPlaying ? 
+                  <FontAwesomeIcon icon={faPauseCircle} size={20} color={"#24561F"} onPress={() => this.stopSong()}/> :
+                  <FontAwesomeIcon icon={faPlay} size={20} color={"#24561F"} onPress={() => this.playSong(item.ayat_url)}/>
+                }
+              </View>
               <View style={styles.title_view}>
               <ImageBackground style={styles.bg_surat} source={require('./images/bg_sourate.jpeg')}>
                 <View style={styles.surat_title_view}>
@@ -80,15 +95,82 @@ const QuranPulaarApp = () => {
             <View style={styles.footer}>
               <Text></Text>
               <Text style={styles.footer_text}>{item.page_number}</Text>
-              <FontAwesomeIcon icon={faBookmark} size={20} color={"#24561F"}/>
+              <View>
+                <FontAwesomeIcon icon={faBookmark} size={20} color={"#24561F"}/>
+                <Badge
+                  status="success"
+                  containerStyle={{ position: 'absolute', top: -4, right: -4 }}
+                />
+              </View>
             </View>
             </ImageBackground>
             </View>
           </View>
         }}
       />
+
+    <Spinner
+      visible={this.state.spinner}
+      textContent={'Loading...'}
+      textStyle={styles.spinnerTextStyle}
+    />
   </SafeAreaView>
-  )
+  );}
+
+  playSong = (url) => {
+    try {
+      this.setState({
+        spinner: true
+      });
+      // play the file tone.mp3
+      //SoundPlayer.playSoundFile('tone', 'mp3')
+      // or play from url
+      //alert(this.state.isPlaying)
+      SoundPlayer.playUrl(url);
+      this.setState({
+        isPlaying: true
+      });
+    } catch (e) {
+        alert(`cannot play the sound file`, e)
+    }
+  }
+
+  stopSong = () => {
+    SoundPlayer.stop();
+    this.setState({
+        isPlaying: false
+    });
+  }
+
+  _onFinishedPlayingSubscription = null;
+  _onFinishedLoadingURLSubscription = null;
+  componentWillUnmount() {
+      this._onFinishedPlayingSubscription.remove()
+      _onFinishedLoadingSubscription.remove()
+      _onFinishedLoadingFileSubscription.remove()
+      this._onFinishedLoadingURLSubscription.remove()
+    }
+
+  componentDidMount() {
+      this._onFinishedPlayingSubscription = SoundPlayer.addEventListener('FinishedPlaying', ({ success }) => {
+          this.setState({
+              isPlaying: false
+          });
+          alert('finished playing', success)
+      })
+      _onFinishedLoadingSubscription = SoundPlayer.addEventListener('FinishedLoading', ({ success }) => {
+        console.log('finished loading', success)
+      })
+      _onFinishedLoadingFileSubscription = SoundPlayer.addEventListener('FinishedLoadingFile', ({ success, name, type }) => {
+        console.log('finished loading file', success, name, type)
+      })
+      this._onFinishedLoadingURLSubscription = SoundPlayer.addEventListener('FinishedLoadingURL', ({ success, url }) => {
+        this.setState({
+          spinner: false
+      });
+      })
+  }
+
 }
 
 const styles = StyleSheet.create({
@@ -108,7 +190,7 @@ const styles = StyleSheet.create({
   content: {
     paddingLeft: 12,
     paddingRight: 10,
-    height: '80%',
+    height: '76%',
   },
   ayat_content: {
     alignItems: 'center'
@@ -116,12 +198,16 @@ const styles = StyleSheet.create({
   body: {
     width: width, 
     height: '95%',
-    borderWidth: 5,
+    borderWidth: 3,
     borderColor: '#4dbf81',
     borderRadius: 10
   },
+  play_icon: {
+    paddingTop: 18,
+    flexDirection: 'row',
+    justifyContent: 'center',
+  },
   title_view: {
-    paddingTop: 15,
     paddingBottom: 5,
     flexDirection: 'row',
     justifyContent: 'center',
@@ -168,7 +254,8 @@ const styles = StyleSheet.create({
   flexDirection: 'row',
   justifyContent: 'space-between',
   marginLeft:10,
-  borderTopWidth: 5,
+  borderTopWidth: 3,
+  paddingTop: 2,
   paddingLeft: 5,
   paddingRight: 5,
   borderColor: '#4dbf81',
@@ -179,6 +266,9 @@ const styles = StyleSheet.create({
   textAlign: 'center',
   fontWeight: 'bold',
   fontSize: 18,
+ },
+ spinnerTextStyle: {
+  color: '#FFF'
  },
 });
 export default QuranPulaarApp;
