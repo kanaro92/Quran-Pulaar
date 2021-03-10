@@ -98,8 +98,11 @@ class QuranPulaarApp extends Component{
               <View>
                 <FontAwesomeIcon icon={faBookmark} size={20} color={"#24561F"}/>
                 <Badge
+                  value="+"
                   status="success"
-                  containerStyle={{ position: 'absolute', top: -4, right: -4 }}
+                  badgeStyle={styles.badge}
+                  textStyle={styles.badgeText}
+                  containerStyle={{ position: 'absolute', top: 0, left: -3 }}
                 />
               </View>
             </View>
@@ -266,6 +269,15 @@ const styles = StyleSheet.create({
   textAlign: 'center',
   fontWeight: 'bold',
   fontSize: 18,
+ },
+ badge: {
+  height: 12,
+  minWidth: 0,
+  width: 12
+ },
+ badgeText: {
+   fontSize: 9,
+   paddingHorizontal: 0
  },
  spinnerTextStyle: {
   color: '#FFF'
