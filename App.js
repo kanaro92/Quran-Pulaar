@@ -10,6 +10,7 @@ import sourates from './sourates';
 import AppHeader from './screens/AppHeader';
 import SoundPlayer from 'react-native-sound-player';
 import Spinner from 'react-native-loading-spinner-overlay';
+import { Badge } from 'react-native-elements'
 
 
 const { width, height } = Dimensions.get('screen');
@@ -60,8 +61,8 @@ class QuranPulaarApp extends Component{
             <ImageBackground source={require('./images/background.png')} style={styles.backGroundImage}>
               <View style={styles.play_icon}>
                 {this.state.isPlaying ? 
-                  <FontAwesomeIcon icon={faPauseCircle} size={28} color={"#24561F"} onPress={() => this.stopSong()}/> :
-                  <FontAwesomeIcon icon={faPlay} size={25} color={"#24561F"} onPress={() => this.playSong(item.ayat_url)}/>
+                  <FontAwesomeIcon icon={faPauseCircle} size={20} color={"#24561F"} onPress={() => this.stopSong()}/> :
+                  <FontAwesomeIcon icon={faPlay} size={20} color={"#24561F"} onPress={() => this.playSong(item.ayat_url)}/>
                 }
               </View>
               <View style={styles.title_view}>
@@ -94,7 +95,13 @@ class QuranPulaarApp extends Component{
             <View style={styles.footer}>
               <Text></Text>
               <Text style={styles.footer_text}>{item.page_number}</Text>
-              <FontAwesomeIcon icon={faBookmark} size={20} color={"#24561F"}/>
+              <View>
+                <FontAwesomeIcon icon={faBookmark} size={20} color={"#24561F"}/>
+                <Badge
+                  status="success"
+                  containerStyle={{ position: 'absolute', top: -4, right: -4 }}
+                />
+              </View>
             </View>
             </ImageBackground>
             </View>
@@ -183,7 +190,7 @@ const styles = StyleSheet.create({
   content: {
     paddingLeft: 12,
     paddingRight: 10,
-    height: '78%',
+    height: '76%',
   },
   ayat_content: {
     alignItems: 'center'
@@ -196,12 +203,11 @@ const styles = StyleSheet.create({
     borderRadius: 10
   },
   play_icon: {
-    paddingTop: 20,
+    paddingTop: 18,
     flexDirection: 'row',
     justifyContent: 'center',
   },
   title_view: {
-    paddingTop: 3,
     paddingBottom: 5,
     flexDirection: 'row',
     justifyContent: 'center',
