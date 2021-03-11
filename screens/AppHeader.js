@@ -3,6 +3,10 @@ import { View, StyleSheet, Button, Text } from 'react-native';
 import { FontAwesomeIcon } from '@fortawesome/react-native-fontawesome';
 import { faBook , faBookmark, faTools, faInfoCircle } from '@fortawesome/free-solid-svg-icons';
 import RBSheet from "react-native-raw-bottom-sheet";
+import InfoComponent from './InfoComponent';
+import BookMarkComponent from './BookMarkComponent';
+import PageComponent from './PageComponent';
+import ToolComponent from './ToolComponent';
 
 class AppHeader extends Component{
     constructor(){
@@ -29,8 +33,9 @@ class AppHeader extends Component{
             ref={ref => {
               this.infoRBSheet = ref;
             }}
-            height={300}
+            height={800}
             openDuration={250}
+            closeOnDragDown={true}
             customStyles={{
               container: {
                 justifyContent: "center",
@@ -38,9 +43,7 @@ class AppHeader extends Component{
               }
             }}
           >
-            <View>
-              <Text>Info</Text>
-            </View>
+            <InfoComponent />
           </RBSheet>
 
           <RBSheet
@@ -56,9 +59,7 @@ class AppHeader extends Component{
               }
             }}
           >
-            <View>
-              <Text>BookMarks</Text>
-            </View>
+            <BookMarkComponent />
           </RBSheet>
 
           <RBSheet
@@ -74,9 +75,7 @@ class AppHeader extends Component{
                 }
               }}
             >
-              <View>
-                <Text>Pages</Text>
-              </View>
+              <PageComponent />
             </RBSheet>
 
             <RBSheet
@@ -92,9 +91,7 @@ class AppHeader extends Component{
                 }
               }}
             >
-              <View>
-                <Text>Tools</Text>
-              </View>
+              <ToolComponent />
             </RBSheet>
         </View>
         
