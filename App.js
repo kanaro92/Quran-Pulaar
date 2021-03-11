@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { 
-  Image, Animated, Text, View, Dimensions, Button,
+  Image, Animated, Text, View, Dimensions,
   StyleSheet, ImageBackground, ScrollView, SafeAreaView, TouchableOpacity
 } from 'react-native';
 import { FontAwesomeIcon } from '@fortawesome/react-native-fontawesome';
@@ -11,7 +11,6 @@ import AppHeader from './screens/AppHeader';
 import SoundPlayer from 'react-native-sound-player';
 import Spinner from 'react-native-loading-spinner-overlay';
 import { Badge } from 'react-native-elements';
-import RBSheet from "react-native-raw-bottom-sheet";
 
 
 const { width, height } = Dimensions.get('screen');
@@ -107,24 +106,6 @@ class QuranPulaarApp extends Component{
                 />
               </View>
             </View>
-            <Button title="OPEN BOTTOM SHEET" onPress={() => this.RBSheet.open()} />
-        <RBSheet
-          ref={ref => {
-            this.RBSheet = ref;
-          }}
-          height={300}
-          openDuration={250}
-          customStyles={{
-            container: {
-              justifyContent: "center",
-              alignItems: "center"
-            }
-          }}
-        >
-          <View>
-            <Text>Hello</Text>
-          </View>
-        </RBSheet>
             </ImageBackground>
             </View>
           </View>
