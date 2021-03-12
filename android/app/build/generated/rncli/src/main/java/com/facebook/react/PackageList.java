@@ -11,8 +11,12 @@ import com.facebook.react.shell.MainReactPackage;
 import java.util.Arrays;
 import java.util.ArrayList;
 
+// @react-native-community/masked-view
+import org.reactnative.maskedview.RNCMaskedViewPackage;
 // react-native-restart
 import com.reactnativerestart.RestartPackage;
+// react-native-safe-area-context
+import com.th3rdwave.safeareacontext.SafeAreaContextPackage;
 // react-native-sound-player
 import com.johnsonsu.rnsoundplayer.RNSoundPlayerPackage;
 // react-native-svg
@@ -66,7 +70,9 @@ public class PackageList {
   public ArrayList<ReactPackage> getPackages() {
     return new ArrayList<>(Arrays.<ReactPackage>asList(
       new MainReactPackage(mConfig),
+      new RNCMaskedViewPackage(),
       new RestartPackage(),
+      new SafeAreaContextPackage(),
       new RNSoundPlayerPackage(),
       new SvgPackage(),
       new VectorIconsPackage(),
