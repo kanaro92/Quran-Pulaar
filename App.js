@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { 
+import {
   Image, Animated, Text, View, Dimensions,
   StyleSheet, ImageBackground, ScrollView, SafeAreaView, TouchableOpacity
 } from 'react-native';
@@ -30,15 +30,15 @@ class QuranPulaarApp extends Component{
      //const scrollX = React.useRef(new Animated.Value(0)).current
   //RNRestart.Restart();
   render(){
-    return( 
+    return(
     <SafeAreaView style={styles.container}>
-    <View 
+    <View
         style={[
           StyleSheet.absoluteFillObject
         ]}
     >
       {sourates.map(() => {
-        return <Image 
+        return <Image
           source={require('./images/background.png')}
           style={styles.image}
           blurRadius={50}
@@ -52,7 +52,7 @@ class QuranPulaarApp extends Component{
         horizontal
         pagingEnabled
         renderItem={({item}) => {
-          return <View >    
+          return <View >
             <View style={styles.juzz}>
               <Text>{item.juzz}</Text>
               <Text>{item.surat}</Text>
@@ -60,7 +60,7 @@ class QuranPulaarApp extends Component{
             <View style={styles.body}>
             <ImageBackground source={require('./images/background.png')} style={styles.backGroundImage}>
               <View style={styles.play_icon}>
-                {this.state.isPlaying ? 
+                {this.state.isPlaying ?
                   <FontAwesomeIcon icon={faPauseCircle} size={20} color={"#24561F"} onPress={() => this.stopSong()}/> :
                   <FontAwesomeIcon icon={faPlay} size={20} color={"#24561F"} onPress={() => this.playSong(item.ayat_url)}/>
                 }
@@ -69,14 +69,14 @@ class QuranPulaarApp extends Component{
               <ImageBackground style={styles.bg_surat} source={require('./images/bg_sourate.jpeg')}>
                 <View style={styles.surat_title_view}>
                   <Text style={styles.surat_title_text}>{item.surat_title}</Text>
-                  {item.ayat_img != "" ? 
+                  {item.ayat_img != "" ?
                     <Image source={item.ayat_img} style={styles.ayat_image}/>:
                     <Text></Text>
                   }
                 </View>
               </ImageBackground>
             </View>
-            <View style={styles.content}> 
+            <View style={styles.content}>
                 <ScrollView>
                   {item.ayat.map(ayat => {
                     return <View style={styles.ayat_content}>
@@ -125,14 +125,12 @@ class QuranPulaarApp extends Component{
       this.setState({
         spinner: true
       });
-      // play the file tone.mp3
-      //SoundPlayer.playSoundFile('tone', 'mp3')
-      // or play from url
-      //alert(this.state.isPlaying)
+      alert(url)
       SoundPlayer.playUrl(url);
       this.setState({
         isPlaying: true
       });
+      alert('is playing : '+this.state.isPlaying)
     } catch (e) {
         alert(`cannot play the sound file`, e)
     }
@@ -146,26 +144,27 @@ class QuranPulaarApp extends Component{
   }
 
   _onFinishedPlayingSubscription = null;
+  _onFinishedLoadingSubscription = null;
   _onFinishedLoadingURLSubscription = null;
   componentWillUnmount() {
       this._onFinishedPlayingSubscription.remove()
-      _onFinishedLoadingSubscription.remove()
-      _onFinishedLoadingFileSubscription.remove()
+      this._onFinishedLoadingSubscription.remove()
       this._onFinishedLoadingURLSubscription.remove()
-    }
+  }
 
   componentDidMount() {
       this._onFinishedPlayingSubscription = SoundPlayer.addEventListener('FinishedPlaying', ({ success }) => {
           this.setState({
               isPlaying: false
           });
+          SoundPlayer.unmount();
+          this._onFinishedPlayingSubscription.remove()
+          this._onFinishedLoadingSubscription.remove()
+          this._onFinishedLoadingURLSubscription.remove()
           alert('finished playing', success)
       })
-      _onFinishedLoadingSubscription = SoundPlayer.addEventListener('FinishedLoading', ({ success }) => {
+      this._onFinishedLoadingSubscription = SoundPlayer.addEventListener('FinishedLoading', ({ success }) => {
         console.log('finished loading', success)
-      })
-      _onFinishedLoadingFileSubscription = SoundPlayer.addEventListener('FinishedLoadingFile', ({ success, name, type }) => {
-        console.log('finished loading file', success, name, type)
       })
       this._onFinishedLoadingURLSubscription = SoundPlayer.addEventListener('FinishedLoadingURL', ({ success, url }) => {
         this.setState({
@@ -199,7 +198,7 @@ const styles = StyleSheet.create({
     alignItems: 'center'
   },
   body: {
-    width: width, 
+    width: width,
     height: '95%',
     borderWidth: 3,
     borderColor: '#4dbf81',
@@ -237,7 +236,7 @@ const styles = StyleSheet.create({
   justifyContent: 'space-between',
  },
   backGroundImage: {
-    width: '100%', 
+    width: '100%',
     height: '100%',
     resizeMode: 'cover',
   },
@@ -245,10 +244,10 @@ const styles = StyleSheet.create({
   width: 30,
   height: 30,
  },
- touchable_ayat: { 
+ touchable_ayat: {
   alignItems: "center",
  },
- ayat_text: { 
+ ayat_text: {
   fontSize: 18,
   textAlign: 'center',
   padding: 3
