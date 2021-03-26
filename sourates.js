@@ -1241,7 +1241,7 @@ export default[
       {
         "number": 1,
         "ar_ayat": "بِأَيِّ ذَنبٍ قُتِلَتْ",
-        "pr_ayat": "Holi oon bakkaat ngel wardanoo (9) e so ɗeereeji ɗi nguɗɗitaama ‘caaktaama’",
+        "pr_ayat": "Holi oon bakkaat ngel wardanoo",
         "img": require("./images/ayat/1.png"),
         "startTime": 1,
         "endTime": 2
@@ -1249,7 +1249,7 @@ export default[
       {
         "number": 1,
         "ar_ayat": "وَإِذَا الصُّحُفُ نُشِرَتْ",
-        "pr_ayat": "E so tawii taaynowol boynaama",
+        "pr_ayat": "E so ɗeereeji ɗi nguɗɗitaama ‘caaktaama’",
         "img": require("./images/ayat/1.png"),
         "startTime": 1,
         "endTime": 2
@@ -1329,7 +1329,7 @@ export default[
       {
         "number": 1,
         "ar_ayat": "ذِي قُوَّةٍ عِندَ ذِي الْعَرْشِ مَكِينٍ",
-        "pr_ayat": "Ɗooftaaɗo toon to koolaaɗo",
+        "pr_ayat": "Ko o jom semmbe e nokkure toownde, to jom daŋki ki",
         "img": require("./images/ayat/1.png"),
         "startTime": 1,
         "endTime": 2
@@ -1337,7 +1337,7 @@ export default[
       {
         "number": 1,
         "ar_ayat": "مُّطَاعٍ ثَمَّ أَمِينٍ",
-        "pr_ayat": "",
+        "pr_ayat": "Ɗooftaaɗo toon to koolaaɗo",
         "img": require("./images/ayat/1.png"),
         "startTime": 1,
         "endTime": 2
@@ -1369,7 +1369,7 @@ export default[
       {
         "number": 1,
         "ar_ayat": "وَمَا هُوَ بِقَوْلِ شَيْطَانٍ رَّجِيمٍ",
-        "pr_ayat": "E ɗum wonaa kadi koŋngol seyɗaane diddaaɗo ",
+        "pr_ayat": "E ɗum wonaa kadi koŋngol seyɗaane berlaaɗo",
         "img": require("./images/ayat/1.png"),
         "startTime": 1,
         "endTime": 2
@@ -1584,9 +1584,9 @@ export default[
   {
     "surat_number": 83,
     "juzz": "الجزء Tumbutere 30",
-    "surat": "سورة المطففين Simoore ŋosooɓe/ŋakkinooɓe",
+    "surat": "سورة المطففين Simoore ŋosooɓe",
     "juzz_number": 30,
-    "surat_title": "Ŋosooɓe  - المطففين",
+    "surat_title": "Ŋosooɓe/ŋakkinooɓe  - المطففين",
     "ayat_number": "36",
     "ayat_img": require("./images/ayat/36.png"),
     "ayat_url": "http://abousy.com/quran_audio/83_AlMoutafifin.mp3",
@@ -1893,9 +1893,9 @@ export default[
   {
     "surat_number": 84,
     "juzz": "الجزء Tumbutere 30",
-    "surat": "سورة الإنشقاق Simoore Fiilaama Niɓɓere",
+    "surat": "سورة الإنشقاق Simoore Al-Insiqaaqi",
     "juzz_number": 30,
-    "surat_title": "Fiilaama Niɓɓere - الإنشقاق",
+    "surat_title": "Al-Insiqaaqi - الإنشقاق",
     "ayat_number": 25,
     "ayat_img": require("./images/ayat/25.png"),
     "ayat_url": "http://abousy.com/quran_audio/84_AlInchiqaq.mp3",
@@ -1912,7 +1912,7 @@ export default[
       {
         "number": 1,
         "ar_ayat": "إِذَا السَّمَاءُ انشَقَّتْ",
-        "pr_ayat": "",
+        "pr_ayat": "So kammu ngu feeciima ‘seekiima’",
         "img": require("./images/ayat/1.png"),
         "startTime": 1,
         "endTime": 2
@@ -1920,7 +1920,7 @@ export default[
       {
         "number": 1,
         "ar_ayat": "وَأَذِنَتْ لِرَبِّهَا وَحُقَّتْ",
-        "pr_ayat": "",
+        "pr_ayat": "Ngu ɗooftiima joom maggu, tee eɗum waɗɗiingu",
         "img": require("./images/ayat/1.png"),
         "startTime": 1,
         "endTime": 2
@@ -1928,7 +1928,7 @@ export default[
       {
         "number": 1,
         "ar_ayat": "وَإِذَا الْأَرْضُ مُدَّتْ",
-        "pr_ayat": "",
+        "pr_ayat": "E so leydi ndi fooɗtaama ‘meeftaama’",
         "img": require("./images/ayat/1.png"),
         "startTime": 1,
         "endTime": 2
@@ -1936,7 +1936,7 @@ export default[
       {
         "number": 1,
         "ar_ayat": "وَأَلْقَتْ مَا فِيهَا وَتَخَلَّتْ",
-        "pr_ayat": "",
+        "pr_ayat": "Ndi werlii ko woni e mayri ndi ɓolɗitii",
         "img": require("./images/ayat/1.png"),
         "startTime": 1,
         "endTime": 2
@@ -1944,7 +1944,7 @@ export default[
       {
         "number": 1,
         "ar_ayat": "وَأَذِنَتْ لِرَبِّهَا وَحُقَّتْ",
-        "pr_ayat": "",
+        "pr_ayat": "E ndi heɗtiima joom mayri, tee eɗum waɗɗiindi",
         "img": require("./images/ayat/1.png"),
         "startTime": 1,
         "endTime": 2
@@ -1952,7 +1952,7 @@ export default[
       {
         "number": 1,
         "ar_ayat": "يَا أَيُّهَا الْإِنسَانُ إِنَّكَ كَادِحٌ إِلَى رَبِّكَ كَدْحًا فَمُلَاقِيهِ",
-        "pr_ayat": "",
+        "pr_ayat": "Eehey maa aan neɗɗo tiiɗnaniiɗo fayde e joomi mum kala tiiɗnaare, ma a hawroy e makko",
         "img": require("./images/ayat/1.png"),
         "startTime": 1,
         "endTime": 2
@@ -1960,7 +1960,7 @@ export default[
       {
         "number": 1,
         "ar_ayat": "فَأَمَّا مَنْ أُوتِيَ كِتَابَهُ بِيَمِينِهِ",
-        "pr_ayat": "",
+        "pr_ayat": "Ndeen noon oon tottiraaɗo deftere mum, ñaamo mum",
         "img": require("./images/ayat/1.png"),
         "startTime": 1,
         "endTime": 2
@@ -1968,7 +1968,7 @@ export default[
       {
         "number": 1,
         "ar_ayat": "فَسَوْفَ يُحَاسَبُ حِسَابًا يَسِيرًا",
-        "pr_ayat": "",
+        "pr_ayat": "Omo fayi hiisaneede hiisoore newiinde",
         "img": require("./images/ayat/1.png"),
         "startTime": 1,
         "endTime": 2
@@ -1976,7 +1976,7 @@ export default[
       {
         "number": 1,
         "ar_ayat": "وَيَنقَلِبُ إِلَى أَهْلِهِ مَسْرُورًا",
-        "pr_ayat": "",
+        "pr_ayat": "Tee o ruttoo to koreeji makko omo weltii",
         "img": require("./images/ayat/1.png"),
         "startTime": 1,
         "endTime": 2
@@ -1984,7 +1984,7 @@ export default[
       {
         "number": 1,
         "ar_ayat": "وَأَمَّا مَنْ أُوتِيَ كِتَابَهُ وَرَاءَ ظَهْرِهِ",
-        "pr_ayat": "",
+        "pr_ayat": "Kono oon tottiraaɗo deftere mum caggal keeci mum",
         "img": require("./images/ayat/1.png"),
         "startTime": 1,
         "endTime": 2
@@ -1992,7 +1992,7 @@ export default[
       {
         "number": 1,
         "ar_ayat": "فَسَوْفَ يَدْعُو ثُبُورًا",
-        "pr_ayat": "",
+        "pr_ayat": "Omo fayi noddude ‘luukde’ boomaare",
         "img": require("./images/ayat/1.png"),
         "startTime": 1,
         "endTime": 2
@@ -2000,7 +2000,7 @@ export default[
       {
         "number": 1,
         "ar_ayat": "وَيَصْلَى سَعِيرًا",
-        "pr_ayat": "",
+        "pr_ayat": "E o sumat e juɗowol ‘Saiir’",
         "img": require("./images/ayat/1.png"),
         "startTime": 1,
         "endTime": 2
@@ -2008,7 +2008,7 @@ export default[
       {
         "number": 1,
         "ar_ayat": "إِنَّهُ كَانَ فِي أَهْلِهِ مَسْرُورًا",
-        "pr_ayat": "",
+        "pr_ayat": "Tigi ne o laatinooma ko beltinooɗo wondude e koreeji makko",
         "img": require("./images/ayat/1.png"),
         "startTime": 1,
         "endTime": 2
@@ -2016,7 +2016,7 @@ export default[
       {
         "number": 1,
         "ar_ayat": "إِنَّهُ ظَنَّ أَن لَّن يَحُورَ",
-        "pr_ayat": "",
+        "pr_ayat": "Tigi ne o sikkunoo o jogoraani ummitineede ’wuurtineede’",
         "img": require("./images/ayat/1.png"),
         "startTime": 1,
         "endTime": 2
@@ -2024,7 +2024,7 @@ export default[
       {
         "number": 1,
         "ar_ayat": "بَلَى إِنَّ رَبَّهُ كَانَ بِهِ بَصِيرًا",
-        "pr_ayat": "",
+        "pr_ayat": "Eey kay, tigi joomiiko laatiima ko jiyoowo mo",
         "img": require("./images/ayat/1.png"),
         "startTime": 1,
         "endTime": 2
@@ -2032,7 +2032,7 @@ export default[
       {
         "number": 1,
         "ar_ayat": "فَلَا أُقْسِمُ بِالشَّفَقِ",
-        "pr_ayat": "",
+        "pr_ayat": "Alaa-dey mi woondirii mutal",
         "img": require("./images/ayat/1.png"),
         "startTime": 1,
         "endTime": 2
@@ -2040,7 +2040,7 @@ export default[
       {
         "number": 1,
         "ar_ayat": "وَاللَّيْلِ وَمَا وَسَقَ",
-        "pr_ayat": "",
+        "pr_ayat": "E jammaagu ngu e kala ko ngu suddi",
         "img": require("./images/ayat/1.png"),
         "startTime": 1,
         "endTime": 2
@@ -2048,7 +2048,7 @@ export default[
       {
         "number": 1,
         "ar_ayat": "وَالْقَمَرِ إِذَا اتَّسَقَ",
-        "pr_ayat": "",
+        "pr_ayat": "E lewru ndu so ndu yaltidii ‘funtidii’",
         "img": require("./images/ayat/1.png"),
         "startTime": 1,
         "endTime": 2
@@ -2056,7 +2056,7 @@ export default[
       {
         "number": 1,
         "ar_ayat": "لَتَرْكَبُنَّ طَبَقًا عَن طَبَقٍ",
-        "pr_ayat": "",
+        "pr_ayat": "Tigi ma on njawtu heɗɗaawo fayde e keɗɗaaje",
         "img": require("./images/ayat/1.png"),
         "startTime": 1,
         "endTime": 2
@@ -2064,7 +2064,7 @@ export default[
       {
         "number": 1,
         "ar_ayat": "فَمَا لَهُمْ لَا يُؤْمِنُونَ",
-        "pr_ayat": "",
+        "pr_ayat": "Ndeen hol ko heɓiɓe haa ɓe ngoongɗinaani",
         "img": require("./images/ayat/1.png"),
         "startTime": 1,
         "endTime": 2
@@ -2072,7 +2072,7 @@ export default[
       {
         "number": 1,
         "ar_ayat": "وَإِذَا قُرِئَ عَلَيْهِمُ الْقُرْآنُ لَا يَسْجُدُونَ",
-        "pr_ayat": "",
+        "pr_ayat": "Tee so ɓe njaŋnganaama khuraana o ɓe tukkotaako",
         "img": require("./images/ayat/1.png"),
         "startTime": 1,
         "endTime": 2
@@ -2080,7 +2080,7 @@ export default[
       {
         "number": 1,
         "ar_ayat": "بَلِ الَّذِينَ كَفَرُوا يُكَذِّبُونَ",
-        "pr_ayat": "",
+        "pr_ayat": "E jaati ɓeen yedduɓe pennii",
         "img": require("./images/ayat/1.png"),
         "startTime": 1,
         "endTime": 2
@@ -2088,7 +2088,7 @@ export default[
       {
         "number": 1,
         "ar_ayat": "وَاللَّهُ أَعْلَمُ بِمَا يُوعُونَ",
-        "pr_ayat": "",
+        "pr_ayat": "Tee Alla ina anndi ko ɓe cuuɗi",
         "img": require("./images/ayat/1.png"),
         "startTime": 1,
         "endTime": 2
@@ -2096,7 +2096,7 @@ export default[
       {
         "number": 1,
         "ar_ayat": "فَبَشِّرْهُم بِعَذَابٍ أَلِيمٍ",
-        "pr_ayat": "",
+        "pr_ayat": "Wadde jeertin e leeɓte muusɗe",
         "img": require("./images/ayat/1.png"),
         "startTime": 1,
         "endTime": 2
@@ -2104,7 +2104,7 @@ export default[
       {
         "number": 1,
         "ar_ayat": "إِلَّا الَّذِينَ آمَنُوا وَعَمِلُوا الصَّالِحَاتِ لَهُمْ أَجْرٌ غَيْرُ مَمْنُونٍ",
-        "pr_ayat": "",
+        "pr_ayat": "So wonaa ɓeen goongɗinɓe tee ngolli moƴƴi ina woodani ɗum-en njoɓdi ndi taƴataa",
         "img": require("./images/ayat/1.png"),
         "startTime": 1,
         "endTime": 2
@@ -2114,9 +2114,9 @@ export default[
   {
     "surat_number": 85,
     "juzz": "الجزء Tumbutere 30",
-    "surat": "سورة البروج Simoore Fiilaama Niɓɓere",
+    "surat": "سورة البروج Simoore Ɗaccuki",
     "juzz_number": 30,
-    "surat_title": "Fiilaama Niɓɓere - البروج",
+    "surat_title": "Ɗaccuki/Ñukkalnde koode - البروج",
     "ayat_number": 22,
     "ayat_img": require("./images/ayat/22.png"),
     "ayat_url": "http://abousy.com/quran_audio/85_AlBourouj.mp3",
@@ -2133,7 +2133,7 @@ export default[
       {
         "number": 1,
         "ar_ayat": "وَالسَّمَاءِ ذَاتِ الْبُرُوجِ",
-        "pr_ayat": "",
+        "pr_ayat": "E nguu kammu ɗaculinngu ‘ñukkalnde koode’",
         "img": require("./images/ayat/1.png"),
         "startTime": 1,
         "endTime": 2
@@ -2141,7 +2141,7 @@ export default[
       {
         "number": 1,
         "ar_ayat": "وَالْيَوْمِ الْمَوْعُودِ",
-        "pr_ayat": "",
+        "pr_ayat": "E ndeen ñalaande fodaande",
         "img": require("./images/ayat/1.png"),
         "startTime": 1,
         "endTime": 2
@@ -2149,7 +2149,7 @@ export default[
       {
         "number": 1,
         "ar_ayat": "وَشَاهِدٍ وَمَشْهُودٍ",
-        "pr_ayat": "",
+        "pr_ayat": "E ceediiɗo e ceedtateeɗo",
         "img": require("./images/ayat/1.png"),
         "startTime": 1,
         "endTime": 2
@@ -2157,7 +2157,7 @@ export default[
       {
         "number": 1,
         "ar_ayat": "قُتِلَ أَصْحَابُ الْأُخْدُودِ",
-        "pr_ayat": "",
+        "pr_ayat": "Waraama yimɓe ukduudu’en",
         "img": require("./images/ayat/1.png"),
         "startTime": 1,
         "endTime": 2
@@ -2165,7 +2165,7 @@ export default[
       {
         "number": 1,
         "ar_ayat": "النَّارِ ذَاتِ الْوَقُودِ",
-        "pr_ayat": "",
+        "pr_ayat": "Ngol jayngol jappiloowol",
         "img": require("./images/ayat/1.png"),
         "startTime": 1,
         "endTime": 2
@@ -2173,7 +2173,7 @@ export default[
       {
         "number": 1,
         "ar_ayat": "إِذْ هُمْ عَلَيْهَا قُعُودٌ",
-        "pr_ayat": "",
+        "pr_ayat": "Tuma nde ɓe njooɗii taartiingol",
         "img": require("./images/ayat/1.png"),
         "startTime": 1,
         "endTime": 2
@@ -2181,7 +2181,7 @@ export default[
       {
         "number": 1,
         "ar_ayat": "وَهُمْ عَلَى مَا يَفْعَلُونَ بِالْمُؤْمِنِينَ شُهُودٌ",
-        "pr_ayat": "",
+        "pr_ayat": "E kamɓe dey ɗuum ko ɓe ngollannoo dow goongɗinɓe, aɓe ceedii ɗum",
         "img": require("./images/ayat/1.png"),
         "startTime": 1,
         "endTime": 2
@@ -2189,7 +2189,7 @@ export default[
       {
         "number": 1,
         "ar_ayat": "وَمَا نَقَمُوا مِنْهُمْ إِلَّا أَن يُؤْمِنُوا بِاللَّهِ الْعَزِيزِ الْحَمِيدِ",
-        "pr_ayat": "",
+        "pr_ayat": "Tee alaa ko ɓe leeɓtirtunoo ɗum-en, so wonaa tan ngoongɗinii Alla tedduɗo jettaaɗo o",
         "img": require("./images/ayat/1.png"),
         "startTime": 1,
         "endTime": 2
@@ -2197,7 +2197,7 @@ export default[
       {
         "number": 1,
         "ar_ayat": "الَّذِي لَهُ مُلْكُ السَّمَاوَاتِ وَالْأَرْضِ وَاللَّهُ عَلَى كُلِّ شَيْءٍ شَهِيدٌ",
-        "pr_ayat": "",
+        "pr_ayat": "Oon mo ina woodani ɗum laamateeri kammuuji ɗi e meydi ndi, Alla ko ceedtiiɗo dow kala huunde",
         "img": require("./images/ayat/1.png"),
         "startTime": 1,
         "endTime": 2
@@ -2205,7 +2205,7 @@ export default[
       {
         "number": 1,
         "ar_ayat": "إِنَّ الَّذِينَ فَتَنُوا الْمُؤْمِنِينَ وَالْمُؤْمِنَاتِ ثُمَّ لَمْ يَتُوبُوا فَلَهُمْ عَذَابُ جَهَنَّمَ وَلَهُمْ عَذَابُ الْحَرِيقِ",
-        "pr_ayat": "",
+        "pr_ayat": "Tigi-ne ɓeen haljintunooɓe ‘finnintunooɓe’ goongɗinɓe worɓe rewɓe, rewti ɓe mbaasi ruttaade ‘tuubde’, ina woodaniɓe leeɓte kobbowol “Jahannama” kadi e leeɓte cumooje",
         "img": require("./images/ayat/1.png"),
         "startTime": 1,
         "endTime": 2
@@ -2213,7 +2213,7 @@ export default[
       {
         "number": 1,
         "ar_ayat": "إِنَّ الَّذِينَ آمَنُوا وَعَمِلُوا الصَّالِحَاتِ لَهُمْ جَنَّاتٌ تَجْرِي مِن تَحْتِهَا الْأَنْهَارُ ذَلِكَ الْفَوْزُ الْكَبِيرُ",
-        "pr_ayat": "",
+        "pr_ayat": "Tigi ne ɓeen goongɗinɓe e ngolli moƴƴi, ina woodani ɗum-en nammbuuji, ɗi caalli ina ndoga les mum-en, ɗuum dey woni daɗal mawngal",
         "img": require("./images/ayat/1.png"),
         "startTime": 1,
         "endTime": 2
@@ -2221,7 +2221,7 @@ export default[
       {
         "number": 1,
         "ar_ayat": "إِنَّ بَطْشَ رَبِّكَ لَشَدِيدٌ",
-        "pr_ayat": "",
+        "pr_ayat": "Tigi-ne jawlannde joome ko saɗtunde",
         "img": require("./images/ayat/1.png"),
         "startTime": 1,
         "endTime": 2
@@ -2229,7 +2229,7 @@ export default[
       {
         "number": 1,
         "ar_ayat": "إِنَّهُ هُوَ يُبْدِئُ وَيُعِيدُ",
-        "pr_ayat": "",
+        "pr_ayat": "Tigi-ne kaŋko woni puɗɗuɗo kadi battitoowo",
         "img": require("./images/ayat/1.png"),
         "startTime": 1,
         "endTime": 2
@@ -2237,7 +2237,7 @@ export default[
       {
         "number": 1,
         "ar_ayat": "وَهُوَ الْغَفُورُ الْوَدُودُ",
-        "pr_ayat": "",
+        "pr_ayat": "E tee kaŋko woni jaafotooɗo jom gilli",
         "img": require("./images/ayat/1.png"),
         "startTime": 1,
         "endTime": 2
@@ -2245,7 +2245,7 @@ export default[
       {
         "number": 1,
         "ar_ayat": "ذُو الْعَرْشِ الْمَجِيدُ",
-        "pr_ayat": "",
+        "pr_ayat": "Jom daŋki tedduki ki",
         "img": require("./images/ayat/1.png"),
         "startTime": 1,
         "endTime": 2
@@ -2253,7 +2253,7 @@ export default[
       {
         "number": 1,
         "ar_ayat": "فَعَّالٌ لِّمَا يُرِيدُ",
-        "pr_ayat": "",
+        "pr_ayat": "Golloowo kala ko welaa",
         "img": require("./images/ayat/1.png"),
         "startTime": 1,
         "endTime": 2
@@ -2261,7 +2261,7 @@ export default[
       {
         "number": 1,
         "ar_ayat": "هَلْ أَتَاكَ حَدِيثُ الْجُنُودِ",
-        "pr_ayat": "",
+        "pr_ayat": "Mbele njaŋtu konuuji araani e ma",
         "img": require("./images/ayat/1.png"),
         "startTime": 1,
         "endTime": 2
@@ -2269,7 +2269,7 @@ export default[
       {
         "number": 1,
         "ar_ayat": "فِرْعَوْنَ وَثَمُودَ",
-        "pr_ayat": "",
+        "pr_ayat": "Nde fir’awna e Samuuda’en",
         "img": require("./images/ayat/1.png"),
         "startTime": 1,
         "endTime": 2
@@ -2277,7 +2277,7 @@ export default[
       {
         "number": 1,
         "ar_ayat": "بَلِ الَّذِينَ كَفَرُوا فِي تَكْذِيبٍ",
-        "pr_ayat": "",
+        "pr_ayat": "Kono kay ɓeen yedduɓe ngoni ko e pennugol tan",
         "img": require("./images/ayat/1.png"),
         "startTime": 1,
         "endTime": 2
@@ -2285,7 +2285,7 @@ export default[
       {
         "number": 1,
         "ar_ayat": "وَاللَّهُ مِن وَرَائِهِم مُّحِيطٌ",
-        "pr_ayat": "",
+        "pr_ayat": "E Alla to caggal maɓɓe ko piiltiiɗo ɓe",
         "img": require("./images/ayat/1.png"),
         "startTime": 1,
         "endTime": 2
@@ -2293,7 +2293,7 @@ export default[
       {
         "number": 1,
         "ar_ayat": "بَلْ هُوَ قُرْآنٌ مَّجِيدٌ",
-        "pr_ayat": "",
+        "pr_ayat": "Ko woni goonga ko ɗum khuraana tedduɗo",
         "img": require("./images/ayat/1.png"),
         "startTime": 1,
         "endTime": 2
@@ -2301,7 +2301,7 @@ export default[
       {
         "number": 1,
         "ar_ayat": "فِي لَوْحٍ مَّحْفُوظٍ",
-        "pr_ayat": "",
+        "pr_ayat": "Nder alluwal deenangal sanne",
         "img": require("./images/ayat/1.png"),
         "startTime": 1,
         "endTime": 2
@@ -2311,9 +2311,9 @@ export default[
   {
     "surat_number": 86,
     "juzz": "الجزء Tumbutere 30",
-    "surat": "سورة الطارق Simoore Fiilaama Niɓɓere",
+    "surat": "سورة الطارق Simoore Roƴoore",
     "juzz_number": 30,
-    "surat_title": "Fiilaama Niɓɓere - الطارق",
+    "surat_title": "Roƴoore - الطارق",
     "ayat_number": 17,
     "ayat_img": require("./images/ayat/17.png"),
     "ayat_url": "http://abousy.com/quran_audio/86_AlTariq.mp3",
@@ -2330,7 +2330,7 @@ export default[
       {
         "number": 1,
         "ar_ayat": "وَالسَّمَاءِ وَالطَّارِقِ",
-        "pr_ayat": "",
+        "pr_ayat": "E kammu ngu e roƴoore nde ‘hoodere’",
         "img": require("./images/ayat/1.png"),
         "startTime": 1,
         "endTime": 2
@@ -2338,7 +2338,7 @@ export default[
       {
         "number": 1,
         "ar_ayat": "وَمَا أَدْرَاكَ مَا الطَّارِقُ",
-        "pr_ayat": "",
+        "pr_ayat": "Hol ko anndintu maa ko woni roƴoore nde",
         "img": require("./images/ayat/1.png"),
         "startTime": 1,
         "endTime": 2
@@ -2346,7 +2346,7 @@ export default[
       {
         "number": 1,
         "ar_ayat": "النَّجْمُ الثَّاقِبُ",
-        "pr_ayat": "",
+        "pr_ayat": "Ko hoodere jalboore",
         "img": require("./images/ayat/1.png"),
         "startTime": 1,
         "endTime": 2
@@ -2354,7 +2354,7 @@ export default[
       {
         "number": 1,
         "ar_ayat": "إِن كُلُّ نَفْسٍ لَّمَّا عَلَيْهَا حَافِظٌ",
-        "pr_ayat": "",
+        "pr_ayat": " Tee dey kala fittaandu ina jogii deenoowo ɗum",
         "img": require("./images/ayat/1.png"),
         "startTime": 1,
         "endTime": 2
@@ -2362,7 +2362,7 @@ export default[
       {
         "number": 1,
         "ar_ayat": "فَلْيَنظُرِ الْإِنسَانُ مِمَّ خُلِقَ",
-        "pr_ayat": "",
+        "pr_ayat": "Ndeen noon yo neɗɗo ndaarto, ko holi ɗuum tagiraa",
         "img": require("./images/ayat/1.png"),
         "startTime": 1,
         "endTime": 2
@@ -2370,7 +2370,7 @@ export default[
       {
         "number": 1,
         "ar_ayat": "خُلِقَ مِن مَّاءٍ دَافِقٍ",
-        "pr_ayat": "",
+        "pr_ayat": "Tagiraa ko he ndiyam nduñojam",
         "img": require("./images/ayat/1.png"),
         "startTime": 1,
         "endTime": 2
@@ -2378,7 +2378,7 @@ export default[
       {
         "number": 1,
         "ar_ayat": "يَخْرُجُ مِن بَيْنِ الصُّلْبِ وَالتَّرَائِبِ",
-        "pr_ayat": "",
+        "pr_ayat": "Njaltojam hakkunde noorol keeci e birɗe",
         "img": require("./images/ayat/1.png"),
         "startTime": 1,
         "endTime": 2
@@ -2386,15 +2386,7 @@ export default[
       {
         "number": 1,
         "ar_ayat": "إِنَّهُ عَلَى رَجْعِهِ لَقَادِرٌ",
-        "pr_ayat": "",
-        "img": require("./images/ayat/1.png"),
-        "startTime": 1,
-        "endTime": 2
-      },
-      {
-        "number": 1,
-        "ar_ayat": "",
-        "pr_ayat": "",
+        "pr_ayat": "E tigi-ne kaŋko dey ko o kattanɗo e artirde mo",
         "img": require("./images/ayat/1.png"),
         "startTime": 1,
         "endTime": 2
@@ -2402,7 +2394,7 @@ export default[
       {
         "number": 1,
         "ar_ayat": "يَوْمَ تُبْلَى السَّرَائِرُ",
-        "pr_ayat": "",
+        "pr_ayat": "Ñande weejnatee cuuɗiindi",
         "img": require("./images/ayat/1.png"),
         "startTime": 1,
         "endTime": 2
@@ -2410,7 +2402,7 @@ export default[
       {
         "number": 1,
         "ar_ayat": "فَمَا لَهُ مِن قُوَّةٍ وَلَا نَاصِرٍ",
-        "pr_ayat": "",
+        "pr_ayat": "Tee alanaa mo semmbe e paabotooɗo",
         "img": require("./images/ayat/1.png"),
         "startTime": 1,
         "endTime": 2
@@ -2418,7 +2410,7 @@ export default[
       {
         "number": 1,
         "ar_ayat": "وَالسَّمَاءِ ذَاتِ الرَّجْعِ",
-        "pr_ayat": "",
+        "pr_ayat": "E nguun kammu ngartiroongu ‘toɓooji’",
         "img": require("./images/ayat/1.png"),
         "startTime": 1,
         "endTime": 2
@@ -2426,7 +2418,7 @@ export default[
       {
         "number": 1,
         "ar_ayat": "وَالْأَرْضِ ذَاتِ الصَّدْعِ",
-        "pr_ayat": "",
+        "pr_ayat": "E ndii lesndi peecotoondi",
         "img": require("./images/ayat/1.png"),
         "startTime": 1,
         "endTime": 2
@@ -2434,7 +2426,7 @@ export default[
       {
         "number": 1,
         "ar_ayat": "إِنَّهُ لَقَوْلٌ فَصْلٌ",
-        "pr_ayat": "",
+        "pr_ayat": "E tigi-ne ko ɗum koŋngol ceerndowol ‘laɓɓinoowol’",
         "img": require("./images/ayat/1.png"),
         "startTime": 1,
         "endTime": 2
@@ -2442,7 +2434,7 @@ export default[
       {
         "number": 1,
         "ar_ayat": "وَمَا هُوَ بِالْهَزْلِ",
-        "pr_ayat": "",
+        "pr_ayat": "Kadi ngol wonaa meeranteewol",
         "img": require("./images/ayat/1.png"),
         "startTime": 1,
         "endTime": 2
@@ -2450,7 +2442,7 @@ export default[
       {
         "number": 1,
         "ar_ayat": "إِنَّهُمْ يَكِيدُونَ كَيْدًا",
-        "pr_ayat": "",
+        "pr_ayat": "E tigi-ne aɓe pewja feere",
         "img": require("./images/ayat/1.png"),
         "startTime": 1,
         "endTime": 2
@@ -2458,7 +2450,7 @@ export default[
       {
         "number": 1,
         "ar_ayat": "وَأَكِيدُ كَيْدًا",
-        "pr_ayat": "",
+        "pr_ayat": "E miin-ne miɗo fewja feere",
         "img": require("./images/ayat/1.png"),
         "startTime": 1,
         "endTime": 2
@@ -2466,7 +2458,7 @@ export default[
       {
         "number": 1,
         "ar_ayat": "فَمَهِّلِ الْكَافِرِينَ أَمْهِلْهُمْ رُوَيْدًا",
-        "pr_ayat": "",
+        "pr_ayat": "Ndeen muñan yeddooɓe ɓe, muñanɓe seeɗa tan",
         "img": require("./images/ayat/1.png"),
         "startTime": 1,
         "endTime": 2
@@ -2476,9 +2468,9 @@ export default[
   {
     "surat_number": 87,
     "juzz": "الجزء Tumbutere 30",
-    "surat": "سورة الأعلى Simoore Fiilaama Niɓɓere",
+    "surat": "سورة الأعلى Simoore Toowal",
     "juzz_number": 30,
-    "surat_title": "Fiilaama Niɓɓere - الأعلى",
+    "surat_title": "Toowal - الأعلى",
     "ayat_number": 19,
     "ayat_img": require("./images/ayat/19.png"),
     "ayat_url": "http://abousy.com/quran_audio/87_AlAlah.mp3",
@@ -2495,7 +2487,7 @@ export default[
       {
         "number": 1,
         "ar_ayat": "سَبِّحِ اسْمَ رَبِّكَ الْأَعْلَى",
-        "pr_ayat": "",
+        "pr_ayat": "Sennin innde joom maa ɓurɗo toowde o",
         "img": require("./images/ayat/1.png"),
         "startTime": 1,
         "endTime": 2
@@ -2503,7 +2495,7 @@ export default[
       {
         "number": 1,
         "ar_ayat": "الَّذِي خَلَقَ فَسَوَّى",
-        "pr_ayat": "",
+        "pr_ayat": "Oon tagɗo tee fotndi",
         "img": require("./images/ayat/1.png"),
         "startTime": 1,
         "endTime": 2
@@ -2511,7 +2503,7 @@ export default[
       {
         "number": 1,
         "ar_ayat": "وَالَّذِي قَدَّرَ فَهَدَى",
-        "pr_ayat": "",
+        "pr_ayat": "E oon koddirɗo kadi hanndii",
         "img": require("./images/ayat/1.png"),
         "startTime": 1,
         "endTime": 2
@@ -2519,7 +2511,7 @@ export default[
       {
         "number": 1,
         "ar_ayat": "وَالَّذِي أَخْرَجَ الْمَرْعَى",
-        "pr_ayat": "",
+        "pr_ayat": "Tee oon jaltinɗo ‘puɗnuɗo‘ ndurateendi ndi",
         "img": require("./images/ayat/1.png"),
         "startTime": 1,
         "endTime": 2
@@ -2527,7 +2519,7 @@ export default[
       {
         "number": 1,
         "ar_ayat": "فَجَعَلَهُ غُثَاءً أَحْوَى",
-        "pr_ayat": "",
+        "pr_ayat": "Kadi ne o waɗtindi mbuudi ‘puunndi’",
         "img": require("./images/ayat/1.png"),
         "startTime": 1,
         "endTime": 2
@@ -2535,7 +2527,7 @@ export default[
       {
         "number": 1,
         "ar_ayat": "سَنُقْرِئُكَ فَلَا تَنسَى",
-        "pr_ayat": "",
+        "pr_ayat": "Amin payi jaŋnginde ma, tee a yejjittaa",
         "img": require("./images/ayat/1.png"),
         "startTime": 1,
         "endTime": 2
@@ -2543,7 +2535,7 @@ export default[
       {
         "number": 1,
         "ar_ayat": "إِلَّا مَا شَاءَ اللَّهُ إِنَّهُ يَعْلَمُ الْجَهْرَ وَمَا يَخْفَى",
-        "pr_ayat": "",
+        "pr_ayat": "So wonaa ko Alla muuyi, e jaati omo anndi ko ɓaŋngi e ko suuɗii ",
         "img": require("./images/ayat/1.png"),
         "startTime": 1,
         "endTime": 2
@@ -2551,7 +2543,7 @@ export default[
       {
         "number": 1,
         "ar_ayat": "وَنُيَسِّرُكَ لِلْيُسْرَى",
-        "pr_ayat": "",
+        "pr_ayat": "Tee min newnante kala newaare",
         "img": require("./images/ayat/1.png"),
         "startTime": 1,
         "endTime": 2
@@ -2559,7 +2551,7 @@ export default[
       {
         "number": 1,
         "ar_ayat": "فَذَكِّرْ إِن نَّفَعَتِ الذِّكْرَى",
-        "pr_ayat": "",
+        "pr_ayat": "Kadi-ne siftin ciftingol dey ina waɗi nafoore",
         "img": require("./images/ayat/1.png"),
         "startTime": 1,
         "endTime": 2
@@ -2567,7 +2559,7 @@ export default[
       {
         "number": 1,
         "ar_ayat": "سَيَذَّكَّرُ مَن يَخْشَى",
-        "pr_ayat": "",
+        "pr_ayat": "ma miijtoyo, oon mo ina hula",
         "img": require("./images/ayat/1.png"),
         "startTime": 1,
         "endTime": 2
@@ -2575,7 +2567,7 @@ export default[
       {
         "number": 1,
         "ar_ayat": "وَيَتَجَنَّبُهَا الْأَشْقَى",
-        "pr_ayat": "",
+        "pr_ayat": "E ma woɗɗito ɗum malkisaaɗo",
         "img": require("./images/ayat/1.png"),
         "startTime": 1,
         "endTime": 2
@@ -2583,7 +2575,7 @@ export default[
       {
         "number": 1,
         "ar_ayat": "الَّذِي يَصْلَى النَّارَ الْكُبْرَى",
-        "pr_ayat": "",
+        "pr_ayat": "Oon naatoowo jayngol mawngol ngol",
         "img": require("./images/ayat/1.png"),
         "startTime": 1,
         "endTime": 2
@@ -2591,7 +2583,7 @@ export default[
       {
         "number": 1,
         "ar_ayat": "ثُمَّ لَا يَمُوتُ فِيهَا وَلَا يَحْيَى",
-        "pr_ayat": "",
+        "pr_ayat": "Refti o maayataa nder maggol e o wuurataa",
         "img": require("./images/ayat/1.png"),
         "startTime": 1,
         "endTime": 2
@@ -2599,7 +2591,7 @@ export default[
       {
         "number": 1,
         "ar_ayat": "قَدْ أَفْلَحَ مَن تَزَكَّى",
-        "pr_ayat": "",
+        "pr_ayat": "E jaati malaama oon laɓɓinɗo",
         "img": require("./images/ayat/1.png"),
         "startTime": 1,
         "endTime": 2
@@ -2607,7 +2599,7 @@ export default[
       {
         "number": 1,
         "ar_ayat": "وَذَكَرَ اسْمَ رَبِّهِ فَصَلَّى",
-        "pr_ayat": "",
+        "pr_ayat": "O siftori innde joomiiko kadi o juuli",
         "img": require("./images/ayat/1.png"),
         "startTime": 1,
         "endTime": 2
@@ -2615,7 +2607,7 @@ export default[
       {
         "number": 1,
         "ar_ayat": "بَلْ تُؤْثِرُونَ الْحَيَاةَ الدُّنْيَا",
-        "pr_ayat": "",
+        "pr_ayat": "Kono tigi cuɓiɗon ko ɗam nguurndam aduna",
         "img": require("./images/ayat/1.png"),
         "startTime": 1,
         "endTime": 2
@@ -2623,7 +2615,7 @@ export default[
       {
         "number": 1,
         "ar_ayat": "وَالْآخِرَةُ خَيْرٌ وَأَبْقَى",
-        "pr_ayat": "",
+        "pr_ayat": "e tigi mbattintooɗam ɗam ɓuri, kadi heddotoo ‘ñiiɓata‘",
         "img": require("./images/ayat/1.png"),
         "startTime": 1,
         "endTime": 2
@@ -2631,7 +2623,7 @@ export default[
       {
         "number": 1,
         "ar_ayat": "إِنَّ هَذَا لَفِي الصُّحُفِ الْأُولَى",
-        "pr_ayat": "",
+        "pr_ayat": "tigi-ne ɗum-ɗoo dey ina nder ɗeereeji garwaniiji ɗi",
         "img": require("./images/ayat/1.png"),
         "startTime": 1,
         "endTime": 2
@@ -2639,7 +2631,7 @@ export default[
       {
         "number": 1,
         "ar_ayat": "صُحُفِ إِبْرَاهِيمَ وَمُوسَى",
-        "pr_ayat": "",
+        "pr_ayat": "Ɗeereeji Ibraahiima e muusaa",
         "img": require("./images/ayat/1.png"),
         "startTime": 1,
         "endTime": 2
@@ -2649,9 +2641,9 @@ export default[
   {
     "surat_number": 88,
     "juzz": "الجزء Tumbutere 30",
-    "surat": "سورة الغاشية Simoore Fiilaama Niɓɓere",
+    "surat": "سورة الغاشية Simoore Soomoore",
     "juzz_number": 30,
-    "surat_title": "Fiilaama Niɓɓere - الغاشية",
+    "surat_title": "Soomoore/hippoore - الغاشية",
     "ayat_number": 26,
     "ayat_img": require("./images/ayat/26.png"),
     "ayat_url": "http://abousy.com/quran_audio/88_AlGhachiyah.mp3",
@@ -2668,7 +2660,7 @@ export default[
       {
         "number": 1,
         "ar_ayat": "هَلْ أَتَاكَ حَدِيثُ الْغَاشِيَةِ",
-        "pr_ayat": "",
+        "pr_ayat": "Mbele arii e maa jangtawol soomoore",
         "img": require("./images/ayat/1.png"),
         "startTime": 1,
         "endTime": 2
@@ -2676,7 +2668,7 @@ export default[
       {
         "number": 1,
         "ar_ayat": "وُجُوهٌ يَوْمَئِذٍ خَاشِعَةٌ",
-        "pr_ayat": "",
+        "pr_ayat": "Ñande heen geece coomete ‘kippete’",
         "img": require("./images/ayat/1.png"),
         "startTime": 1,
         "endTime": 2
@@ -2684,7 +2676,7 @@ export default[
       {
         "number": 1,
         "ar_ayat": "عَامِلَةٌ نَّاصِبَةٌ",
-        "pr_ayat": "",
+        "pr_ayat": "Coklirɗe tampuɗe ‘golle tampinooje‘",
         "img": require("./images/ayat/1.png"),
         "startTime": 1,
         "endTime": 2
@@ -2692,7 +2684,7 @@ export default[
       {
         "number": 1,
         "ar_ayat": "تَصْلَى نَارًا حَامِيَةً",
-        "pr_ayat": "",
+        "pr_ayat": "Ɓe naatat jayngol gulngol",
         "img": require("./images/ayat/1.png"),
         "startTime": 1,
         "endTime": 2
@@ -2700,7 +2692,7 @@ export default[
       {
         "number": 1,
         "ar_ayat": "تُسْقَى مِنْ عَيْنٍ آنِيَةٍ",
-        "pr_ayat": "",
+        "pr_ayat": "Ɓe njarnirtee ko sewnde pasɗam",
         "img": require("./images/ayat/1.png"),
         "startTime": 1,
         "endTime": 2
@@ -2708,7 +2700,7 @@ export default[
       {
         "number": 1,
         "ar_ayat": "لَّيْسَ لَهُمْ طَعَامٌ إِلَّا مِن ضَرِيعٍ",
-        "pr_ayat": "",
+        "pr_ayat": "Alanaa ɓe toon ñamri, so wonaa ummoraade e ñakaɓere ‘puɗi ñaaɗɗi’",
         "img": require("./images/ayat/1.png"),
         "startTime": 1,
         "endTime": 2
@@ -2716,7 +2708,7 @@ export default[
       {
         "number": 1,
         "ar_ayat": "لَّا يُسْمِنُ وَلَا يُغْنِي مِن جُوعٍ",
-        "pr_ayat": "",
+        "pr_ayat": "Nde faynataa, tee nde nafataa e heege",
         "img": require("./images/ayat/1.png"),
         "startTime": 1,
         "endTime": 2
@@ -2724,7 +2716,7 @@ export default[
       {
         "number": 1,
         "ar_ayat": "وُجُوهٌ يَوْمَئِذٍ نَّاعِمَةٌ",
-        "pr_ayat": "",
+        "pr_ayat": "Won e geece ñande heen ko labaaɗe",
         "img": require("./images/ayat/1.png"),
         "startTime": 1,
         "endTime": 2
@@ -2732,7 +2724,7 @@ export default[
       {
         "number": 1,
         "ar_ayat": "لِّسَعْيِهَا رَاضِيَةٌ",
-        "pr_ayat": "",
+        "pr_ayat": "Mbeltii ngam golle maɓɓe",
         "img": require("./images/ayat/1.png"),
         "startTime": 1,
         "endTime": 2
@@ -2740,7 +2732,7 @@ export default[
       {
         "number": 1,
         "ar_ayat": "فِي جَنَّةٍ عَالِيَةٍ",
-        "pr_ayat": "",
+        "pr_ayat": "Nder nammbu toowɗo",
         "img": require("./images/ayat/1.png"),
         "startTime": 1,
         "endTime": 2
@@ -2748,7 +2740,7 @@ export default[
       {
         "number": 1,
         "ar_ayat": "لَّا تَسْمَعُ فِيهَا لَاغِيَةً",
-        "pr_ayat": "",
+        "pr_ayat": "A nanataa nder heen puuyka",
         "img": require("./images/ayat/1.png"),
         "startTime": 1,
         "endTime": 2
@@ -2756,7 +2748,7 @@ export default[
       {
         "number": 1,
         "ar_ayat": "فِيهَا عَيْنٌ جَارِيَةٌ",
-        "pr_ayat": "",
+        "pr_ayat": "Ina nder heen sewnde dogoore",
         "img": require("./images/ayat/1.png"),
         "startTime": 1,
         "endTime": 2
@@ -2764,7 +2756,7 @@ export default[
       {
         "number": 1,
         "ar_ayat": "فِيهَا سُرُرٌ مَّرْفُوعَةٌ",
-        "pr_ayat": "",
+        "pr_ayat": "Ina nder heen dinndeeje toownaaɗe",
         "img": require("./images/ayat/1.png"),
         "startTime": 1,
         "endTime": 2
@@ -2772,7 +2764,7 @@ export default[
       {
         "number": 1,
         "ar_ayat": "وَأَكْوَابٌ مَّوْضُوعَةٌ",
-        "pr_ayat": "",
+        "pr_ayat": "E ñeɗirɗe pawaaɗe",
         "img": require("./images/ayat/1.png"),
         "startTime": 1,
         "endTime": 2
@@ -2780,7 +2772,7 @@ export default[
       {
         "number": 1,
         "ar_ayat": "وَنَمَارِقُ مَصْفُوفَةٌ",
-        "pr_ayat": "",
+        "pr_ayat": "E ngaflaaji gorondiraaɗi",
         "img": require("./images/ayat/1.png"),
         "startTime": 1,
         "endTime": 2
@@ -2788,7 +2780,7 @@ export default[
       {
         "number": 1,
         "ar_ayat": "وَزَرَابِيُّ مَبْثُوثَةٌ",
-        "pr_ayat": "",
+        "pr_ayat": "E daage guɗɗitaaɗe",
         "img": require("./images/ayat/1.png"),
         "startTime": 1,
         "endTime": 2
@@ -2796,7 +2788,7 @@ export default[
       {
         "number": 1,
         "ar_ayat": "أَفَلَا يَنظُرُونَ إِلَى الْإِبِلِ كَيْفَ خُلِقَتْ",
-        "pr_ayat": "",
+        "pr_ayat": "Mbele ɓe ndaarataa fayde e gelooɗi ɗi hono no ɗi tagiraa nih",
         "img": require("./images/ayat/1.png"),
         "startTime": 1,
         "endTime": 2
@@ -2804,7 +2796,7 @@ export default[
       {
         "number": 1,
         "ar_ayat": "وَإِلَى السَّمَاءِ كَيْفَ رُفِعَتْ",
-        "pr_ayat": "",
+        "pr_ayat": "E kammu ngu, hono no ngu ɓamtiraa",
         "img": require("./images/ayat/1.png"),
         "startTime": 1,
         "endTime": 2
@@ -2812,7 +2804,7 @@ export default[
       {
         "number": 1,
         "ar_ayat": "وَإِلَى الْجِبَالِ كَيْفَ نُصِبَتْ",
-        "pr_ayat": "",
+        "pr_ayat": "E kaaƴe ɗe, hono ɗe ñippiraa",
         "img": require("./images/ayat/1.png"),
         "startTime": 1,
         "endTime": 2
@@ -2820,7 +2812,7 @@ export default[
       {
         "number": 1,
         "ar_ayat": "وَإِلَى الْأَرْضِ كَيْفَ سُطِحَتْ",
-        "pr_ayat": "",
+        "pr_ayat": "E lesdi ndi hono ndi wuɗɗitiraa ‘fotndiraa’",
         "img": require("./images/ayat/1.png"),
         "startTime": 1,
         "endTime": 2
@@ -2828,7 +2820,7 @@ export default[
       {
         "number": 1,
         "ar_ayat": "فَذَكِّرْ إِنَّمَا أَنتَ مُذَكِّرٌ",
-        "pr_ayat": "",
+        "pr_ayat": "Ndeen noon siftin, aan dey ko a ciftinoowo tan",
         "img": require("./images/ayat/1.png"),
         "startTime": 1,
         "endTime": 2
@@ -2836,7 +2828,7 @@ export default[
       {
         "number": 1,
         "ar_ayat": "لَّسْتَ عَلَيْهِم بِمُصَيْطِرٍ",
-        "pr_ayat": "",
+        "pr_ayat": "A wonaa gonɗo e hoonaade dow maɓɓe tan",
         "img": require("./images/ayat/1.png"),
         "startTime": 1,
         "endTime": 2
@@ -2844,7 +2836,7 @@ export default[
       {
         "number": 1,
         "ar_ayat": "إِلَّا مَن تَوَلَّى وَكَفَرَ",
-        "pr_ayat": "",
+        "pr_ayat": "So wonaa e oon duŋtiiɗo kadi yeddi",
         "img": require("./images/ayat/1.png"),
         "startTime": 1,
         "endTime": 2
@@ -2852,7 +2844,7 @@ export default[
       {
         "number": 1,
         "ar_ayat": "فَيُعَذِّبُهُ اللَّهُ الْعَذَابَ الْأَكْبَرَ",
-        "pr_ayat": "",
+        "pr_ayat": "Alla ina fayi leeɓtude mo leeɓte mawɗe",
         "img": require("./images/ayat/1.png"),
         "startTime": 1,
         "endTime": 2
@@ -2860,7 +2852,7 @@ export default[
       {
         "number": 1,
         "ar_ayat": "إِنَّ إِلَيْنَا إِيَابَهُمْ",
-        "pr_ayat": "",
+        "pr_ayat": "Ko to amen tan woni ruttornde maɓɓe",
         "img": require("./images/ayat/1.png"),
         "startTime": 1,
         "endTime": 2
@@ -2868,7 +2860,7 @@ export default[
       {
         "number": 1,
         "ar_ayat": "ثُمَّ إِنَّ عَلَيْنَا حِسَابَهُم",
-        "pr_ayat": "",
+        "pr_ayat": "Rewti ko minen tan woodani ñaawoore maɓɓe",
         "img": require("./images/ayat/1.png"),
         "startTime": 1,
         "endTime": 2
@@ -2878,9 +2870,9 @@ export default[
   {
     "surat_number": 89,
     "juzz": "الجزء Tumbutere 30",
-    "surat": "سورة الفجر Simoore Fiilaama Niɓɓere",
+    "surat": "سورة الفجر Simoore Weetndooga",
     "juzz_number": 30,
-    "surat_title": "Fiilaama Niɓɓere - الفجر",
+    "surat_title": "Weetndooga - الفجر",
     "ayat_number": 30,
     "ayat_img": require("./images/ayat/30.png"),
     "ayat_url": "http://abousy.com/quran_audio/89_AlFajr.mp3",
@@ -2897,7 +2889,7 @@ export default[
       {
         "number": 1,
         "ar_ayat": "وَالْفَجْرِ",
-        "pr_ayat": "",
+        "pr_ayat": "E Weetndooga",
         "img": require("./images/ayat/1.png"),
         "startTime": 1,
         "endTime": 2
@@ -2905,7 +2897,7 @@ export default[
       {
         "number": 1,
         "ar_ayat": "وَلَيَالٍ عَشْرٍ",
-        "pr_ayat": "",
+        "pr_ayat": "E jammaaji sappo ɗi",
         "img": require("./images/ayat/1.png"),
         "startTime": 1,
         "endTime": 2
@@ -2913,7 +2905,7 @@ export default[
       {
         "number": 1,
         "ar_ayat": "وَالشَّفْعِ وَالْوَتْرِ",
-        "pr_ayat": "",
+        "pr_ayat": "E punayel e teelɗungel",
         "img": require("./images/ayat/1.png"),
         "startTime": 1,
         "endTime": 2
@@ -2921,7 +2913,7 @@ export default[
       {
         "number": 1,
         "ar_ayat": "وَاللَّيْلِ إِذَا يَسْرِ",
-        "pr_ayat": "",
+        "pr_ayat": "E jammaagu ngu, so roƴii ’yahii’",
         "img": require("./images/ayat/1.png"),
         "startTime": 1,
         "endTime": 2
@@ -2929,7 +2921,7 @@ export default[
       {
         "number": 1,
         "ar_ayat": "هَلْ فِي ذَلِكَ قَسَمٌ لِّذِي حِجْرٍ",
-        "pr_ayat": "",
+        "pr_ayat": "Mbele wonanaani e ɗuum woondoore wonande kakkilɗo",
         "img": require("./images/ayat/1.png"),
         "startTime": 1,
         "endTime": 2
@@ -2937,7 +2929,7 @@ export default[
       {
         "number": 1,
         "ar_ayat": "أَلَمْ تَرَ كَيْفَ فَعَلَ رَبُّكَ بِعَادٍ",
-        "pr_ayat": "",
+        "pr_ayat": "A yiyaani no joommaa waɗiri aad’en",
         "img": require("./images/ayat/1.png"),
         "startTime": 1,
         "endTime": 2
@@ -2945,7 +2937,7 @@ export default[
       {
         "number": 1,
         "ar_ayat": "إِرَمَ ذَاتِ الْعِمَادِ",
-        "pr_ayat": "",
+        "pr_ayat": "Irama’en joomen toga-togiiji",
         "img": require("./images/ayat/1.png"),
         "startTime": 1,
         "endTime": 2
@@ -2953,7 +2945,7 @@ export default[
       {
         "number": 1,
         "ar_ayat": "الَّتِي لَمْ يُخْلَقْ مِثْلُهَا فِي الْبِلَادِ",
-        "pr_ayat": "",
+        "pr_ayat": "Ngoon, ngo hono mum meeɗaa maheede he gure",
         "img": require("./images/ayat/1.png"),
         "startTime": 1,
         "endTime": 2
@@ -2961,7 +2953,7 @@ export default[
       {
         "number": 1,
         "ar_ayat": "وَثَمُودَ الَّذِينَ جَابُوا الصَّخْرَ بِالْوَادِ",
-        "pr_ayat": "",
+        "pr_ayat": "E Samuuda’en ɓeen ferɓe ‘asɓe’ kaaƴe nder caanngol",
         "img": require("./images/ayat/1.png"),
         "startTime": 1,
         "endTime": 2
@@ -2969,7 +2961,7 @@ export default[
       {
         "number": 1,
         "ar_ayat": "وَفِرْعَوْنَ ذِي الْأَوْتَادِ",
-        "pr_ayat": "",
+        "pr_ayat": "E fir’awna jom Luuɗe ‘tugaaje ceeɓɗe’",
         "img": require("./images/ayat/1.png"),
         "startTime": 1,
         "endTime": 2
@@ -2977,7 +2969,7 @@ export default[
       {
         "number": 1,
         "ar_ayat": "الَّذِينَ طَغَوْا فِي الْبِلَادِ",
-        "pr_ayat": "",
+        "pr_ayat": "Ɓeen fof ko bewnooɓe nder leyɗeele mum-en",
         "img": require("./images/ayat/1.png"),
         "startTime": 1,
         "endTime": 2
@@ -2985,7 +2977,7 @@ export default[
       {
         "number": 1,
         "ar_ayat": "فَأَكْثَرُوا فِيهَا الْفَسَادَ",
-        "pr_ayat": "",
+        "pr_ayat": "E ɓe kebbiniino heen bonannde",
         "img": require("./images/ayat/1.png"),
         "startTime": 1,
         "endTime": 2
@@ -2993,7 +2985,7 @@ export default[
       {
         "number": 1,
         "ar_ayat": "فَصَبَّ عَلَيْهِمْ رَبُّكَ سَوْطَ عَذَابٍ",
-        "pr_ayat": "",
+        "pr_ayat": "Tan joommaa yuppi dow maɓɓe ɓorngol leeɓte",
         "img": require("./images/ayat/1.png"),
         "startTime": 1,
         "endTime": 2
@@ -3001,7 +2993,7 @@ export default[
       {
         "number": 1,
         "ar_ayat": "إِنَّ رَبَّكَ لَبِالْمِرْصَادِ",
-        "pr_ayat": "",
+        "pr_ayat": "E  tigi ne joome ina he tommbornde ‘reeni’",
         "img": require("./images/ayat/1.png"),
         "startTime": 1,
         "endTime": 2
@@ -3009,7 +3001,7 @@ export default[
       {
         "number": 1,
         "ar_ayat": "فَأَمَّا الْإِنسَانُ إِذَا مَا ابْتَلَاهُ رَبُّهُ فَأَكْرَمَهُ وَنَعَّمَهُ فَيَقُولُ رَبِّي أَكْرَمَنِ",
-        "pr_ayat": "",
+        "pr_ayat": "Kadi ne neɗɗo so joomi mum ƴeewndiima ɗum, tan o teddinii ɗum, tan wiya joomi am teddinii ko am",
         "img": require("./images/ayat/1.png"),
         "startTime": 1,
         "endTime": 2
@@ -3017,7 +3009,7 @@ export default[
       {
         "number": 1,
         "ar_ayat": "وَأَمَّا إِذَا مَا ابْتَلَاهُ فَقَدَرَ عَلَيْهِ رِزْقَهُ فَيَقُولُ رَبِّي أَهَانَنِ",
-        "pr_ayat": "",
+        "pr_ayat": "kono noon so ƴeewndoriima ɗum e ɓillanande ɗum ngeɗu mum, tan o wiya joomi am hoynii ko am",
         "img": require("./images/ayat/1.png"),
         "startTime": 1,
         "endTime": 2
@@ -3025,7 +3017,7 @@ export default[
       {
         "number": 1,
         "ar_ayat": "كَلَّا بَل لَّا تُكْرِمُونَ الْيَتِيمَ",
-        "pr_ayat": "",
+        "pr_ayat": "Alaa-de tigi on teddinaano baayo",
         "img": require("./images/ayat/1.png"),
         "startTime": 1,
         "endTime": 2
@@ -3033,7 +3025,7 @@ export default[
       {
         "number": 1,
         "ar_ayat": "وَلَا تَحَاضُّونَ عَلَى طَعَامِ الْمِسْكِينِ",
-        "pr_ayat": "",
+        "pr_ayat": "E on mbattortaano ‘mbismotonooko’ e ñamminde baasɗo",
         "img": require("./images/ayat/1.png"),
         "startTime": 1,
         "endTime": 2
@@ -3041,7 +3033,7 @@ export default[
       {
         "number": 1,
         "ar_ayat": "وَتَأْكُلُونَ التُّرَاثَ أَكْلًا لَّمًّا",
-        "pr_ayat": "",
+        "pr_ayat": "Oɗon ñaama ndonaandi e ñaamgol mookannde",
         "img": require("./images/ayat/1.png"),
         "startTime": 1,
         "endTime": 2
@@ -3049,7 +3041,7 @@ export default[
       {
         "number": 1,
         "ar_ayat": "وَتُحِبُّونَ الْمَالَ حُبًّا جَمًّا",
-        "pr_ayat": "",
+        "pr_ayat": "Tee oɗon njiɗi jawdi jiɗgol ɓurtungol",
         "img": require("./images/ayat/1.png"),
         "startTime": 1,
         "endTime": 2
@@ -3057,7 +3049,7 @@ export default[
       {
         "number": 1,
         "ar_ayat": "كَلَّا إِذَا دُكَّتِ الْأَرْضُ دَكًّا دَكًّا",
-        "pr_ayat": "",
+        "pr_ayat": "Alaa-de so leydi dakkaama, ‘unaama’ ndakkankon-ndakkankon",
         "img": require("./images/ayat/1.png"),
         "startTime": 1,
         "endTime": 2
@@ -3065,7 +3057,7 @@ export default[
       {
         "number": 1,
         "ar_ayat": "وَجَاءَ رَبُّكَ وَالْمَلَكُ صَفًّا صَفًّا",
-        "pr_ayat": "",
+        "pr_ayat": "Tee joome ma aroy, ko noon-ne malaykaaji ɗi, aɗi mbaɗi gori",
         "img": require("./images/ayat/1.png"),
         "startTime": 1,
         "endTime": 2
@@ -3073,7 +3065,7 @@ export default[
       {
         "number": 1,
         "ar_ayat": "وَجِيءَ يَوْمَئِذٍ بِجَهَنَّمَ يَوْمَئِذٍ يَتَذَكَّرُ الْإِنسَانُ وَأَنَّى لَهُ الذِّكْرَى",
-        "pr_ayat": "",
+        "pr_ayat": "E ñande mum jayngol ngol addee, ñande mum ma neɗɗo siftor, kono hol ko ciftorgol nafata",
         "img": require("./images/ayat/1.png"),
         "startTime": 1,
         "endTime": 2
@@ -3081,7 +3073,7 @@ export default[
       {
         "number": 1,
         "ar_ayat": "يَقُولُ يَا لَيْتَنِي قَدَّمْتُ لِحَيَاتِي",
-        "pr_ayat": "",
+        "pr_ayat": "O wiya eeh haaniino tawi won ko ngardinannoo mi nguurndam am",
         "img": require("./images/ayat/1.png"),
         "startTime": 1,
         "endTime": 2
@@ -3089,7 +3081,7 @@ export default[
       {
         "number": 1,
         "ar_ayat": "فَيَوْمَئِذٍ لَّا يُعَذِّبُ عَذَابَهُ أَحَدٌ",
-        "pr_ayat": "",
+        "pr_ayat": "Kadi ñande heen hay gooto leeɓtetaake ko wayi no leeɓte makko",
         "img": require("./images/ayat/1.png"),
         "startTime": 1,
         "endTime": 2
@@ -3097,7 +3089,7 @@ export default[
       {
         "number": 1,
         "ar_ayat": "وَلَا يُوثِقُ وَثَاقَهُ أَحَدٌ",
-        "pr_ayat": "",
+        "pr_ayat": "E tee hay gooto toŋngetaake hono toŋngol makko",
         "img": require("./images/ayat/1.png"),
         "startTime": 1,
         "endTime": 2
@@ -3105,7 +3097,7 @@ export default[
       {
         "number": 1,
         "ar_ayat": "يَا أَيَّتُهَا النَّفْسُ الْمُطْمَئِنَّةُ",
-        "pr_ayat": "",
+        "pr_ayat": "Eehey maa fittaandu huɓindiindu",
         "img": require("./images/ayat/1.png"),
         "startTime": 1,
         "endTime": 2
@@ -3113,7 +3105,7 @@ export default[
       {
         "number": 1,
         "ar_ayat": "ارْجِعِي إِلَى رَبِّكِ رَاضِيَةً مَّرْضِيَّةً",
-        "pr_ayat": "",
+        "pr_ayat": "Rutto to joome, aɗa woni beltiiɗo beeytiiɗo",
         "img": require("./images/ayat/1.png"),
         "startTime": 1,
         "endTime": 2
@@ -3121,7 +3113,7 @@ export default[
       {
         "number": 1,
         "ar_ayat": "فَادْخُلِي فِي عِبَادِي",
-        "pr_ayat": "",
+        "pr_ayat": "Kadi-ne naat nder jiyaaɓe am ɓe",
         "img": require("./images/ayat/1.png"),
         "startTime": 1,
         "endTime": 2
@@ -3129,7 +3121,7 @@ export default[
       {
         "number": 1,
         "ar_ayat": "وَادْخُلِي جَنَّتِي",
-        "pr_ayat": "",
+        "pr_ayat": "Etee-ne naat nammbu am ‘Aljanna’",
         "img": require("./images/ayat/1.png"),
         "startTime": 1,
         "endTime": 2
@@ -3139,9 +3131,9 @@ export default[
   {
     "surat_number": 90,
     "juzz": "الجزء Tumbutere 30",
-    "surat": "سورة البلد Simoore Fiilaama Niɓɓere",
+    "surat": "سورة البلد Simoore Wuro",
     "juzz_number": 30,
-    "surat_title": "Fiilaama Niɓɓere - البلد",
+    "surat_title": "Wuro - البلد",
     "ayat_number": 20,
     "ayat_img": require("./images/ayat/20.png"),
     "ayat_url": "http://abousy.com/quran_audio/90_AlBalad.mp3",
@@ -3158,7 +3150,7 @@ export default[
       {
         "number": 1,
         "ar_ayat": "لَا أُقْسِمُ بِهَذَا الْبَلَدِ",
-        "pr_ayat": "",
+        "pr_ayat": "Alaa- mi woondirii ndee sahre",
         "img": require("./images/ayat/1.png"),
         "startTime": 1,
         "endTime": 2
@@ -3166,7 +3158,7 @@ export default[
       {
         "number": 1,
         "ar_ayat": "وَأَنتَ حِلٌّ بِهَذَا الْبَلَدِ",
-        "pr_ayat": "",
+        "pr_ayat": "E aan aɗa hoɗi he ndee sahre",
         "img": require("./images/ayat/1.png"),
         "startTime": 1,
         "endTime": 2
@@ -3174,7 +3166,7 @@ export default[
       {
         "number": 1,
         "ar_ayat": "وَوَالِدٍ وَمَا وَلَدَ",
-        "pr_ayat": "",
+        "pr_ayat": "E baabiraaɗo e ɗuum ko o jibina",
         "img": require("./images/ayat/1.png"),
         "startTime": 1,
         "endTime": 2
@@ -3182,7 +3174,7 @@ export default[
       {
         "number": 1,
         "ar_ayat": "لَقَدْ خَلَقْنَا الْإِنسَانَ فِي كَبَدٍ",
-        "pr_ayat": "",
+        "pr_ayat": "E jaati min tagii neɗɗo nder caɗeele",
         "img": require("./images/ayat/1.png"),
         "startTime": 1,
         "endTime": 2
@@ -3190,7 +3182,7 @@ export default[
       {
         "number": 1,
         "ar_ayat": "أَيَحْسَبُ أَن لَّن يَقْدِرَ عَلَيْهِ أَحَدٌ",
-        "pr_ayat": "",
+        "pr_ayat": "Mbele o eɓɓata ’sikkata‘ hay gooto waawanoytaamo ndiga",
         "img": require("./images/ayat/1.png"),
         "startTime": 1,
         "endTime": 2
@@ -3198,7 +3190,7 @@ export default[
       {
         "number": 1,
         "ar_ayat": "يَقُولُ أَهْلَكْتُ مَالًا لُّبَدًا",
-        "pr_ayat": "",
+        "pr_ayat": "O wiya eeh, mi boylii jawdi ɗuuɗndi",
         "img": require("./images/ayat/1.png"),
         "startTime": 1,
         "endTime": 2
@@ -3206,7 +3198,7 @@ export default[
       {
         "number": 1,
         "ar_ayat": "أَيَحْسَبُ أَن لَّمْ يَرَهُ أَحَدٌ",
-        "pr_ayat": "",
+        "pr_ayat": "A-mbele o sikkata ‘eɓɓata’ ko hay gooto yiyaani mo",
         "img": require("./images/ayat/1.png"),
         "startTime": 1,
         "endTime": 2
@@ -3214,7 +3206,7 @@ export default[
       {
         "number": 1,
         "ar_ayat": "أَلَمْ نَجْعَل لَّهُ عَيْنَيْنِ",
-        "pr_ayat": "",
+        "pr_ayat": "A-mbele min mbaɗanaani mo gite ɗiɗi",
         "img": require("./images/ayat/1.png"),
         "startTime": 1,
         "endTime": 2
@@ -3222,7 +3214,7 @@ export default[
       {
         "number": 1,
         "ar_ayat": "وَلِسَانًا وَشَفَتَيْنِ",
-        "pr_ayat": "",
+        "pr_ayat": "E ɗemngal e toni ɗiɗi",
         "img": require("./images/ayat/1.png"),
         "startTime": 1,
         "endTime": 2
@@ -3230,7 +3222,7 @@ export default[
       {
         "number": 1,
         "ar_ayat": "وَهَدَيْنَاهُ النَّجْدَيْنِ",
-        "pr_ayat": "",
+        "pr_ayat": "Kadi min kanndii mo e laaɓi ɗiɗi",
         "img": require("./images/ayat/1.png"),
         "startTime": 1,
         "endTime": 2
@@ -3238,7 +3230,7 @@ export default[
       {
         "number": 1,
         "ar_ayat": "فَلَا اقْتَحَمَ الْعَقَبَةَ",
-        "pr_ayat": "",
+        "pr_ayat": "Kono o fawñaaki yolnde laawol ‘caɗtungol’ ’al agabata’",
         "img": require("./images/ayat/1.png"),
         "startTime": 1,
         "endTime": 2
@@ -3246,7 +3238,7 @@ export default[
       {
         "number": 1,
         "ar_ayat": "وَمَا أَدْرَاكَ مَا الْعَقَبَةُ",
-        "pr_ayat": "",
+        "pr_ayat": "E hol fof ko anndintu maa ko woni yolnde ‘al agabata’",
         "img": require("./images/ayat/1.png"),
         "startTime": 1,
         "endTime": 2
@@ -3254,7 +3246,7 @@ export default[
       {
         "number": 1,
         "ar_ayat": "فَكُّ رَقَبَةٍ",
-        "pr_ayat": "",
+        "pr_ayat": "Ko hokkitde daande ‘rimɗinde maccuɗo’",
         "img": require("./images/ayat/1.png"),
         "startTime": 1,
         "endTime": 2
@@ -3262,7 +3254,7 @@ export default[
       {
         "number": 1,
         "ar_ayat": "أَوْ إِطْعَامٌ فِي يَوْمٍ ذِي مَسْغَبَةٍ",
-        "pr_ayat": "",
+        "pr_ayat": "Walla ñamminde nder ñalawma keegaaɗo ‘heege’",
         "img": require("./images/ayat/1.png"),
         "startTime": 1,
         "endTime": 2
@@ -3270,7 +3262,7 @@ export default[
       {
         "number": 1,
         "ar_ayat": "يَتِيمًا ذَا مَقْرَبَةٍ",
-        "pr_ayat": "",
+        "pr_ayat": "Baayo ɓalliiɗo ‘jiidaaɗo’",
         "img": require("./images/ayat/1.png"),
         "startTime": 1,
         "endTime": 2
@@ -3278,7 +3270,7 @@ export default[
       {
         "number": 1,
         "ar_ayat": "أَوْ مِسْكِينًا ذَا مَتْرَبَةٍ",
-        "pr_ayat": "",
+        "pr_ayat": "Walla baasɗo haa funndi ‘takkuɗo lesdi’",
         "img": require("./images/ayat/1.png"),
         "startTime": 1,
         "endTime": 2
@@ -3286,7 +3278,7 @@ export default[
       {
         "number": 1,
         "ar_ayat": "ثُمَّ كَانَ مِنَ الَّذِينَ آمَنُوا وَتَوَاصَوْا بِالصَّبْرِ وَتَوَاصَوْا بِالْمَرْحَمَةِ",
-        "pr_ayat": "",
+        "pr_ayat": "Refti haaniino tawi o laatinooma, ko o jeyaaɗo e ɓeen goongɗinɓe, tee mbagginorii e muñal kadi mbagginorii e jurmondiral",
         "img": require("./images/ayat/1.png"),
         "startTime": 1,
         "endTime": 2
@@ -3294,7 +3286,7 @@ export default[
       {
         "number": 1,
         "ar_ayat": "أُولَئِكَ أَصْحَابُ الْمَيْمَنَةِ",
-        "pr_ayat": "",
+        "pr_ayat": "Ɓeen ngoni yimɓe seŋngo ñaamo",
         "img": require("./images/ayat/1.png"),
         "startTime": 1,
         "endTime": 2
@@ -3302,7 +3294,7 @@ export default[
       {
         "number": 1,
         "ar_ayat": "وَالَّذِينَ كَفَرُوا بِآيَاتِنَا هُمْ أَصْحَابُ الْمَشْأَمَةِ",
-        "pr_ayat": "",
+        "pr_ayat": "E ɓeen yedduɓe maandeeji amen, ɓeen ngoni yimɓe nano",
         "img": require("./images/ayat/1.png"),
         "startTime": 1,
         "endTime": 2
@@ -3310,7 +3302,7 @@ export default[
       {
         "number": 1,
         "ar_ayat": "عَلَيْهِمْ نَارٌ مُّؤْصَدَةٌ",
-        "pr_ayat": "",
+        "pr_ayat": "Rewata dow maɓɓe ko jayngol uddangol",
         "img": require("./images/ayat/1.png"),
         "startTime": 1,
         "endTime": 2
@@ -3320,9 +3312,9 @@ export default[
   {
     "surat_number": 91,
     "juzz": "الجزء Tumbutere 30",
-    "surat": "سورة الشمس Simoore Fiilaama Niɓɓere",
+    "surat": "سورة الشمس Simoore Naange",
     "juzz_number": 30,
-    "surat_title": "Fiilaama Niɓɓere - الشمس",
+    "surat_title": "Naange - الشمس",
     "ayat_number": 15,
     "ayat_img": require("./images/ayat/15.png"),
     "ayat_url": "http://abousy.com/quran_audio/91_AlAchchams.mp3",
@@ -3339,7 +3331,7 @@ export default[
       {
         "number": 1,
         "ar_ayat": "وَالشَّمْسِ وَضُحَاهَا",
-        "pr_ayat": "",
+        "pr_ayat": "E naange nge e beewtawe mum",
         "img": require("./images/ayat/1.png"),
         "startTime": 1,
         "endTime": 2
@@ -3347,7 +3339,7 @@ export default[
       {
         "number": 1,
         "ar_ayat": "وَالْقَمَرِ إِذَا تَلَاهَا",
-        "pr_ayat": "",
+        "pr_ayat": "E so tawii lewru ndu rewii heen",
         "img": require("./images/ayat/1.png"),
         "startTime": 1,
         "endTime": 2
@@ -3355,7 +3347,7 @@ export default[
       {
         "number": 1,
         "ar_ayat": "وَالنَّهَارِ إِذَا جَلَّاهَا",
-        "pr_ayat": "",
+        "pr_ayat": "E so ñalawmaare nde so ƴellitiima ‘laaɓii’",
         "img": require("./images/ayat/1.png"),
         "startTime": 1,
         "endTime": 2
@@ -3363,7 +3355,7 @@ export default[
       {
         "number": 1,
         "ar_ayat": "وَاللَّيْلِ إِذَا يَغْشَاهَا",
-        "pr_ayat": "",
+        "pr_ayat": "E so jammaagu ngu mutniiɗum",
         "img": require("./images/ayat/1.png"),
         "startTime": 1,
         "endTime": 2
@@ -3371,7 +3363,7 @@ export default[
       {
         "number": 1,
         "ar_ayat": "وَالسَّمَاءِ وَمَا بَنَاهَا",
-        "pr_ayat": "",
+        "pr_ayat": "E kammu ngu e oon tagɗo ngu",
         "img": require("./images/ayat/1.png"),
         "startTime": 1,
         "endTime": 2
@@ -3379,7 +3371,7 @@ export default[
       {
         "number": 1,
         "ar_ayat": "وَالْأَرْضِ وَمَا طَحَاهَا",
-        "pr_ayat": "",
+        "pr_ayat": "E leydi ndi e no ndi wertorii nih",
         "img": require("./images/ayat/1.png"),
         "startTime": 1,
         "endTime": 2
@@ -3387,7 +3379,7 @@ export default[
       {
         "number": 1,
         "ar_ayat": "وَنَفْسٍ وَمَا سَوَّاهَا",
-        "pr_ayat": "",
+        "pr_ayat": "E fittaandu ndu e potnduɗo ndu",
         "img": require("./images/ayat/1.png"),
         "startTime": 1,
         "endTime": 2
@@ -3395,7 +3387,7 @@ export default[
       {
         "number": 1,
         "ar_ayat": "فَأَلْهَمَهَا فُجُورَهَا وَتَقْوَاهَا",
-        "pr_ayat": "",
+        "pr_ayat": "Loŋnginundu paŋkareeje mayru, e kulol mayru ‘paawal mayru’",
         "img": require("./images/ayat/1.png"),
         "startTime": 1,
         "endTime": 2
@@ -3403,7 +3395,7 @@ export default[
       {
         "number": 1,
         "ar_ayat": "قَدْ أَفْلَحَ مَن زَكَّاهَا",
-        "pr_ayat": "",
+        "pr_ayat": "E jaati malaama oon laɓɓinɗo ndu",
         "img": require("./images/ayat/1.png"),
         "startTime": 1,
         "endTime": 2
@@ -3411,7 +3403,7 @@ export default[
       {
         "number": 1,
         "ar_ayat": "وَقَدْ خَابَ مَن دَسَّاهَا",
-        "pr_ayat": "",
+        "pr_ayat": "E tigi-rigi sooyii ko oon bonnuɗo ndu",
         "img": require("./images/ayat/1.png"),
         "startTime": 1,
         "endTime": 2
@@ -3419,7 +3411,7 @@ export default[
       {
         "number": 1,
         "ar_ayat": "كَذَّبَتْ ثَمُودُ بِطَغْوَاهَا",
-        "pr_ayat": "",
+        "pr_ayat": "Samuuda’en pennirii bewre mum-en",
         "img": require("./images/ayat/1.png"),
         "startTime": 1,
         "endTime": 2
@@ -3427,7 +3419,7 @@ export default[
       {
         "number": 1,
         "ar_ayat": "إِذِ انبَعَثَ أَشْقَاهَا",
-        "pr_ayat": "",
+        "pr_ayat": "Nde ɓurɗo malkiseede e maɓɓe ummii",
         "img": require("./images/ayat/1.png"),
         "startTime": 1,
         "endTime": 2
@@ -3435,7 +3427,7 @@ export default[
       {
         "number": 1,
         "ar_ayat": "فَقَالَ لَهُمْ رَسُولُ اللَّهِ نَاقَةَ اللَّهِ وَسُقْيَاهَا",
-        "pr_ayat": "",
+        "pr_ayat": "Ndeen nelaaɗo Alla o wiyiɓe: ngelooba Alla ‘njarla’ ngoppireeba yarannde mabba",
         "img": require("./images/ayat/1.png"),
         "startTime": 1,
         "endTime": 2
@@ -3443,7 +3435,7 @@ export default[
       {
         "number": 1,
         "ar_ayat": "فَكَذَّبُوهُ فَعَقَرُوهَا فَدَمْدَمَ عَلَيْهِمْ رَبُّهُم بِذَنبِهِمْ فَسَوَّاهَا",
-        "pr_ayat": "",
+        "pr_ayat": "Kono ɓe penni mo, ɓe mboriiba joomiiɓe firti ɓe, ngam bakkatuuji maɓɓe, o fonndi ɓe e mayre",
         "img": require("./images/ayat/1.png"),
         "startTime": 1,
         "endTime": 2
@@ -3451,7 +3443,7 @@ export default[
       {
         "number": 1,
         "ar_ayat": "وَلَا يَخَافُ عُقْبَاهَا",
-        "pr_ayat": "",
+        "pr_ayat": "Tee o hulaani battane mayre",
         "img": require("./images/ayat/1.png"),
         "startTime": 1,
         "endTime": 2
@@ -3461,9 +3453,9 @@ export default[
   {
     "surat_number": 92,
     "juzz": "الجزء Tumbutere 30",
-    "surat": "سورة الليل Simoore Fiilaama Niɓɓere",
+    "surat": "سورة الليل Simoore Jamma",
     "juzz_number": 30,
-    "surat_title": "Fiilaama Niɓɓere - الليل",
+    "surat_title": "Jamma - الليل",
     "ayat_number": 21,
     "ayat_img": require("./images/ayat/21.png"),
     "ayat_url": "http://abousy.com/quran_audio/92_AlLail.mp3",
@@ -3480,7 +3472,7 @@ export default[
       {
         "number": 1,
         "ar_ayat": "وَاللَّيْلِ إِذَا يَغْشَى",
-        "pr_ayat": "",
+        "pr_ayat": "E jammaagu ngu so mutii",
         "img": require("./images/ayat/1.png"),
         "startTime": 1,
         "endTime": 2
@@ -3488,7 +3480,7 @@ export default[
       {
         "number": 1,
         "ar_ayat": "وَالنَّهَارِ إِذَا تَجَلَّى",
-        "pr_ayat": "",
+        "pr_ayat": "E ñalawmaare nde so laaɓii",
         "img": require("./images/ayat/1.png"),
         "startTime": 1,
         "endTime": 2
@@ -3496,7 +3488,7 @@ export default[
       {
         "number": 1,
         "ar_ayat": "وَمَا خَلَقَ الذَّكَرَ وَالْأُنثَى",
-        "pr_ayat": "",
+        "pr_ayat": "E ko waɗi tagoore gorol e dewol",
         "img": require("./images/ayat/1.png"),
         "startTime": 1,
         "endTime": 2
@@ -3504,7 +3496,7 @@ export default[
       {
         "number": 1,
         "ar_ayat": "إِنَّ سَعْيَكُمْ لَشَتَّى",
-        "pr_ayat": "",
+        "pr_ayat": "E tigi-ne yahdu mon ndu, ko seertundu ’golle mon ɗe ko ceertuɗe’",
         "img": require("./images/ayat/1.png"),
         "startTime": 1,
         "endTime": 2
@@ -3512,7 +3504,7 @@ export default[
       {
         "number": 1,
         "ar_ayat": "فَأَمَّا مَنْ أَعْطَى وَاتَّقَى",
-        "pr_ayat": "",
+        "pr_ayat": "E so tawii ko oon dokkiroowo kadi huli ‘Alla’",
         "img": require("./images/ayat/1.png"),
         "startTime": 1,
         "endTime": 2
@@ -3520,7 +3512,7 @@ export default[
       {
         "number": 1,
         "ar_ayat": "وَصَدَّقَ بِالْحُسْنَى",
-        "pr_ayat": "",
+        "pr_ayat": "E o goongɗini wonande moƴƴere nde ‘njoɓdi ndi’",
         "img": require("./images/ayat/1.png"),
         "startTime": 1,
         "endTime": 2
@@ -3528,7 +3520,7 @@ export default[
       {
         "number": 1,
         "ar_ayat": "فَسَنُيَسِّرُهُ لِلْيُسْرَى",
-        "pr_ayat": "",
+        "pr_ayat": "Amin payi newnande mo kala newaare",
         "img": require("./images/ayat/1.png"),
         "startTime": 1,
         "endTime": 2
@@ -3536,7 +3528,7 @@ export default[
       {
         "number": 1,
         "ar_ayat": "وَأَمَّا مَن بَخِلَ وَاسْتَغْنَى",
-        "pr_ayat": "",
+        "pr_ayat": "E so tawii ko oon ɗawoowo galɗikiniiɗo",
         "img": require("./images/ayat/1.png"),
         "startTime": 1,
         "endTime": 2
@@ -3544,7 +3536,7 @@ export default[
       {
         "number": 1,
         "ar_ayat": "وَكَذَّبَ بِالْحُسْنَى",
-        "pr_ayat": "",
+        "pr_ayat": "Kadi o fenni moƴƴere nde ‘njoɓdi’",
         "img": require("./images/ayat/1.png"),
         "startTime": 1,
         "endTime": 2
@@ -3552,7 +3544,7 @@ export default[
       {
         "number": 1,
         "ar_ayat": "فَسَنُيَسِّرُهُ لِلْعُسْرَى",
-        "pr_ayat": "",
+        "pr_ayat": "Amin payi newnande mo kala ɓillere ‘caɗeele’",
         "img": require("./images/ayat/1.png"),
         "startTime": 1,
         "endTime": 2
@@ -3560,7 +3552,7 @@ export default[
       {
         "number": 1,
         "ar_ayat": "وَمَا يُغْنِي عَنْهُ مَالُهُ إِذَا تَرَدَّى",
-        "pr_ayat": "",
+        "pr_ayat": "E jawdi makko ndi nafataa mo, so o jartodinii",
         "img": require("./images/ayat/1.png"),
         "startTime": 1,
         "endTime": 2
@@ -3568,7 +3560,7 @@ export default[
       {
         "number": 1,
         "ar_ayat": "إِنَّ عَلَيْنَا لَلْهُدَى",
-        "pr_ayat": "",
+        "pr_ayat": "E tigi-ne ko minen waɗɗii kanndogol ngol",
         "img": require("./images/ayat/1.png"),
         "startTime": 1,
         "endTime": 2
@@ -3576,7 +3568,7 @@ export default[
       {
         "number": 1,
         "ar_ayat": "وَإِنَّ لَنَا لَلْآخِرَةَ وَالْأُولَى",
-        "pr_ayat": "",
+        "pr_ayat": "Tee etigi-ne ko minen woodani wattannde e arwaniire",
         "img": require("./images/ayat/1.png"),
         "startTime": 1,
         "endTime": 2
@@ -3584,7 +3576,7 @@ export default[
       {
         "number": 1,
         "ar_ayat": "فَأَنذَرْتُكُمْ نَارًا تَلَظَّى",
-        "pr_ayat": "",
+        "pr_ayat": "Ndeen noon, mi jeertinii on jayngol lewlewtowol ‘Lasaa’",
         "img": require("./images/ayat/1.png"),
         "startTime": 1,
         "endTime": 2
@@ -3592,7 +3584,7 @@ export default[
       {
         "number": 1,
         "ar_ayat": "لَا يَصْلَاهَا إِلَّا الْأَشْقَى",
-        "pr_ayat": "",
+        "pr_ayat": "Naatataa he maggol so wonaa ɓurɗo malkiseede",
         "img": require("./images/ayat/1.png"),
         "startTime": 1,
         "endTime": 2
@@ -3600,7 +3592,7 @@ export default[
       {
         "number": 1,
         "ar_ayat": "الَّذِي كَذَّبَ وَتَوَلَّى",
-        "pr_ayat": "",
+        "pr_ayat": "Oon pennuɗo ruŋtii",
         "img": require("./images/ayat/1.png"),
         "startTime": 1,
         "endTime": 2
@@ -3608,7 +3600,7 @@ export default[
       {
         "number": 1,
         "ar_ayat": "وَسَيُجَنَّبُهَا الْأَتْقَى",
-        "pr_ayat": "",
+        "pr_ayat": "E ma woɗɗine ngol kulɗo ‘Alla’",
         "img": require("./images/ayat/1.png"),
         "startTime": 1,
         "endTime": 2
@@ -3616,7 +3608,7 @@ export default[
       {
         "number": 1,
         "ar_ayat": "الَّذِي يُؤْتِي مَالَهُ يَتَزَكَّى",
-        "pr_ayat": "",
+        "pr_ayat": "Oon tottiroowo jawdi mum ngam laaɓa",
         "img": require("./images/ayat/1.png"),
         "startTime": 1,
         "endTime": 2
@@ -3624,7 +3616,7 @@ export default[
       {
         "number": 1,
         "ar_ayat": "وَمَا لِأَحَدٍ عِندَهُ مِن نِّعْمَةٍ تُجْزَى",
-        "pr_ayat": "",
+        "pr_ayat": "Tee o joganaaki hay gooto moƴƴere, nde ina yoɓee",
         "img": require("./images/ayat/1.png"),
         "startTime": 1,
         "endTime": 2
@@ -3632,7 +3624,7 @@ export default[
       {
         "number": 1,
         "ar_ayat": "إِلَّا ابْتِغَاءَ وَجْهِ رَبِّهِ الْأَعْلَى",
-        "pr_ayat": "",
+        "pr_ayat": "So wonaa tan ɗaɓɓude yeeso joomiiko toowɗo ‘weluya’",
         "img": require("./images/ayat/1.png"),
         "startTime": 1,
         "endTime": 2
@@ -3640,7 +3632,7 @@ export default[
       {
         "number": 1,
         "ar_ayat": "وَلَسَوْفَ يَرْضَى",
-        "pr_ayat": "",
+        "pr_ayat": "Tee omo fayi weltaade sanne",
         "img": require("./images/ayat/1.png"),
         "startTime": 1,
         "endTime": 2
@@ -3650,9 +3642,9 @@ export default[
   {
     "surat_number": 93,
     "juzz": "الجزء Tumbutere 30",
-    "surat": "سورة الضحى Simoore Fiilaama Niɓɓere",
+    "surat": "سورة الضحى Simoore Beete",
     "juzz_number": 30,
-    "surat_title": "Fiilaama Niɓɓere - الضحى",
+    "surat_title": "Beete - الضحى",
     "ayat_number": 11,
     "ayat_img": require("./images/ayat/11.png"),
     "ayat_url": "http://abousy.com/quran_audio/93_AlDouha.mp3",
@@ -3669,7 +3661,7 @@ export default[
       {
         "number": 1,
         "ar_ayat": "وَالضُّحَى",
-        "pr_ayat": "",
+        "pr_ayat": "E beetawe ɗe",
         "img": require("./images/ayat/1.png"),
         "startTime": 1,
         "endTime": 2
@@ -3677,7 +3669,7 @@ export default[
       {
         "number": 1,
         "ar_ayat": "وَاللَّيْلِ إِذَا سَجَى",
-        "pr_ayat": "",
+        "pr_ayat": "E jammaagu ngu so hippii ‘niɓɓiɗii’",
         "img": require("./images/ayat/1.png"),
         "startTime": 1,
         "endTime": 2
@@ -3685,7 +3677,7 @@ export default[
       {
         "number": 1,
         "ar_ayat": "مَا وَدَّعَكَ رَبُّكَ وَمَا قَلَى",
-        "pr_ayat": "",
+        "pr_ayat": "Joome woppaani ma, tee añaani ma",
         "img": require("./images/ayat/1.png"),
         "startTime": 1,
         "endTime": 2
@@ -3693,7 +3685,7 @@ export default[
       {
         "number": 1,
         "ar_ayat": "وَلَلْآخِرَةُ خَيْرٌ لَّكَ مِنَ الْأُولَى",
-        "pr_ayat": "",
+        "pr_ayat": "E jaati wattannde ɓurata moƴƴude e maa e arwaniire",
         "img": require("./images/ayat/1.png"),
         "startTime": 1,
         "endTime": 2
@@ -3701,7 +3693,7 @@ export default[
       {
         "number": 1,
         "ar_ayat": "وَلَسَوْفَ يُعْطِيكَ رَبُّكَ فَتَرْضَى",
-        "pr_ayat": "",
+        "pr_ayat": "Etee kadi joome ina fayi rokkude maa haa mbeltoɗaa",
         "img": require("./images/ayat/1.png"),
         "startTime": 1,
         "endTime": 2
@@ -3709,7 +3701,7 @@ export default[
       {
         "number": 1,
         "ar_ayat": "أَلَمْ يَجِدْكَ يَتِيمًا فَآوَى",
-        "pr_ayat": "",
+        "pr_ayat": "E mbele o tawaano maa, ko a baayo o heɓɓiti maa",
         "img": require("./images/ayat/1.png"),
         "startTime": 1,
         "endTime": 2
@@ -3717,7 +3709,7 @@ export default[
       {
         "number": 1,
         "ar_ayat": "وَوَجَدَكَ ضَالًّا فَهَدَى",
-        "pr_ayat": "",
+        "pr_ayat": "E kadi ne o taw maa, aɗa majji o hanndi maa",
         "img": require("./images/ayat/1.png"),
         "startTime": 1,
         "endTime": 2
@@ -3725,7 +3717,7 @@ export default[
       {
         "number": 1,
         "ar_ayat": "وَوَجَدَكَ عَائِلًا فَأَغْنَى",
-        "pr_ayat": "",
+        "pr_ayat": "E o taw maa aɗa waasi, o alɗin maa",
         "img": require("./images/ayat/1.png"),
         "startTime": 1,
         "endTime": 2
@@ -3733,7 +3725,7 @@ export default[
       {
         "number": 1,
         "ar_ayat": "فَأَمَّا الْيَتِيمَ فَلَا تَقْهَرْ",
-        "pr_ayat": "",
+        "pr_ayat": "E ndeen noon hoto hiiɗo baayo",
         "img": require("./images/ayat/1.png"),
         "startTime": 1,
         "endTime": 2
@@ -3741,7 +3733,7 @@ export default[
       {
         "number": 1,
         "ar_ayat": "وَأَمَّا السَّائِلَ فَلَا تَنْهَرْ",
-        "pr_ayat": "",
+        "pr_ayat": "E tawii kadi ko ñaagotooɗo hoto riiw ɗum",
         "img": require("./images/ayat/1.png"),
         "startTime": 1,
         "endTime": 2
@@ -3749,7 +3741,7 @@ export default[
       {
         "number": 1,
         "ar_ayat": "وَأَمَّا بِنِعْمَةِ رَبِّكَ فَحَدِّثْ",
-        "pr_ayat": "",
+        "pr_ayat": "E kono kadi-ne jangto moƴƴere joome nde",
         "img": require("./images/ayat/1.png"),
         "startTime": 1,
         "endTime": 2
@@ -3759,9 +3751,9 @@ export default[
   {
     "surat_number": 94,
     "juzz": "الجزء Tumbutere 30",
-    "surat": "سورة الشرح Simoore Fiilaama Niɓɓere",
+    "surat": "سورة الشرح Simoore Sukkitoore",
     "juzz_number": 30,
-    "surat_title": "Fiilaama Niɓɓere - الشرح",
+    "surat_title": "Sukkitoore - الشرح",
     "ayat_number": 8,
     "ayat_img": require("./images/ayat/8.png"),
     "ayat_url": "http://abousy.com/quran_audio/94_AlAchcharh.mp3",
@@ -3778,7 +3770,7 @@ export default[
       {
         "number": 1,
         "ar_ayat": "أَلَمْ نَشْرَحْ لَكَ صَدْرَكَ",
-        "pr_ayat": "",
+        "pr_ayat": "A-mbele min cukkitanaanima ɓernde ma nde",
         "img": require("./images/ayat/1.png"),
         "startTime": 1,
         "endTime": 2
@@ -3786,7 +3778,7 @@ export default[
       {
         "number": 1,
         "ar_ayat": "وَوَضَعْنَا عَنكَ وِزْرَكَ",
-        "pr_ayat": "",
+        "pr_ayat": "Min ngittan maa doŋngal ma",
         "img": require("./images/ayat/1.png"),
         "startTime": 1,
         "endTime": 2
@@ -3794,7 +3786,7 @@ export default[
       {
         "number": 1,
         "ar_ayat": "الَّذِي أَنقَضَ ظَهْرَكَ",
-        "pr_ayat": "",
+        "pr_ayat": "Ngaal kelnonogal keeci ma",
         "img": require("./images/ayat/1.png"),
         "startTime": 1,
         "endTime": 2
@@ -3802,7 +3794,7 @@ export default[
       {
         "number": 1,
         "ar_ayat": "وَرَفَعْنَا لَكَ ذِكْرَكَ",
-        "pr_ayat": "",
+        "pr_ayat": "Min ɓamtan maa lollugol maa",
         "img": require("./images/ayat/1.png"),
         "startTime": 1,
         "endTime": 2
@@ -3810,7 +3802,7 @@ export default[
       {
         "number": 1,
         "ar_ayat": "فَإِنَّ مَعَ الْعُسْرِ يُسْرًا",
-        "pr_ayat": "",
+        "pr_ayat": "E tigi-ne caggal caɗeele ko newaare",
         "img": require("./images/ayat/1.png"),
         "startTime": 1,
         "endTime": 2
@@ -3818,7 +3810,7 @@ export default[
       {
         "number": 1,
         "ar_ayat": "إِنَّ مَعَ الْعُسْرِ يُسْرًا",
-        "pr_ayat": "",
+        "pr_ayat": "Kadi e tigi-ne caggal caɗeele, ko newaare",
         "img": require("./images/ayat/1.png"),
         "startTime": 1,
         "endTime": 2
@@ -3826,7 +3818,7 @@ export default[
       {
         "number": 1,
         "ar_ayat": "فَإِذَا فَرَغْتَ فَانصَبْ",
-        "pr_ayat": "",
+        "pr_ayat": "Ndeen-noon so a haljitii daro ‘tiiɗno no feewi’",
         "img": require("./images/ayat/1.png"),
         "startTime": 1,
         "endTime": 2
@@ -3834,7 +3826,7 @@ export default[
       {
         "number": 1,
         "ar_ayat": "وَإِلَى رَبِّكَ فَارْغَب",
-        "pr_ayat": "",
+        "pr_ayat": "E hatojin feewde e joome",
         "img": require("./images/ayat/1.png"),
         "startTime": 1,
         "endTime": 2
@@ -3844,9 +3836,9 @@ export default[
   {
     "surat_number": 95,
     "juzz": "الجزء Tumbutere 30",
-    "surat": "سورة التين Simoore Fiilaama Niɓɓere",
+    "surat": "سورة التين Simoore Lekki Tiini",
     "juzz_number": 30,
-    "surat_title": "Fiilaama Niɓɓere - التين",
+    "surat_title": "Lekki Tiini - التين",
     "ayat_number": 8,
     "ayat_img": require("./images/ayat/8.png"),
     "ayat_url": "http://abousy.com/quran_audio/95_ATTin.mp3",
@@ -3863,15 +3855,7 @@ export default[
       {
         "number": 1,
         "ar_ayat": "وَالتِّينِ وَالزَّيْتُونِ",
-        "pr_ayat": "",
-        "img": require("./images/ayat/1.png"),
-        "startTime": 1,
-        "endTime": 2
-      },
-      {
-        "number": 1,
-        "ar_ayat": "",
-        "pr_ayat": "",
+        "pr_ayat": "E lekki tiini e lekki Seytuuni ’potte kamateeɗe nebam’",
         "img": require("./images/ayat/1.png"),
         "startTime": 1,
         "endTime": 2
@@ -3879,7 +3863,7 @@ export default[
       {
         "number": 1,
         "ar_ayat": "وَطُورِ سِينِينَ",
-        "pr_ayat": "",
+        "pr_ayat": "E tule ferlo siinay",
         "img": require("./images/ayat/1.png"),
         "startTime": 1,
         "endTime": 2
@@ -3887,7 +3871,7 @@ export default[
       {
         "number": 1,
         "ar_ayat": "وَهَذَا الْبَلَدِ الْأَمِينِ",
-        "pr_ayat": "",
+        "pr_ayat": "E ndee share hooliinde",
         "img": require("./images/ayat/1.png"),
         "startTime": 1,
         "endTime": 2
@@ -3895,7 +3879,7 @@ export default[
       {
         "number": 1,
         "ar_ayat": "لَقَدْ خَلَقْنَا الْإِنسَانَ فِي أَحْسَنِ تَقْوِيمٍ",
-        "pr_ayat": "",
+        "pr_ayat": "E jaati min tagii neɗɗo e no ɓuri yooɗirde ‘pooccagol’",
         "img": require("./images/ayat/1.png"),
         "startTime": 1,
         "endTime": 2
@@ -3903,7 +3887,7 @@ export default[
       {
         "number": 1,
         "ar_ayat": "ثُمَّ رَدَدْنَاهُ أَسْفَلَ سَافِلِينَ",
-        "pr_ayat": "",
+        "pr_ayat": "Refti min nduttimo he ko ɓuri lesɗude e lesɗeendi",
         "img": require("./images/ayat/1.png"),
         "startTime": 1,
         "endTime": 2
@@ -3911,7 +3895,7 @@ export default[
       {
         "number": 1,
         "ar_ayat": "إِلَّا الَّذِينَ آمَنُوا وَعَمِلُوا الصَّالِحَاتِ فَلَهُمْ أَجْرٌ غَيْرُ مَمْنُونٍ",
-        "pr_ayat": "",
+        "pr_ayat": "So ɓeen goongɗinɓe, e ngolli ko moƴƴi, ɓeen ina woodani ɗum-en njoɓdi ndi huuɓataa",
         "img": require("./images/ayat/1.png"),
         "startTime": 1,
         "endTime": 2
@@ -3919,7 +3903,7 @@ export default[
       {
         "number": 1,
         "ar_ayat": "فَمَا يُكَذِّبُكَ بَعْدُ بِالدِّينِ",
-        "pr_ayat": "",
+        "pr_ayat": "Ndeen noon hol ko fenninmaa caggal ɗuum he njoɓdi ndi ‘he diine’",
         "img": require("./images/ayat/1.png"),
         "startTime": 1,
         "endTime": 2
@@ -3927,7 +3911,7 @@ export default[
       {
         "number": 1,
         "ar_ayat": "أَلَيْسَ اللَّهُ بِأَحْكَمِ الْحَاكِمِينَ",
-        "pr_ayat": "",
+        "pr_ayat": "Mbele wonaa Alla woni ɓurɗo waawde ñaawde e ñaawooɓe",
         "img": require("./images/ayat/1.png"),
         "startTime": 1,
         "endTime": 2
@@ -3937,9 +3921,9 @@ export default[
   {
     "surat_number": 96,
     "juzz": "الجزء Tumbutere 30",
-    "surat": "سورة العلق Simoore Fiilaama Niɓɓere",
+    "surat": "سورة العلق Simoore Heɗɗere",
     "juzz_number": 30,
-    "surat_title": "Fiilaama Niɓɓere - العلق",
+    "surat_title": "Heɗɗere - العلق",
     "ayat_number": 19,
     "ayat_img": require("./images/ayat/19.png"),
     "ayat_url": "http://abousy.com/quran_audio/96_AlAlaq.mp3",
@@ -3956,7 +3940,7 @@ export default[
       {
         "number": 1,
         "ar_ayat": "اقْرَأْ بِاسْمِ رَبِّكَ الَّذِي خَلَقَ",
-        "pr_ayat": "",
+        "pr_ayat": "Janŋngu ngam innde joome oon tagɗo",
         "img": require("./images/ayat/1.png"),
         "startTime": 1,
         "endTime": 2
@@ -3964,7 +3948,7 @@ export default[
       {
         "number": 1,
         "ar_ayat": "خَلَقَ الْإِنسَانَ مِنْ عَلَقٍ",
-        "pr_ayat": "",
+        "pr_ayat": "Tagɗo neɗɗo iwde e heɗɗere",
         "img": require("./images/ayat/1.png"),
         "startTime": 1,
         "endTime": 2
@@ -3972,7 +3956,7 @@ export default[
       {
         "number": 1,
         "ar_ayat": "اقْرَأْ وَرَبُّكَ الْأَكْرَمُ",
-        "pr_ayat": "",
+        "pr_ayat": "Jaŋngu ngam joome ɓurɗo teddude",
         "img": require("./images/ayat/1.png"),
         "startTime": 1,
         "endTime": 2
@@ -3980,7 +3964,7 @@ export default[
       {
         "number": 1,
         "ar_ayat": "الَّذِي عَلَّمَ بِالْقَلَمِ",
-        "pr_ayat": "",
+        "pr_ayat": "Oon ganndinirɗo kuɗol",
         "img": require("./images/ayat/1.png"),
         "startTime": 1,
         "endTime": 2
@@ -3988,7 +3972,7 @@ export default[
       {
         "number": 1,
         "ar_ayat": "عَلَّمَ الْإِنسَانَ مَا لَمْ يَعْلَمْ",
-        "pr_ayat": "",
+        "pr_ayat": "O anndini neɗɗo ɗuum ko anndaano",
         "img": require("./images/ayat/1.png"),
         "startTime": 1,
         "endTime": 2
@@ -3996,7 +3980,7 @@ export default[
       {
         "number": 1,
         "ar_ayat": "كَلَّا إِنَّ الْإِنسَانَ لَيَطْغَى",
-        "pr_ayat": "",
+        "pr_ayat": "Alaa-de tigi-ne neɗɗo ndeke ina bewa",
         "img": require("./images/ayat/1.png"),
         "startTime": 1,
         "endTime": 2
@@ -4004,7 +3988,7 @@ export default[
       {
         "number": 1,
         "ar_ayat": "أَن رَّآهُ اسْتَغْنَى",
-        "pr_ayat": "",
+        "pr_ayat": "O sikki ko o baawanɗo hoyre makko, nde o yiytii dañal makko",
         "img": require("./images/ayat/1.png"),
         "startTime": 1,
         "endTime": 2
@@ -4012,7 +3996,7 @@ export default[
       {
         "number": 1,
         "ar_ayat": "إِنَّ إِلَى رَبِّكَ الرُّجْعَى",
-        "pr_ayat": "",
+        "pr_ayat": "E tigi-ne ko to joomma woni ruttornde",
         "img": require("./images/ayat/1.png"),
         "startTime": 1,
         "endTime": 2
@@ -4020,7 +4004,7 @@ export default[
       {
         "number": 1,
         "ar_ayat": "أَرَأَيْتَ الَّذِي يَنْهَى",
-        "pr_ayat": "",
+        "pr_ayat": "Mbele a yiyaani oon kaɗoowo",
         "img": require("./images/ayat/1.png"),
         "startTime": 1,
         "endTime": 2
@@ -4028,7 +4012,7 @@ export default[
       {
         "number": 1,
         "ar_ayat": "عَبْدًا إِذَا صَلَّى",
-        "pr_ayat": "",
+        "pr_ayat": "Jiyaaɗo o so ina juula",
         "img": require("./images/ayat/1.png"),
         "startTime": 1,
         "endTime": 2
@@ -4036,7 +4020,7 @@ export default[
       {
         "number": 1,
         "ar_ayat": "أَرَأَيْتَ إِن كَانَ عَلَى الْهُدَى",
-        "pr_ayat": "",
+        "pr_ayat": "Mbele a yiyaani kadi so laatinooma dow hanndaare nde",
         "img": require("./images/ayat/1.png"),
         "startTime": 1,
         "endTime": 2
@@ -4044,7 +4028,7 @@ export default[
       {
         "number": 1,
         "ar_ayat": "أَوْ أَمَرَ بِالتَّقْوَى",
-        "pr_ayat": "",
+        "pr_ayat": "Walla o tinndiniri kulol Alla",
         "img": require("./images/ayat/1.png"),
         "startTime": 1,
         "endTime": 2
@@ -4052,7 +4036,7 @@ export default[
       {
         "number": 1,
         "ar_ayat": "أَرَأَيْتَ إِن كَذَّبَ وَتَوَلَّى",
-        "pr_ayat": "",
+        "pr_ayat": "Mbele a yiyaani tigi so tawii o fennii o ruŋtiima",
         "img": require("./images/ayat/1.png"),
         "startTime": 1,
         "endTime": 2
@@ -4060,7 +4044,7 @@ export default[
       {
         "number": 1,
         "ar_ayat": "أَلَمْ يَعْلَم بِأَنَّ اللَّهَ يَرَى",
-        "pr_ayat": "",
+        "pr_ayat": "Mbele o anndaa tigi Alla ko jiyoowo",
         "img": require("./images/ayat/1.png"),
         "startTime": 1,
         "endTime": 2
@@ -4068,7 +4052,7 @@ export default[
       {
         "number": 1,
         "ar_ayat": "كَلَّا لَئِن لَّمْ يَنتَهِ لَنَسْفَعًا بِالنَّاصِيَةِ",
-        "pr_ayat": "",
+        "pr_ayat": "Alaa-dey so tawii tan o dartinaani, ma mi teeɓtoromo tiintiiniwol ’jubbol’",
         "img": require("./images/ayat/1.png"),
         "startTime": 1,
         "endTime": 2
@@ -4076,7 +4060,7 @@ export default[
       {
         "number": 1,
         "ar_ayat": "نَاصِيَةٍ كَاذِبَةٍ خَاطِئَةٍ",
-        "pr_ayat": "",
+        "pr_ayat": "He tiintiiniwol ’jubbol’ penoowo goopoowo",
         "img": require("./images/ayat/1.png"),
         "startTime": 1,
         "endTime": 2
@@ -4084,15 +4068,15 @@ export default[
       {
         "number": 1,
         "ar_ayat": "فَلْيَدْعُ نَادِيَهُ",
-        "pr_ayat": "",
+        "pr_ayat": "Ndeen noon yo o noddu fedde makko",
         "img": require("./images/ayat/1.png"),
         "startTime": 1,
         "endTime": 2
       },
       {
         "number": 1,
-        "ar_ayat": "فَلْيَدْعُ نَادِيَهُ",
-        "pr_ayat": "",
+        "ar_ayat": "سَنَدْعُ الزَّبَانِيَةَُ",
+        "pr_ayat": "Minen-ne, ma min noddu deenooji ‘Jabaaniyata’",
         "img": require("./images/ayat/1.png"),
         "startTime": 1,
         "endTime": 2
@@ -4100,7 +4084,7 @@ export default[
       {
         "number": 1,
         "ar_ayat": "كَلَّا لَا تُطِعْهُ وَاسْجُدْ وَاقْتَرِب",
-        "pr_ayat": "",
+        "pr_ayat": "Alaa-dey hoto ɗooftomo tukko kadi ɓallikinoɗaa",
         "img": require("./images/ayat/1.png"),
         "startTime": 1,
         "endTime": 2
@@ -4110,9 +4094,9 @@ export default[
   {
     "surat_number": 97,
     "juzz": "الجزء Tumbutere 30",
-    "surat": "سورة القدر Simoore Fiilaama Niɓɓere",
+    "surat": "سورة القدر Simoore Hoddiro",
     "juzz_number": 30,
-    "surat_title": "Fiilaama Niɓɓere - القدر",
+    "surat_title": "Hoddiro - القدر",
     "ayat_number": 5,
     "ayat_img": require("./images/ayat/5.png"),
     "ayat_url": "http://abousy.com/quran_audio/97_AlQadr.mp3",
@@ -4129,7 +4113,7 @@ export default[
       {
         "number": 1,
         "ar_ayat": "إِنَّا أَنزَلْنَاهُ فِي لَيْلَةِ الْقَدْرِ",
-        "pr_ayat": "",
+        "pr_ayat": "E jaati min njippini ɗum ko nder jamma hoddirooji",
         "img": require("./images/ayat/1.png"),
         "startTime": 1,
         "endTime": 2
@@ -4137,7 +4121,7 @@ export default[
       {
         "number": 1,
         "ar_ayat": "وَمَا أَدْرَاكَ مَا لَيْلَةُ الْقَدْرِ",
-        "pr_ayat": "",
+        "pr_ayat": "Hol fof ko anndintu maa ko woni jamma hoddiro",
         "img": require("./images/ayat/1.png"),
         "startTime": 1,
         "endTime": 2
@@ -4145,7 +4129,7 @@ export default[
       {
         "number": 1,
         "ar_ayat": "لَيْلَةُ الْقَدْرِ خَيْرٌ مِّنْ أَلْفِ شَهْرٍ",
-        "pr_ayat": "",
+        "pr_ayat": "Jamma hoddiroore ɓuri ujunere lewru",
         "img": require("./images/ayat/1.png"),
         "startTime": 1,
         "endTime": 2
@@ -4153,7 +4137,7 @@ export default[
       {
         "number": 1,
         "ar_ayat": "تَنَزَّلُ الْمَلَائِكَةُ وَالرُّوحُ فِيهَا بِإِذْنِ رَبِّهِم مِّن كُلِّ أَمْرٍ",
-        "pr_ayat": "",
+        "pr_ayat": " Nder heen malaykaaji ɗi njippotoo e ruuhu ina heen e yamiroore joommajji, ummoraade e kala fiyaaku",
         "img": require("./images/ayat/1.png"),
         "startTime": 1,
         "endTime": 2
@@ -4161,7 +4145,7 @@ export default[
       {
         "number": 1,
         "ar_ayat": "سَلَامٌ هِيَ حَتَّى مَطْلَعِ الْفَجْرِ",
-        "pr_ayat": "",
+        "pr_ayat": "Ndeen ko kisal e jam haa weetndooga ƴellitoo",
         "img": require("./images/ayat/1.png"),
         "startTime": 1,
         "endTime": 2
@@ -4171,9 +4155,9 @@ export default[
   {
     "surat_number": 98,
     "juzz": "الجزء Tumbutere 30",
-    "surat": "سورة البينة Simoore Fiilaama Niɓɓere",
+    "surat": "سورة البينة Simoore Feññinoore",
     "juzz_number": 30,
-    "surat_title": "Fiilaama Niɓɓere - البينة",
+    "surat_title": "Feññinoore - البينة",
     "ayat_number": 8,
     "ayat_img": require("./images/ayat/8.png"),
     "ayat_url": "http://abousy.com/quran_audio/98_AlBaiyinah.mp3",
@@ -4190,7 +4174,7 @@ export default[
       {
         "number": 1,
         "ar_ayat": "لَمْ يَكُنِ الَّذِينَ كَفَرُوا مِنْ أَهْلِ الْكِتَابِ وَالْمُشْرِكِينَ مُنفَكِّينَ حَتَّى تَأْتِيَهُمُ الْبَيِّنَةُ",
-        "pr_ayat": "",
+        "pr_ayat": "Ɓeen yedduɓe jeyaaɓe e yimɓe deftere e renndinooɓe ɓe, ɓe ngoppataa jeddi, so wonaa nde ari e mum-en maandeeji laaɓtuɗi",
         "img": require("./images/ayat/1.png"),
         "startTime": 1,
         "endTime": 2
@@ -4198,7 +4182,7 @@ export default[
       {
         "number": 1,
         "ar_ayat": "رَسُولٌ مِّنَ اللَّهِ يَتْلُو صُحُفًا مُّطَهَّرَةً",
-        "pr_ayat": "",
+        "pr_ayat": "Nelaaɗo iwɗo to Alla, mo ina janganaɓe ɗeereeji laaɓtuɗi",
         "img": require("./images/ayat/1.png"),
         "startTime": 1,
         "endTime": 2
@@ -4206,7 +4190,7 @@ export default[
       {
         "number": 1,
         "ar_ayat": "فِيهَا كُتُبٌ قَيِّمَةٌ",
-        "pr_ayat": "",
+        "pr_ayat": "Ina heen defte cemmbinɗe",
         "img": require("./images/ayat/1.png"),
         "startTime": 1,
         "endTime": 2
@@ -4214,7 +4198,7 @@ export default[
       {
         "number": 1,
         "ar_ayat": "وَمَا تَفَرَّقَ الَّذِينَ أُوتُوا الْكِتَابَ إِلَّا مِن بَعْدِ مَا جَاءَتْهُمُ الْبَيِّنَةُ",
-        "pr_ayat": "",
+        "pr_ayat": "Tee ɓeen tottanooɓe deftere nde, ɓepeccaaki so wonaa caggal nde feññinoore nde ari e maɓɓe",
         "img": require("./images/ayat/1.png"),
         "startTime": 1,
         "endTime": 2
@@ -4222,7 +4206,7 @@ export default[
       {
         "number": 1,
         "ar_ayat": "وَمَا أُمِرُوا إِلَّا لِيَعْبُدُوا اللَّهَ مُخْلِصِينَ لَهُ الدِّينَ حُنَفَاءَ وَيُقِيمُوا الصَّلَاةَ وَيُؤْتُوا الزَّكَاةَ وَذَلِكَ دِينُ الْقَيِّمَةِ",
-        "pr_ayat": "",
+        "pr_ayat": "E ɓe tinndinaaka ‘njamiraaka’ so wonaa yo ɓe ndew Alla, ɓe laɓɓinana ɗum dewgol kadi ɓe ñiiɓna  njuulu, e ɓe tottira asakal, tee ko ɗuum woni dewgol pooccingol ‘diine poocciiɗo’",
         "img": require("./images/ayat/1.png"),
         "startTime": 1,
         "endTime": 2
@@ -4230,7 +4214,7 @@ export default[
       {
         "number": 1,
         "ar_ayat": "إِنَّ الَّذِينَ كَفَرُوا مِنْ أَهْلِ الْكِتَابِ وَالْمُشْرِكِينَ فِي نَارِ جَهَنَّمَ خَالِدِينَ فِيهَا أُولَئِكَ هُمْ شَرُّ الْبَرِيَّةِ",
-        "pr_ayat": "",
+        "pr_ayat": "E tigi-ne ɓeen yedduɓe jeyaaɓe e yimɓe deftere e renndinooɓe ɓe, ɓe ngonata ko nder kobbowol ‘jahannama’ ɓe caasa nder heen, ɓeen ngoni tagoore ɓurnde bonde",
         "img": require("./images/ayat/1.png"),
         "startTime": 1,
         "endTime": 2
@@ -4238,7 +4222,7 @@ export default[
       {
         "number": 1,
         "ar_ayat": "إِنَّ الَّذِينَ آمَنُوا وَعَمِلُوا الصَّالِحَاتِ أُولَئِكَ هُمْ خَيْرُ الْبَرِيَّةِ",
-        "pr_ayat": "",
+        "pr_ayat": "E tigi-ne ɓeen goongɗinɓe, ngolli ko moƴƴi, ɓeen ngoni tagoore ɓurnde moƴƴude",
         "img": require("./images/ayat/1.png"),
         "startTime": 1,
         "endTime": 2
@@ -4246,7 +4230,7 @@ export default[
       {
         "number": 1,
         "ar_ayat": "جَزَاؤُهُمْ عِندَ رَبِّهِمْ جَنَّاتُ عَدْنٍ تَجْرِي مِن تَحْتِهَا الْأَنْهَارُ خَالِدِينَ فِيهَا أَبَدًا رَّضِيَ اللَّهُ عَنْهُمْ وَرَضُوا عَنْهُ ذَلِكَ لِمَنْ خَشِيَ رَبَّهُ",
-        "pr_ayat": "",
+        "pr_ayat": "Njoɓdi mum-en ina to joomi mum-en nammbu ñiiɓal ‘aljanna’ mo caalli ndogata les mum, heen ɓe ñiiɓata haa cay, Alla ina weltaniiɓe e aɓe mbeltanii mo ɗuum woodani ko kulɗo joomi mum",
         "img": require("./images/ayat/1.png"),
         "startTime": 1,
         "endTime": 2
@@ -4256,9 +4240,9 @@ export default[
   {
     "surat_number": 99,
     "juzz": "الجزء Tumbutere 30",
-    "surat": "سورة الزلزلة Simoore Fiilaama Niɓɓere",
+    "surat": "سورة الزلزلة Simoore Jerɓugol",
     "juzz_number": 30,
-    "surat_title": "Fiilaama Niɓɓere - الزلزلة",
+    "surat_title": "Jerɓugol - الزلزلة",
     "ayat_number": 8,
     "ayat_img": require("./images/ayat/8.png"),
     "ayat_url": "http://abousy.com/quran_audio/99_AlZalzalah.mp3 ",
@@ -4275,7 +4259,7 @@ export default[
       {
         "number": 1,
         "ar_ayat": "إِذَا زُلْزِلَتِ الْأَرْضُ زِلْزَالَهَا",
-        "pr_ayat": "",
+        "pr_ayat": "So tawii leydi ndi yerɓii jerɓugol mayri",
         "img": require("./images/ayat/1.png"),
         "startTime": 1,
         "endTime": 2
@@ -4283,7 +4267,7 @@ export default[
       {
         "number": 1,
         "ar_ayat": "وَأَخْرَجَتِ الْأَرْضُ أَثْقَالَهَا",
-        "pr_ayat": "",
+        "pr_ayat": "E leydi ndi yaltinii doŋle mayri",
         "img": require("./images/ayat/1.png"),
         "startTime": 1,
         "endTime": 2
@@ -4291,7 +4275,7 @@ export default[
       {
         "number": 1,
         "ar_ayat": "وَقَالَ الْإِنسَانُ مَا لَهَا",
-        "pr_ayat": "",
+        "pr_ayat": "Tee neɗɗo wiya hol ko ndi wondi",
         "img": require("./images/ayat/1.png"),
         "startTime": 1,
         "endTime": 2
@@ -4299,7 +4283,7 @@ export default[
       {
         "number": 1,
         "ar_ayat": "يَوْمَئِذٍ تُحَدِّثُ أَخْبَارَهَا",
-        "pr_ayat": "",
+        "pr_ayat": "Ñande heen ndi jangtoto kabaruuji mayri",
         "img": require("./images/ayat/1.png"),
         "startTime": 1,
         "endTime": 2
@@ -4307,7 +4291,7 @@ export default[
       {
         "number": 1,
         "ar_ayat": "بِأَنَّ رَبَّكَ أَوْحَى لَهَا",
-        "pr_ayat": "",
+        "pr_ayat": "Ngati ko joome loŋngini ndi",
         "img": require("./images/ayat/1.png"),
         "startTime": 1,
         "endTime": 2
@@ -4315,7 +4299,7 @@ export default[
       {
         "number": 1,
         "ar_ayat": "يَوْمَئِذٍ يَصْدُرُ النَّاسُ أَشْتَاتًا لِّيُرَوْا أَعْمَالَهُمْ",
-        "pr_ayat": "",
+        "pr_ayat": "Ñande heen yimɓe njaltirta ko cente-cente, ngam hollirde golleeji mum-en",
         "img": require("./images/ayat/1.png"),
         "startTime": 1,
         "endTime": 2
@@ -4323,7 +4307,7 @@ export default[
       {
         "number": 1,
         "ar_ayat": "فَمَن يَعْمَلْ مِثْقَالَ ذَرَّةٍ خَيْرًا يَرَهُ",
-        "pr_ayat": "",
+        "pr_ayat": "Kala oon golluɗo ko foti no gabbel moƴƴere yiya ɗum",
         "img": require("./images/ayat/1.png"),
         "startTime": 1,
         "endTime": 2
@@ -4331,7 +4315,7 @@ export default[
       {
         "number": 1,
         "ar_ayat": "وَمَن يَعْمَلْ مِثْقَالَ ذَرَّةٍ شَرًّا يَرَهُ",
-        "pr_ayat": "",
+        "pr_ayat": "E kala oon golluɗo ko foti no gabbel bonannde yiya ɗum",
         "img": require("./images/ayat/1.png"),
         "startTime": 1,
         "endTime": 2
@@ -4341,9 +4325,9 @@ export default[
   {
     "surat_number": 100,
     "juzz": "الجزء Tumbutere 30",
-    "surat": "سورة العاديات Simoore Fiilaama Niɓɓere",
+    "surat": "سورة العاديات Simoore Dogooji",
     "juzz_number": 30,
-    "surat_title": "Fiilaama Niɓɓere - العاديات",
+    "surat_title": "Dogooji - العاديات",
     "ayat_number": 10,
     "ayat_img": require("./images/ayat/10.png"),
     "ayat_url": "http://abousy.com/quran_audio/100_AlAdiyat.mp3",
@@ -4360,7 +4344,7 @@ export default[
       {
         "number": 1,
         "ar_ayat": "وَالْعَادِيَاتِ ضَبْحًا",
-        "pr_ayat": "",
+        "pr_ayat": "E dogooji ina para",
         "img": require("./images/ayat/1.png"),
         "startTime": 1,
         "endTime": 2
@@ -4368,7 +4352,7 @@ export default[
       {
         "number": 1,
         "ar_ayat": "فَالْمُورِيَاتِ قَدْحًا",
-        "pr_ayat": "",
+        "pr_ayat": "Ɗiin toƴƴooji peete",
         "img": require("./images/ayat/1.png"),
         "startTime": 1,
         "endTime": 2
@@ -4376,7 +4360,7 @@ export default[
       {
         "number": 1,
         "ar_ayat": "فَالْمُغِيرَاتِ صُبْحًا",
-        "pr_ayat": "",
+        "pr_ayat": "Ɗiin tippotooɗi weetndooga",
         "img": require("./images/ayat/1.png"),
         "startTime": 1,
         "endTime": 2
@@ -4384,7 +4368,7 @@ export default[
       {
         "number": 1,
         "ar_ayat": "فَأَثَرْنَ بِهِ نَقْعًا",
-        "pr_ayat": "",
+        "pr_ayat": "Ɗi iirta heen punndi",
         "img": require("./images/ayat/1.png"),
         "startTime": 1,
         "endTime": 2
@@ -4392,7 +4376,7 @@ export default[
       {
         "number": 1,
         "ar_ayat": "فَوَسَطْنَ بِهِ جَمْعًا",
-        "pr_ayat": "",
+        "pr_ayat": "Ɗi ndaroo toon e hakkunde dental",
         "img": require("./images/ayat/1.png"),
         "startTime": 1,
         "endTime": 2
@@ -4400,7 +4384,7 @@ export default[
       {
         "number": 1,
         "ar_ayat": "إِنَّ الْإِنسَانَ لِرَبِّهِ لَكَنُودٌ",
-        "pr_ayat": "",
+        "pr_ayat": "E tigi-ne neɗɗo ko canndolinɗo fayde e joomi mum",
         "img": require("./images/ayat/1.png"),
         "startTime": 1,
         "endTime": 2
@@ -4408,7 +4392,7 @@ export default[
       {
         "number": 1,
         "ar_ayat": "وَإِنَّهُ عَلَى ذَلِكَ لَشَهِيدٌ",
-        "pr_ayat": "",
+        "pr_ayat": "Etee tigi-ne kaŋko omo seedii ɗuum",
         "img": require("./images/ayat/1.png"),
         "startTime": 1,
         "endTime": 2
@@ -4416,7 +4400,7 @@ export default[
       {
         "number": 1,
         "ar_ayat": "وَإِنَّهُ لِحُبِّ الْخَيْرِ لَشَدِيدٌ",
-        "pr_ayat": "",
+        "pr_ayat": "E tigi-ne kaŋko dey ko o jiɗɗo moƴƴere sanne",
         "img": require("./images/ayat/1.png"),
         "startTime": 1,
         "endTime": 2
@@ -4424,7 +4408,7 @@ export default[
       {
         "number": 1,
         "ar_ayat": "أَفَلَا يَعْلَمُ إِذَا بُعْثِرَ مَا فِي الْقُبُورِ",
-        "pr_ayat": "",
+        "pr_ayat": "Mbele o anndaa ko woni nder janaale koo, so sarkitaama",
         "img": require("./images/ayat/1.png"),
         "startTime": 1,
         "endTime": 2
@@ -4432,7 +4416,7 @@ export default[
       {
         "number": 1,
         "ar_ayat": "وَحُصِّلَ مَا فِي الصُّدُورِ",
-        "pr_ayat": "",
+        "pr_ayat": "Kadi-ne ko woni nder becce koo, so renndinaama ‘yaltinaama’",
         "img": require("./images/ayat/1.png"),
         "startTime": 1,
         "endTime": 2
@@ -4440,7 +4424,7 @@ export default[
       {
         "number": 1,
         "ar_ayat": "إِنَّ رَبَّهُم بِهِمْ يَوْمَئِذٍ لَّخَبِيرٌ",
-        "pr_ayat": "",
+        "pr_ayat": "E tigi-ne joomiiɓe ñande heen ko kumpitiiɗo ɓe",
         "img": require("./images/ayat/1.png"),
         "startTime": 1,
         "endTime": 2
@@ -4450,9 +4434,9 @@ export default[
   {
     "surat_number": 101,
     "juzz": "الجزء Tumbutere 30",
-    "surat": "سورة القارعة Simoore Fiilaama Niɓɓere",
+    "surat": "سورة القارعة Simoore Duɗɗoore",
     "juzz_number": 30,
-    "surat_title": "Fiilaama Niɓɓere - القارعة",
+    "surat_title": "Duɗɗoore - القارعة",
     "ayat_number": 10,
     "ayat_img": require("./images/ayat/10.png"),
     "ayat_url": "http://abousy.com/quran_audio/101_AlQariah.mp3",
@@ -4469,7 +4453,7 @@ export default[
       {
         "number": 1,
         "ar_ayat": "الْقَارِعَةُ",
-        "pr_ayat": "",
+        "pr_ayat": "Duɗɗoore nde",
         "img": require("./images/ayat/1.png"),
         "startTime": 1,
         "endTime": 2
@@ -4477,7 +4461,7 @@ export default[
       {
         "number": 1,
         "ar_ayat": "مَا الْقَارِعَةُ",
-        "pr_ayat": "",
+        "pr_ayat": "Hol ko woni duɗɗoore nde",
         "img": require("./images/ayat/1.png"),
         "startTime": 1,
         "endTime": 2
@@ -4485,7 +4469,7 @@ export default[
       {
         "number": 1,
         "ar_ayat": "وَمَا أَدْرَاكَ مَا الْقَارِعَةُ",
-        "pr_ayat": "",
+        "pr_ayat": "Tee hol fof ko anndintu ma duɗɗoore nde",
         "img": require("./images/ayat/1.png"),
         "startTime": 1,
         "endTime": 2
@@ -4493,7 +4477,7 @@ export default[
       {
         "number": 1,
         "ar_ayat": "يَوْمَ يَكُونُ النَّاسُ كَالْفَرَاشِ الْمَبْثُوثِ",
-        "pr_ayat": "",
+        "pr_ayat": "Ñande yimɓe ɓe mbayata no beɗi-Alla cariiɗi",
         "img": require("./images/ayat/1.png"),
         "startTime": 1,
         "endTime": 2
@@ -4501,7 +4485,7 @@ export default[
       {
         "number": 1,
         "ar_ayat": "وَتَكُونُ الْجِبَالُ كَالْعِهْنِ الْمَنفُوشِ",
-        "pr_ayat": "",
+        "pr_ayat": "E tule kaaƴe ɗe laatoo no biral ɓursangal",
         "img": require("./images/ayat/1.png"),
         "startTime": 1,
         "endTime": 2
@@ -4509,7 +4493,7 @@ export default[
       {
         "number": 1,
         "ar_ayat": "فَأَمَّا مَن ثَقُلَتْ مَوَازِينُهُ",
-        "pr_ayat": "",
+        "pr_ayat": "Kala noon mo ɓetirgal mum ñisi",
         "img": require("./images/ayat/1.png"),
         "startTime": 1,
         "endTime": 2
@@ -4517,7 +4501,7 @@ export default[
       {
         "number": 1,
         "ar_ayat": "فَهُوَ فِي عِيشَةٍ رَّاضِيَةٍ",
-        "pr_ayat": "",
+        "pr_ayat": "Oon dey wonata ko he nguurndam mbelɗam",
         "img": require("./images/ayat/1.png"),
         "startTime": 1,
         "endTime": 2
@@ -4525,7 +4509,7 @@ export default[
       {
         "number": 1,
         "ar_ayat": "وَأَمَّا مَنْ خَفَّتْ مَوَازِينُهُ",
-        "pr_ayat": "",
+        "pr_ayat": "Kono oon mo ɓetirgal mum hoyfi",
         "img": require("./images/ayat/1.png"),
         "startTime": 1,
         "endTime": 2
@@ -4533,7 +4517,7 @@ export default[
       {
         "number": 1,
         "ar_ayat": "فَأُمُّهُ هَاوِيَةٌ",
-        "pr_ayat": "",
+        "pr_ayat": "Ko dosowol wonata yumma mum ‘haawiya woni jaaƴnde mum‘",
         "img": require("./images/ayat/1.png"),
         "startTime": 1,
         "endTime": 2
@@ -4541,7 +4525,7 @@ export default[
       {
         "number": 1,
         "ar_ayat": "وَمَا أَدْرَاكَ مَا هِيَهْ",
-        "pr_ayat": "",
+        "pr_ayat": "Tee hol fof ko anndintu maa ko ngol woni",
         "img": require("./images/ayat/1.png"),
         "startTime": 1,
         "endTime": 2
@@ -4549,7 +4533,7 @@ export default[
       {
         "number": 1,
         "ar_ayat": "نَارٌ حَامِيَةٌ",
-        "pr_ayat": "",
+        "pr_ayat": "Ɗuum ko jayngol gulngol",
         "img": require("./images/ayat/1.png"),
         "startTime": 1,
         "endTime": 2
@@ -4559,9 +4543,9 @@ export default[
   {
     "surat_number": 102,
     "juzz": "الجزء Tumbutere 30",
-    "surat": "سورة التكاثر Simoore Fiilaama Niɓɓere",
+    "surat": "سورة التكاثر Simoore Ɓuraa-ɓuraa",
     "juzz_number": 30,
-    "surat_title": "Fiilaama Niɓɓere - التكاثر",
+    "surat_title": "Ɓuraa-ɓuraa - التكاثر",
     "ayat_number": 8,
     "ayat_img": require("./images/ayat/8.png"),
     "ayat_url": "http://abousy.com/quran_audio/102_AtTakasour.mp3",
@@ -4578,7 +4562,7 @@ export default[
       {
         "number": 1,
         "ar_ayat": "أَلْهَاكُمُ التَّكَاثُرُ",
-        "pr_ayat": "",
+        "pr_ayat": "Ee-hey-mon, ɓuraa-ɓuraa yejjitinii on",
         "img": require("./images/ayat/1.png"),
         "startTime": 1,
         "endTime": 2
@@ -4586,7 +4570,7 @@ export default[
       {
         "number": 1,
         "ar_ayat": "حَتَّى زُرْتُمُ الْمَقَابِرَ",
-        "pr_ayat": "",
+        "pr_ayat": "Haa nde njuuroyiɗon janaale ɗe",
         "img": require("./images/ayat/1.png"),
         "startTime": 1,
         "endTime": 2
@@ -4594,7 +4578,7 @@ export default[
       {
         "number": 1,
         "ar_ayat": "كَلَّا سَوْفَ تَعْلَمُونَ",
-        "pr_ayat": "",
+        "pr_ayat": "Alaa-dey ma on nganndoy",
         "img": require("./images/ayat/1.png"),
         "startTime": 1,
         "endTime": 2
@@ -4602,7 +4586,7 @@ export default[
       {
         "number": 1,
         "ar_ayat": "ثُمَّ كَلَّا سَوْفَ تَعْلَمُونَ",
-        "pr_ayat": "",
+        "pr_ayat": "Refti alaa-dey ma on nganndoy",
         "img": require("./images/ayat/1.png"),
         "startTime": 1,
         "endTime": 2
@@ -4610,7 +4594,7 @@ export default[
       {
         "number": 1,
         "ar_ayat": "كَلَّا لَوْ تَعْلَمُونَ عِلْمَ الْيَقِينِ",
-        "pr_ayat": "",
+        "pr_ayat": "Alaa-dey sinno fof on nganndiino ganndal e yeneneede",
         "img": require("./images/ayat/1.png"),
         "startTime": 1,
         "endTime": 2
@@ -4618,7 +4602,7 @@ export default[
       {
         "number": 1,
         "ar_ayat": "لَتَرَوُنَّ الْجَحِيمَ",
-        "pr_ayat": "",
+        "pr_ayat": "Kay-ne maa on njiy taaynowol ‘jahiim’",
         "img": require("./images/ayat/1.png"),
         "startTime": 1,
         "endTime": 2
@@ -4626,7 +4610,7 @@ export default[
       {
         "number": 1,
         "ar_ayat": "ثُمَّ لَتَرَوُنَّهَا عَيْنَ الْيَقِينِ",
-        "pr_ayat": "",
+        "pr_ayat": "Refti ma on njiy ngol, e yitere yeneneede",
         "img": require("./images/ayat/1.png"),
         "startTime": 1,
         "endTime": 2
@@ -4634,7 +4618,7 @@ export default[
       {
         "number": 1,
         "ar_ayat": "ثُمَّ لَتُسْأَلُنَّ يَوْمَئِذٍ عَنِ النَّعِيمِ",
-        "pr_ayat": "",
+        "pr_ayat": "Refti oɗon payi naamnoyeede ñande heen sgaa ndakmitaari",
         "img": require("./images/ayat/1.png"),
         "startTime": 1,
         "endTime": 2
@@ -4644,9 +4628,9 @@ export default[
   {
     "surat_number": 103,
     "juzz": "الجزء Tumbutere 30",
-    "surat": "سورة العصر Simoore Fiilaama Niɓɓere",
+    "surat": "سورة العصر Simoore Tumaare",
     "juzz_number": 30,
-    "surat_title": "Fiilaama Niɓɓere - العصر",
+    "surat_title": "Tumaare - العصر",
     "ayat_number": 3,
     "ayat_img": require("./images/ayat/3.png"),
     "ayat_url": "http://abousy.com/quran_audio/103_AlAsr.mp3",
@@ -4663,7 +4647,7 @@ export default[
       {
         "number": 1,
         "ar_ayat": "وَالْعَصْرِ",
-        "pr_ayat": "",
+        "pr_ayat": "E tumaare nde",
         "img": require("./images/ayat/1.png"),
         "startTime": 1,
         "endTime": 2
@@ -4671,7 +4655,7 @@ export default[
       {
         "number": 1,
         "ar_ayat": "إِنَّ الْإِنسَانَ لَفِي خُسْرٍ",
-        "pr_ayat": "",
+        "pr_ayat": "Tigi ne neɗɗo ina he ɓelsere",
         "img": require("./images/ayat/1.png"),
         "startTime": 1,
         "endTime": 2
@@ -4679,7 +4663,7 @@ export default[
       {
         "number": 1,
         "ar_ayat": "إِلَّا الَّذِينَ آمَنُوا وَعَمِلُوا الصَّالِحَاتِ وَتَوَاصَوْا بِالْحَقِّ وَتَوَاصَوْا بِالصَّبْرِ",
-        "pr_ayat": "",
+        "pr_ayat": "So wonaa ɓeen goongɗinɓe kadi ngolli ko moƴƴi, ɓe mbagginorii e goonga kadi ɓe mbagginorii e muñal",
         "img": require("./images/ayat/1.png"),
         "startTime": 1,
         "endTime": 2
@@ -4689,9 +4673,9 @@ export default[
   {
     "surat_number": 104,
     "juzz": "الجزء Tumbutere 30",
-    "surat": "سورة الهمزة Simoore Fiilaama Niɓɓere",
+    "surat": "سورة الهمزة Simoore Ñohooɓe",
     "juzz_number": 30,
-    "surat_title": "Fiilaama Niɓɓere - الهمزة",
+    "surat_title": "Ñohooɓe - الهمزة",
     "ayat_number": 9,
     "ayat_img": require("./images/ayat/9.png"),
     "ayat_url": "http://abousy.com/quran_audio/104_AlHumazah.mp3",
@@ -4708,7 +4692,7 @@ export default[
       {
         "number": 1,
         "ar_ayat": "وَيْلٌ لِّكُلِّ هُمَزَةٍ لُّمَزَةٍ",
-        "pr_ayat": "",
+        "pr_ayat": "Woy-heege ‘bone’ woodanii kala ñohoowo gaybinoowo",
         "img": require("./images/ayat/1.png"),
         "startTime": 1,
         "endTime": 2
@@ -4716,7 +4700,7 @@ export default[
       {
         "number": 1,
         "ar_ayat": "الَّذِي جَمَعَ مَالًا وَعَدَّدَهُ",
-        "pr_ayat": "",
+        "pr_ayat": "Oon denndinɗo jawdi ina lima limtoo ɗum",
         "img": require("./images/ayat/1.png"),
         "startTime": 1,
         "endTime": 2
@@ -4724,7 +4708,7 @@ export default[
       {
         "number": 1,
         "ar_ayat": "يَحْسَبُ أَنَّ مَالَهُ أَخْلَدَهُ",
-        "pr_ayat": "",
+        "pr_ayat": "O sikki jawdi makko ndi, saasnat mo haa cay",
         "img": require("./images/ayat/1.png"),
         "startTime": 1,
         "endTime": 2
@@ -4732,7 +4716,7 @@ export default[
       {
         "number": 1,
         "ar_ayat": "كَلَّا لَيُنبَذَنَّ فِي الْحُطَمَةِ",
-        "pr_ayat": "",
+        "pr_ayat": "Alaa-dey ma o wedde nder kooñnowol ‘huɗama’",
         "img": require("./images/ayat/1.png"),
         "startTime": 1,
         "endTime": 2
@@ -4740,7 +4724,7 @@ export default[
       {
         "number": 1,
         "ar_ayat": "وَمَا أَدْرَاكَ مَا الْحُطَمَةُ",
-        "pr_ayat": "",
+        "pr_ayat": "Holi fof ko anndintu maa ko woni kooñnowol ‘huɗama’",
         "img": require("./images/ayat/1.png"),
         "startTime": 1,
         "endTime": 2
@@ -4748,7 +4732,7 @@ export default[
       {
         "number": 1,
         "ar_ayat": "نَارُ اللَّهِ الْمُوقَدَةُ",
-        "pr_ayat": "",
+        "pr_ayat": "Ko jayngol Alla kuɓɓangol",
         "img": require("./images/ayat/1.png"),
         "startTime": 1,
         "endTime": 2
@@ -4756,7 +4740,7 @@ export default[
       {
         "number": 1,
         "ar_ayat": "الَّتِي تَطَّلِعُ عَلَى الْأَفْئِدَةِ",
-        "pr_ayat": "",
+        "pr_ayat": "Ngool, ngol ina ƴellitoo haa to ɓerɗe",
         "img": require("./images/ayat/1.png"),
         "startTime": 1,
         "endTime": 2
@@ -4764,7 +4748,7 @@ export default[
       {
         "number": 1,
         "ar_ayat": "إِنَّهَا عَلَيْهِم مُّؤْصَدَةٌ",
-        "pr_ayat": "",
+        "pr_ayat": "Tigi-ne ngol fiiltotoɓe",
         "img": require("./images/ayat/1.png"),
         "startTime": 1,
         "endTime": 2
@@ -4772,7 +4756,7 @@ export default[
       {
         "number": 1,
         "ar_ayat": "فِي عَمَدٍ مُّمَدَّدَةٍ",
-        "pr_ayat": "",
+        "pr_ayat": "Nder doosɗe juutɗe",
         "img": require("./images/ayat/1.png"),
         "startTime": 1,
         "endTime": 2
