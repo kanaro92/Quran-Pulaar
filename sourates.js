@@ -4766,9 +4766,9 @@ export default[
   {
     "surat_number": 105,
     "juzz": "الجزء Tumbutere 30",
-    "surat": "سورة الفيل Simoore Fiilaama Niɓɓere",
+    "surat": "سورة الفيل Simoore Ñiiwa",
     "juzz_number": 30,
-    "surat_title": "Fiilaama Niɓɓere - الفيل",
+    "surat_title": "Ñiiwa - الفيل",
     "ayat_number": 5,
     "ayat_img": require("./images/ayat/5.png"),
     "ayat_url": "http://abousy.com/quran_audio/105_AlFil.mp3",
@@ -4785,7 +4785,7 @@ export default[
       {
         "number": 1,
         "ar_ayat": "أَلَمْ تَرَ كَيْفَ فَعَلَ رَبُّكَ بِأَصْحَابِ الْفِيلِ",
-        "pr_ayat": "",
+        "pr_ayat": "Mbele a yiyaani no joome waɗiri yimɓe ñiiwa ba",
         "img": require("./images/ayat/1.png"),
         "startTime": 1,
         "endTime": 2
@@ -4793,7 +4793,7 @@ export default[
       {
         "number": 1,
         "ar_ayat": "أَلَمْ يَجْعَلْ كَيْدَهُمْ فِي تَضْلِيلٍ",
-        "pr_ayat": "",
+        "pr_ayat": "A-mbele o firtaani feere maɓɓe",
         "img": require("./images/ayat/1.png"),
         "startTime": 1,
         "endTime": 2
@@ -4801,7 +4801,7 @@ export default[
       {
         "number": 1,
         "ar_ayat": "وَأَرْسَلَ عَلَيْهِمْ طَيْرًا أَبَابِيلَ",
-        "pr_ayat": "",
+        "pr_ayat": "E o nuli dow maɓɓe lilluɗe colli",
         "img": require("./images/ayat/1.png"),
         "startTime": 1,
         "endTime": 2
@@ -4809,15 +4809,7 @@ export default[
       {
         "number": 1,
         "ar_ayat": "تَرْمِيهِم بِحِجَارَةٍ مِّن سِجِّيلٍ",
-        "pr_ayat": "",
-        "img": require("./images/ayat/1.png"),
-        "startTime": 1,
-        "endTime": 2
-      },
-      {
-        "number": 1,
-        "ar_ayat": "",
-        "pr_ayat": "",
+        "pr_ayat": "Ɗi ina mberlooɓe kaaƴe iwɗe to loopal",
         "img": require("./images/ayat/1.png"),
         "startTime": 1,
         "endTime": 2
@@ -4825,7 +4817,7 @@ export default[
       {
         "number": 1,
         "ar_ayat": "فَجَعَلَهُمْ كَعَصْفٍ مَّأْكُولٍ",
-        "pr_ayat": "",
+        "pr_ayat": "Tan ɗum waɗti ɓe hono no huɗo ñaayaako",
         "img": require("./images/ayat/1.png"),
         "startTime": 1,
         "endTime": 2
@@ -4835,9 +4827,9 @@ export default[
   {
     "surat_number": 106,
     "juzz": "الجزء Tumbutere 30",
-    "surat": "سورة قريش Simoore Fiilaama Niɓɓere",
+    "surat": "سورة قريش Simoore Khuraysiyaŋkooɓe",
     "juzz_number": 30,
-    "surat_title": "Fiilaama Niɓɓere - قريش",
+    "surat_title": "Khuraysiyaŋkooɓe - قريش",
     "ayat_number": 4,
     "ayat_img": require("./images/ayat/4.png"),
     "ayat_url": "http://abousy.com/quran_audio/106_Qourach.mp3",
@@ -4854,7 +4846,7 @@ export default[
       {
         "number": 1,
         "ar_ayat": "لِإِيلَافِ قُرَيْشٍ",
-        "pr_ayat": "",
+        "pr_ayat": "Ngam ‘fii’ kawrital khuraysiyaŋkooɓe ɗo wootere",
         "img": require("./images/ayat/1.png"),
         "startTime": 1,
         "endTime": 2
@@ -4862,7 +4854,7 @@ export default[
       {
         "number": 1,
         "ar_ayat": "إِيلَافِهِمْ رِحْلَةَ الشِّتَاءِ وَالصَّيْفِ",
-        "pr_ayat": "",
+        "pr_ayat": "Ngam fiɓnde kawtal maɓɓe sete njulaagu dabbunde e ceeɗu",
         "img": require("./images/ayat/1.png"),
         "startTime": 1,
         "endTime": 2
@@ -4870,7 +4862,7 @@ export default[
       {
         "number": 1,
         "ar_ayat": "فَلْيَعْبُدُوا رَبَّ هَذَا الْبَيْتِ",
-        "pr_ayat": "",
+        "pr_ayat": "Wadde ndeen-noon yo ɓe ndew jom nduu suudu",
         "img": require("./images/ayat/1.png"),
         "startTime": 1,
         "endTime": 2
@@ -4878,7 +4870,7 @@ export default[
       {
         "number": 1,
         "ar_ayat": "الَّذِي أَطْعَمَهُم مِّن جُوعٍ وَآمَنَهُم مِّنْ خَوْفٍ",
-        "pr_ayat": "",
+        "pr_ayat": "Oon ñamminɗo ɓe, ittiɓe e heege hisniɓe e kulol",
         "img": require("./images/ayat/1.png"),
         "startTime": 1,
         "endTime": 2
@@ -4888,9 +4880,9 @@ export default[
   {
     "surat_number": 107,
     "juzz": "الجزء Tumbutere 30",
-    "surat": "سورة الماعون Simoore Fiilaama Niɓɓere",
+    "surat": "سورة الماعون Simoore Genduɗe",
     "juzz_number": 30,
-    "surat_title": "Fiilaama Niɓɓere - الماعون",
+    "surat_title": "Genduɗe/Kuutorɗe - الماعون",
     "ayat_number": 7,
     "ayat_img": require("./images/ayat/7.png"),
     "ayat_url": "http://abousy.com/quran_audio/107_AlMahoun.mp3",
@@ -4907,7 +4899,7 @@ export default[
       {
         "number": 1,
         "ar_ayat": "أَرَأَيْتَ الَّذِي يُكَذِّبُ بِالدِّينِ",
-        "pr_ayat": "",
+        "pr_ayat": "Mbele a yiyaani oon mo ina fenna diine",
         "img": require("./images/ayat/1.png"),
         "startTime": 1,
         "endTime": 2
@@ -4915,7 +4907,7 @@ export default[
       {
         "number": 1,
         "ar_ayat": "فَذَلِكَ الَّذِي يَدُعُّ الْيَتِيمَ",
-        "pr_ayat": "",
+        "pr_ayat": "Ko ooɗoon woni diiwoowo baayo",
         "img": require("./images/ayat/1.png"),
         "startTime": 1,
         "endTime": 2
@@ -4923,7 +4915,7 @@ export default[
       {
         "number": 1,
         "ar_ayat": "وَلَا يَحُضُّ عَلَى طَعَامِ الْمِسْكِينِ",
-        "pr_ayat": "",
+        "pr_ayat": "Etee o etaaki ñamminde baasɗo",
         "img": require("./images/ayat/1.png"),
         "startTime": 1,
         "endTime": 2
@@ -4931,7 +4923,7 @@ export default[
       {
         "number": 1,
         "ar_ayat": "فَوَيْلٌ لِّلْمُصَلِّينَ",
-        "pr_ayat": "",
+        "pr_ayat": "Wadde-ne ‘woy-heege’ bone woodanii juulooɓe",
         "img": require("./images/ayat/1.png"),
         "startTime": 1,
         "endTime": 2
@@ -4939,7 +4931,7 @@ export default[
       {
         "number": 1,
         "ar_ayat": "الَّذِينَ هُمْ عَن صَلَاتِهِمْ سَاهُونَ",
-        "pr_ayat": "",
+        "pr_ayat": "Ɓeen ngoni welsindiiɓe juulɗeele mum-en",
         "img": require("./images/ayat/1.png"),
         "startTime": 1,
         "endTime": 2
@@ -4947,7 +4939,7 @@ export default[
       {
         "number": 1,
         "ar_ayat": "الَّذِينَ هُمْ يُرَاءُونَ",
-        "pr_ayat": "",
+        "pr_ayat": "Ɓeen ngoni yeengikintooɓe",
         "img": require("./images/ayat/1.png"),
         "startTime": 1,
         "endTime": 2
@@ -4955,7 +4947,7 @@ export default[
       {
         "number": 1,
         "ar_ayat": "وَيَمْنَعُونَ الْمَاعُونَ",
-        "pr_ayat": "",
+        "pr_ayat": "Tee aɓe kaɗa ngendukon ‘kuutorɗe’",
         "img": require("./images/ayat/1.png"),
         "startTime": 1,
         "endTime": 2
@@ -4965,9 +4957,9 @@ export default[
   {
     "surat_number": 108,
     "juzz": "الجزء Tumbutere 30",
-    "surat": "سورة الكوثر Simoore Fiilaama Niɓɓere",
+    "surat": "سورة الكوثر Simoore Weendu Kawsara",
     "juzz_number": 30,
-    "surat_title": "Fiilaama Niɓɓere - الكوثر",
+    "surat_title": "Weendu Kawsara - الكوثر",
     "ayat_number": 3,
     "ayat_img": require("./images/ayat/3.png"),
     "ayat_url": "http://abousy.com/quran_audio/108_AlKawsar.mp3",
@@ -4984,7 +4976,7 @@ export default[
       {
         "number": 1,
         "ar_ayat": "إِنَّا أَعْطَيْنَاكَ الْكَوْثَرَ",
-        "pr_ayat": "",
+        "pr_ayat": "Ko minen ndokku ma weendu kawsara",
         "img": require("./images/ayat/1.png"),
         "startTime": 1,
         "endTime": 2
@@ -4992,7 +4984,7 @@ export default[
       {
         "number": 1,
         "ar_ayat": "فَصَلِّ لِرَبِّكَ وَانْحَرْ",
-        "pr_ayat": "",
+        "pr_ayat": "Wadde juulan joome, kadi ne boro",
         "img": require("./images/ayat/1.png"),
         "startTime": 1,
         "endTime": 2
@@ -5000,7 +4992,7 @@ export default[
       {
         "number": 1,
         "ar_ayat": "إِنَّ شَانِئَكَ هُوَ الْأَبْتَرُ",
-        "pr_ayat": "",
+        "pr_ayat": "Tigi-ne gaño ma kañum woni gaaɓtaro",
         "img": require("./images/ayat/1.png"),
         "startTime": 1,
         "endTime": 2
@@ -5010,9 +5002,9 @@ export default[
   {
     "surat_number": 109,
     "juzz": "الجزء Tumbutere 30",
-    "surat": "سورة الكافرون Simoore Fiilaama Niɓɓere",
+    "surat": "سورة الكافرون Simoore Yedduɓe",
     "juzz_number": 30,
-    "surat_title": "Fiilaama Niɓɓere - الكافرون",
+    "surat_title": "Yedduɓe - الكافرون",
     "ayat_number": 6,
     "ayat_img": require("./images/ayat/6.png"),
     "ayat_url": "http://abousy.com/quran_audio/109_AlKafiroun.mp3",
@@ -5029,7 +5021,7 @@ export default[
       {
         "number": 1,
         "ar_ayat": "قُلْ يَا أَيُّهَا الْكَافِرُونَ",
-        "pr_ayat": "",
+        "pr_ayat": "Wiy ee-hey mon yedduɓe",
         "img": require("./images/ayat/1.png"),
         "startTime": 1,
         "endTime": 2
@@ -5037,7 +5029,7 @@ export default[
       {
         "number": 1,
         "ar_ayat": "لَا أَعْبُدُ مَا تَعْبُدُونَ",
-        "pr_ayat": "",
+        "pr_ayat": "Mi rewataa ɗuum ko ndewaton",
         "img": require("./images/ayat/1.png"),
         "startTime": 1,
         "endTime": 2
@@ -5045,7 +5037,7 @@ export default[
       {
         "number": 1,
         "ar_ayat": "وَلَا أَنتُمْ عَابِدُونَ مَا أَعْبُدُ",
-        "pr_ayat": "",
+        "pr_ayat": "Tee onon-ne, on ndewataa ɗuum ko ndewatmi",
         "img": require("./images/ayat/1.png"),
         "startTime": 1,
         "endTime": 2
@@ -5053,7 +5045,7 @@ export default[
       {
         "number": 1,
         "ar_ayat": "وَلَا أَنَا عَابِدٌ مَّا عَبَدتُّمْ",
-        "pr_ayat": "",
+        "pr_ayat": "Ette miin-ne mi rewataa, ɗuum ko ndewaton",
         "img": require("./images/ayat/1.png"),
         "startTime": 1,
         "endTime": 2
@@ -5061,7 +5053,7 @@ export default[
       {
         "number": 1,
         "ar_ayat": "وَلَا أَنتُمْ عَابِدُونَ مَا أَعْبُدُ",
-        "pr_ayat": "",
+        "pr_ayat": "Tee onon-ne, on ngonaa rewooɓe ɗuum ko ndewat mi",
         "img": require("./images/ayat/1.png"),
         "startTime": 1,
         "endTime": 2
@@ -5069,7 +5061,7 @@ export default[
       {
         "number": 1,
         "ar_ayat": "لَكُمْ دِينُكُمْ وَلِيَ دِينِ",
-        "pr_ayat": "",
+        "pr_ayat": "Woodanii on diine mon, e miin-ne woodanii ko am diine am",
         "img": require("./images/ayat/1.png"),
         "startTime": 1,
         "endTime": 2
@@ -5079,9 +5071,9 @@ export default[
   {
     "surat_number": 110,
     "juzz": "الجزء Tumbutere 30",
-    "surat": "سورة النصر Simoore Fiilaama Niɓɓere",
+    "surat": "سورة النصر Simoore Ballal",
     "juzz_number": 30,
-    "surat_title": "Fiilaama Niɓɓere - النصر",
+    "surat_title": "Faabu/Ballal - النصر",
     "ayat_number": 3,
     "ayat_img": require("./images/ayat/3.png"),
     "ayat_url": "http://abousy.com/quran_audio/110_AnNasr.mp3",
@@ -5098,7 +5090,7 @@ export default[
       {
         "number": 1,
         "ar_ayat": "إِذَا جَاءَ نَصْرُ اللَّهِ وَالْفَتْحُ",
-        "pr_ayat": "",
+        "pr_ayat": "So ballal Alla e udditaare nde arii",
         "img": require("./images/ayat/1.png"),
         "startTime": 1,
         "endTime": 2
@@ -5106,7 +5098,7 @@ export default[
       {
         "number": 1,
         "ar_ayat": "وَرَأَيْتَ النَّاسَ يَدْخُلُونَ فِي دِينِ اللَّهِ أَفْوَاجًا",
-        "pr_ayat": "",
+        "pr_ayat": "Tee njiyaa yimɓe ina naata he diine Alla cente-cente",
         "img": require("./images/ayat/1.png"),
         "startTime": 1,
         "endTime": 2
@@ -5114,7 +5106,7 @@ export default[
       {
         "number": 1,
         "ar_ayat": "فَسَبِّحْ بِحَمْدِ رَبِّكَ وَاسْتَغْفِرْهُ إِنَّهُ كَانَ تَوَّابًا",
-        "pr_ayat": "",
+        "pr_ayat": "Wadde ‘imsino’ sennin joome e yettude ɗum e njaafnoɗaa mo, tigi-ne kaŋko dey o laatiima jaɓoowo duttagol ’tuubgol’",
         "img": require("./images/ayat/1.png"),
         "startTime": 1,
         "endTime": 2
@@ -5124,9 +5116,9 @@ export default[
   {
     "surat_number": 111,
     "juzz": "الجزء Tumbutere 30",
-    "surat": "سورة المسد Simoore Fiilaama Niɓɓere",
+    "surat": "سورة المسد Simoore Baaji",
     "juzz_number": 30,
-    "surat_title": "Fiilaama Niɓɓere - المسد",
+    "surat_title": "Baaji - المسد",
     "ayat_number": 5,
     "ayat_img": require("./images/ayat/5.png"),
     "ayat_url": "http://abousy.com/quran_audio/111_AlMasad.mp3",
@@ -5143,7 +5135,7 @@ export default[
       {
         "number": 1,
         "ar_ayat": "تَبَّتْ يَدَا أَبِي لَهَبٍ وَتَبَّ",
-        "pr_ayat": "",
+        "pr_ayat": "Juuɗe abuu lahabin mbonii kadi ne o bonii",
         "img": require("./images/ayat/1.png"),
         "startTime": 1,
         "endTime": 2
@@ -5151,7 +5143,7 @@ export default[
       {
         "number": 1,
         "ar_ayat": "مَا أَغْنَى عَنْهُ مَالُهُ وَمَا كَسَبَ",
-        "pr_ayat": "",
+        "pr_ayat": "Nafataamo jawdi makko ndi, e ko o faggitii",
         "img": require("./images/ayat/1.png"),
         "startTime": 1,
         "endTime": 2
@@ -5159,7 +5151,7 @@ export default[
       {
         "number": 1,
         "ar_ayat": "سَيَصْلَى نَارًا ذَاتَ لَهَبٍ",
-        "pr_ayat": "",
+        "pr_ayat": "Ma o naat jayngol lewlewtowol",
         "img": require("./images/ayat/1.png"),
         "startTime": 1,
         "endTime": 2
@@ -5167,7 +5159,7 @@ export default[
       {
         "number": 1,
         "ar_ayat": "وَامْرَأَتُهُ حَمَّالَةَ الْحَطَبِ",
-        "pr_ayat": "",
+        "pr_ayat": "E kaŋko e debbo makko doondotooɗo leɗɗe",
         "img": require("./images/ayat/1.png"),
         "startTime": 1,
         "endTime": 2
@@ -5175,7 +5167,7 @@ export default[
       {
         "number": 1,
         "ar_ayat": "فِي جِيدِهَا حَبْلٌ مِّن مَّسَدٍ",
-        "pr_ayat": "",
+        "pr_ayat": "Ɓoggol baaji karlangol ina he daande makko",
         "img": require("./images/ayat/1.png"),
         "startTime": 1,
         "endTime": 2
@@ -5185,9 +5177,9 @@ export default[
   {
     "surat_number": 112,
     "juzz": "الجزء Tumbutere 30",
-    "surat": "سورة الإخلاص Simoore Fiilaama Niɓɓere",
+    "surat": "سورة الإخلاص Simoore Laɓɓinoore",
     "juzz_number": 30,
-    "surat_title": "Fiilaama Niɓɓere - الإخلاص",
+    "surat_title": "Laɓɓinoore - الإخلاص",
     "ayat_number": 4,
     "ayat_img": require("./images/ayat/4.png"),
     "ayat_url": "http://abousy.com/quran_audio/112_AlIkhlas.mp3",
@@ -5204,7 +5196,7 @@ export default[
       {
         "number": 1,
         "ar_ayat": "قُلْ هُوَ اللَّهُ أَحَدٌ",
-        "pr_ayat": "",
+        "pr_ayat": "Wiy ko kaŋko woni Alla gooto o",
         "img": require("./images/ayat/1.png"),
         "startTime": 1,
         "endTime": 2
@@ -5212,7 +5204,7 @@ export default[
       {
         "number": 1,
         "ar_ayat": "اللَّهُ الصَّمَدُ",
-        "pr_ayat": "",
+        "pr_ayat": "Alla baawanɗo hoyre mum",
         "img": require("./images/ayat/1.png"),
         "startTime": 1,
         "endTime": 2
@@ -5220,7 +5212,7 @@ export default[
       {
         "number": 1,
         "ar_ayat": "لَمْ يَلِدْ وَلَمْ يُولَدْ",
-        "pr_ayat": "",
+        "pr_ayat": "O jibinaani e o jibinaaka",
         "img": require("./images/ayat/1.png"),
         "startTime": 1,
         "endTime": 2
@@ -5228,7 +5220,7 @@ export default[
       {
         "number": 1,
         "ar_ayat": "وَلَمْ يَكُن لَّهُ كُفُوًا أَحَدٌ",
-        "pr_ayat": "",
+        "pr_ayat": "E o alaa hay gooto nannduɗo e makko",
         "img": require("./images/ayat/1.png"),
         "startTime": 1,
         "endTime": 2
@@ -5238,9 +5230,9 @@ export default[
   {
     "surat_number": 113,
     "juzz": "الجزء Tumbutere 30",
-    "surat": "سورة الفلق Simoore Fiilaama Niɓɓere",
+    "surat": "سورة الفلق Simoore Weetndooga",
     "juzz_number": 30,
-    "surat_title": "Fiilaama Niɓɓere - الفلق",
+    "surat_title": "Weetndooga - الفلق",
     "ayat_number": 5,
     "ayat_img": require("./images/ayat/5.png"),
     "ayat_url": "http://abousy.com/quran_audio/113_AlFalaq.mp3",
@@ -5257,7 +5249,7 @@ export default[
       {
         "number": 1,
         "ar_ayat": "قُلْ أَعُوذُ بِرَبِّ الْفَلَقِ",
-        "pr_ayat": "",
+        "pr_ayat": "Wiy mi mooliima jom mboɗeeri weetndooga",
         "img": require("./images/ayat/1.png"),
         "startTime": 1,
         "endTime": 2
@@ -5265,7 +5257,7 @@ export default[
       {
         "number": 1,
         "ar_ayat": "مِن شَرِّ مَا خَلَقَ",
-        "pr_ayat": "",
+        "pr_ayat": "E bone ɗuum ko o tagi",
         "img": require("./images/ayat/1.png"),
         "startTime": 1,
         "endTime": 2
@@ -5273,7 +5265,7 @@ export default[
       {
         "number": 1,
         "ar_ayat": "وَمِن شَرِّ غَاسِقٍ إِذَا وَقَبَ",
-        "pr_ayat": "",
+        "pr_ayat": "E bone jamma o so naatii",
         "img": require("./images/ayat/1.png"),
         "startTime": 1,
         "endTime": 2
@@ -5281,7 +5273,7 @@ export default[
       {
         "number": 1,
         "ar_ayat": "وَمِن شَرِّ النَّفَّاثَاتِ فِي الْعُقَدِ",
-        "pr_ayat": "",
+        "pr_ayat": "E bone ɓeen jatotooɓe e tokkooɗe",
         "img": require("./images/ayat/1.png"),
         "startTime": 1,
         "endTime": 2
@@ -5289,7 +5281,7 @@ export default[
       {
         "number": 1,
         "ar_ayat": "وَمِن شَرِّ حَاسِدٍ إِذَا حَسَدَ",
-        "pr_ayat": "",
+        "pr_ayat": "E bone gaño so tawii añii",
         "img": require("./images/ayat/1.png"),
         "startTime": 1,
         "endTime": 2
@@ -5299,9 +5291,9 @@ export default[
   {
     "surat_number": 114,
     "juzz": "الجزء Tumbutere 30",
-    "surat": "سورة الناس Simoore Fiilaama Niɓɓere",
+    "surat": "سورة الناس Simoore Yimɓe",
     "juzz_number": 30,
-    "surat_title": "Fiilaama Niɓɓere - الناس",
+    "surat_title": "Yimɓe - الناس",
     "ayat_number": 6,
     "ayat_img": require("./images/ayat/6.png"),
     "ayat_url": "http://abousy.com/quran_audio/114_AnNas.mp3",
@@ -5318,7 +5310,7 @@ export default[
       {
         "number": 1,
         "ar_ayat": "قُلْ أَعُوذُ بِرَبِّ النَّاسِ",
-        "pr_ayat": "",
+        "pr_ayat": "Wiy mi mooliima jom yimɓe ɓe",
         "img": require("./images/ayat/1.png"),
         "startTime": 1,
         "endTime": 2
@@ -5326,7 +5318,7 @@ export default[
       {
         "number": 1,
         "ar_ayat": "مَلِكِ النَّاسِ",
-        "pr_ayat": "",
+        "pr_ayat": "laamɗo yimɓe ɓe",
         "img": require("./images/ayat/1.png"),
         "startTime": 1,
         "endTime": 2
@@ -5334,7 +5326,7 @@ export default[
       {
         "number": 1,
         "ar_ayat": "إِلَهِ النَّاسِ",
-        "pr_ayat": "",
+        "pr_ayat": "Deweteeɗo yimɓe ɓe",
         "img": require("./images/ayat/1.png"),
         "startTime": 1,
         "endTime": 2
@@ -5342,7 +5334,7 @@ export default[
       {
         "number": 1,
         "ar_ayat": "مِن شَرِّ الْوَسْوَاسِ الْخَنَّاسِ",
-        "pr_ayat": "",
+        "pr_ayat": "E bone oon cok-cokinoowo to les",
         "img": require("./images/ayat/1.png"),
         "startTime": 1,
         "endTime": 2
@@ -5350,7 +5342,7 @@ export default[
       {
         "number": 1,
         "ar_ayat": "الَّذِي يُوَسْوِسُ فِي صُدُورِ النَّاسِ",
-        "pr_ayat": "",
+        "pr_ayat": "Oon cok-cokinoowo he nder ɓecce yimɓe ɓe",
         "img": require("./images/ayat/1.png"),
         "startTime": 1,
         "endTime": 2
@@ -5358,7 +5350,7 @@ export default[
       {
         "number": 1,
         "ar_ayat": "مِنَ الْجِنَّةِ وَالنَّاسِ",
-        "pr_ayat": "",
+        "pr_ayat": "Iwde e jinneeji e yimɓe",
         "img": require("./images/ayat/1.png"),
         "startTime": 1,
         "endTime": 2
