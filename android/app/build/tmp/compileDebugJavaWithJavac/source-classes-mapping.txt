@@ -3,12 +3,12 @@ com/quran/ReactNativeFlipper.java
  com.quran.ReactNativeFlipper$1
  com.quran.ReactNativeFlipper$2
  com.quran.ReactNativeFlipper$2$1
-com/quran/MainApplication.java
- com.quran.MainApplication
- com.quran.MainApplication$1
+com/facebook/react/PackageList.java
+ com.facebook.react.PackageList
 com/quran/BuildConfig.java
  com.quran.BuildConfig
 com/quran/MainActivity.java
  com.quran.MainActivity
-com/facebook/react/PackageList.java
- com.facebook.react.PackageList
+com/quran/MainApplication.java
+ com.quran.MainApplication
+ com.quran.MainApplication$1
