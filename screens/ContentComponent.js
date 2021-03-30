@@ -175,8 +175,6 @@ class ContentComponent extends PureComponent{
 
     componentWillUnmount() {
         SoundPlayer.unmount();
-        this._onFinishedPlayingSubscription.remove();
-        this._onFinishedLoadingURLSubscription.remove();
         this.setState({
             isLoaded: true
         });
