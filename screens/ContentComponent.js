@@ -121,7 +121,7 @@ class ContentComponent extends PureComponent{
             }
             this._onFinishedLoadingURLSubscription.remove();
         } );
-        this._onFinishedPlayingSubscription = SoundPlayer.addEventListener('FinishedPlayingURL', () => {
+        this._onFinishedPlayingSubscription = SoundPlayer.addEventListener('FinishedPlaying', () => {
             alert("finished Playing")
             this._onFinishedPlayingSubscription.remove();
             SoundPlayer.unmount();
@@ -166,7 +166,7 @@ class ContentComponent extends PureComponent{
                 alert(`cannot play the sound`, e)
             }
         } )
-        this._onFinishedPlayingSubscription = this._onFinishedPlayingSubscription = SoundPlayer.addEventListener('FinishedPlayingURL', () => {
+        this._onFinishedPlayingSubscription = this._onFinishedPlayingSubscription = SoundPlayer.addEventListener('FinishedPlaying', () => {
             alert("finished Playing")
             this._onFinishedPlayingSubscription.remove();
             SoundPlayer.unmount();
