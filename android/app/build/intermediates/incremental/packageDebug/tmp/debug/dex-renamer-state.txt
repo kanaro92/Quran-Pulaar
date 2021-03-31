@@ -1,4 +1,4 @@
-#Tue Mar 30 20:56:04 WEST 2021
+#Wed Mar 31 11:06:36 WEST 2021
 base.0=E\:\\kane\\projects\\quran-pulaar\\android\\app\\build\\intermediates\\dex\\debug\\mergeDexDebug\\classes.dex
 path.0=classes.dex
 renamed.0=classes.dex

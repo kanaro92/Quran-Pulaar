@@ -50,38 +50,6 @@ class QuranPulaarApp extends Component {
             </SafeAreaView>
         );
     }
-    /*
-    _onFinishedPlayingSubscription = null;
-    _onFinishedLoadingSubscription = null;
-    _onFinishedLoadingURLSubscription = null;
-    componentWillUnmount() {
-        this._onFinishedPlayingSubscription.remove()
-        this._onFinishedLoadingSubscription.remove()
-        this._onFinishedLoadingURLSubscription.remove()
-    }
-
-    componentDidMount() {
-        this._onFinishedPlayingSubscription = SoundPlayer.addEventListener('FinishedPlaying', ({ success }) => {
-            this.setState({
-                isPlaying: false
-            });
-            SoundPlayer.unmount();
-            this._onFinishedPlayingSubscription.remove()
-            this._onFinishedLoadingSubscription.remove()
-            this._onFinishedLoadingURLSubscription.remove()
-            alert('finished playing', success)
-        })
-        this._onFinishedLoadingSubscription = SoundPlayer.addEventListener('FinishedLoading', ({ success }) => {
-          console.log('finished loading', success)
-        })
-        this._onFinishedLoadingURLSubscription = SoundPlayer.addEventListener('FinishedLoadingURL', ({ success, url }) => {
-          this.setState({
-            spinner: false
-        });
-        })
-    }
-     */
-
 }
 
 const styles = StyleSheet.create({

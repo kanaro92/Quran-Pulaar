@@ -11,14 +11,14 @@ class ToolComponent extends Component{
       return(
         <View>
           <ScrollView>
-              <Text>Tools</Text>
+              <Text>Maa en ngartoy heen ko leelaani...</Text>
           </ScrollView>
         </View>
-        
+
       );
     }
   }
-  
+
   export default ToolComponent;
 
   const styles = StyleSheet.create({

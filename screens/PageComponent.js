@@ -11,14 +11,14 @@ class PageComponent extends Component{
       return(
         <View>
           <ScrollView>
-              <Text>Page</Text>
+              <Text>Maa en ngartoy heen ko leelaani...</Text>
           </ScrollView>
         </View>
-        
+
       );
     }
   }
-  
+
   export default PageComponent;
 
   const styles = StyleSheet.create({

@@ -11,14 +11,14 @@ class BookMarkComponent extends Component{
       return(
         <View>
           <ScrollView>
-              <Text>BookMarks</Text>
+              <Text>Maa en ngartoy heen ko leelaani...</Text>
           </ScrollView>
         </View>
-        
+
       );
     }
   }
-  
+
   export default BookMarkComponent;
 
   const styles = StyleSheet.create({

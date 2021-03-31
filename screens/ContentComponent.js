@@ -1,4 +1,4 @@
-import React, { PureComponent} from 'react';
+import React, {PureComponent, useRef} from 'react';
 import {
     Image, Animated, Text, View, Dimensions,
     StyleSheet, ImageBackground, ScrollView, TouchableOpacity
@@ -55,7 +55,12 @@ class ContentComponent extends PureComponent{
                                 return <View style={styles.ayat_content}>
                                     <TouchableOpacity
                                         style={styles.touchable_ayat}
-                                        onPress={() => this.playAyat(this.props.item.ayat_url)}
+                                        onPress={() =>
+                                            this.playAyat(
+                                                this.props.item.ayat_url,
+                                                ayat.startTime,
+                                                ayat.endTime,
+                                            )}
                                     >
                                         <Text selectable={true} style={styles.ayat_text}>{ayat.ar_ayat}</Text>
                                         <Text selectable={true} style={styles.ayat_text}>{ayat.pr_ayat}</Text>
@@ -83,7 +88,7 @@ class ContentComponent extends PureComponent{
             </View>
             <Spinner
                 visible={this.state.spinner}
-                textContent={'Loading...'}
+                textContent={'Ina aawto simoore nde...'}
                 textStyle={styles.spinnerTextStyle}
             />
         </View>
@@ -94,11 +99,11 @@ class ContentComponent extends PureComponent{
     _onFinishedPlayingSubscription = null
     _onFinishedLoadingURLSubscription = null
 
-    playSong = (url) => {
+    playSong = (url: string) => {
         this.setState({
             spinner: true
         });
-        
+
         this._onFinishedLoadingURLSubscription = SoundPlayer.addEventListener('FinishedLoadingURL', () => {
             this.setState({
                 spinner: false
@@ -112,18 +117,21 @@ class ContentComponent extends PureComponent{
                     isPlaying: true
                 });
             } catch (e) {
-                alert(`cannot play the sound`, e)
+                alert(`Roŋki aawtaade simoore nde, seŋo e internet !`, e)
             }
             this._onFinishedLoadingURLSubscription.remove();
         } );
         this._onFinishedPlayingSubscription = SoundPlayer.addEventListener('FinishedPlaying', () => {
             this._onFinishedPlayingSubscription.remove();
             //SoundPlayer.unmount();
+            this.setState({
+                isPlaying: false
+            });
         } )
         try{
             SoundPlayer.loadUrl(url);
         } catch (e) {
-            alert(`cannot load the sound`, e)
+            alert(`Roŋki aawtaade simoore nde, seŋo e internet !`, e)
         }
     }
 
@@ -136,7 +144,8 @@ class ContentComponent extends PureComponent{
         this._onFinishedLoadingURLSubscription.remove();
     }
 
-    playAyat(url) {
+
+    playAyat(url: string, startTime: number, endTime: number) {
         this.setState({
             spinner: true
         });
@@ -149,24 +158,36 @@ class ContentComponent extends PureComponent{
                 isLoaded: true
             });
             try {
-                SoundPlayer.seek(8)
+                let duration = endTime - startTime;
+                alert("s: "+startTime+" e: "+endTime+" d: "+duration * 1000)
+                SoundPlayer.seek(startTime)
                 SoundPlayer.play()
+                this.sleep(duration * 1000).then(() => {
+                    this.stopSong();
+                });
                 this.setState({
                     isPlaying: true
                 });
             } catch (e) {
-                alert(`cannot play the sound`, e)
+                alert(`Roŋki aawtaade simoore nde, seŋo e internet !`, e)
             }
         } )
         this._onFinishedPlayingSubscription = this._onFinishedPlayingSubscription = SoundPlayer.addEventListener('FinishedPlaying', () => {
             this._onFinishedPlayingSubscription.remove();
             //SoundPlayer.unmount();
+            this.setState({
+                isPlaying: false
+            });
         } )
         try{
             SoundPlayer.loadUrl(url);
         } catch (e) {
-            alert(`cannot load the sound`, e)
+            alert(`Roŋki aawtaade simoore nde, seŋo e internet !`, e)
         }
+    }
+
+    sleep(ms) {
+        return new Promise(resolve => setTimeout(resolve, ms));
     }
 
     componentWillUnmount() {

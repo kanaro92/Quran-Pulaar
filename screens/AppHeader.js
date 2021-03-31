@@ -33,7 +33,7 @@ class AppHeader extends Component{
             ref={ref => {
               this.infoRBSheet = ref;
             }}
-            height={800}
+            height={400}
             openDuration={250}
             closeOnDragDown={true}
             customStyles={{
@@ -94,11 +94,11 @@ class AppHeader extends Component{
               <ToolComponent />
             </RBSheet>
         </View>
-        
+
       );
     }
   }
-  
+
   export default AppHeader;
 
   const styles = StyleSheet.create({
