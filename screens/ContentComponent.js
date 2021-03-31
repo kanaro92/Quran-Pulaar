@@ -98,11 +98,7 @@ class ContentComponent extends PureComponent{
         this.setState({
             spinner: true
         });
-        try{
-            SoundPlayer.loadUrl(url);
-        } catch (e) {
-            alert(`cannot load the sound`, e)
-        }
+        
         this._onFinishedLoadingURLSubscription = SoundPlayer.addEventListener('FinishedLoadingURL', () => {
             this.setState({
                 spinner: false
@@ -110,7 +106,6 @@ class ContentComponent extends PureComponent{
             this.setState({
                 isLoaded: true
             });
-            alert("finished loading")
             try {
                 SoundPlayer.play()
                 this.setState({
@@ -122,10 +117,14 @@ class ContentComponent extends PureComponent{
             this._onFinishedLoadingURLSubscription.remove();
         } );
         this._onFinishedPlayingSubscription = SoundPlayer.addEventListener('FinishedPlaying', () => {
-            alert("finished Playing")
             this._onFinishedPlayingSubscription.remove();
-            SoundPlayer.unmount();
+            //SoundPlayer.unmount();
         } )
+        try{
+            SoundPlayer.loadUrl(url);
+        } catch (e) {
+            alert(`cannot load the sound`, e)
+        }
     }
 
     stopSong = () => {
@@ -141,11 +140,6 @@ class ContentComponent extends PureComponent{
         this.setState({
             spinner: true
         });
-        try{
-            SoundPlayer.loadUrl(url);
-        } catch (e) {
-            alert(`cannot load the sound`, e)
-        }
         this._onFinishedLoadingURLSubscription = SoundPlayer.addEventListener('FinishedLoadingURL', () => {
             this._onFinishedLoadingURLSubscription.remove();
             this.setState({
@@ -154,9 +148,7 @@ class ContentComponent extends PureComponent{
             this.setState({
                 isLoaded: true
             });
-            alert("finished loading")
             try {
-                alert("Playing ayat")
                 SoundPlayer.seek(8)
                 SoundPlayer.play()
                 this.setState({
@@ -167,14 +159,18 @@ class ContentComponent extends PureComponent{
             }
         } )
         this._onFinishedPlayingSubscription = this._onFinishedPlayingSubscription = SoundPlayer.addEventListener('FinishedPlaying', () => {
-            alert("finished Playing")
             this._onFinishedPlayingSubscription.remove();
-            SoundPlayer.unmount();
+            //SoundPlayer.unmount();
         } )
+        try{
+            SoundPlayer.loadUrl(url);
+        } catch (e) {
+            alert(`cannot load the sound`, e)
+        }
     }
 
     componentWillUnmount() {
-        SoundPlayer.unmount();
+        //SoundPlayer.unmount();
         this.setState({
             isLoaded: true
         });
