@@ -18,7 +18,7 @@ class ContentComponent extends PureComponent{
         super();
         this.state = {
             isPlaying: false,
-            isLoaded: false,
+            isLoading: false,
             spinner: false,
         }
       }
@@ -27,8 +27,8 @@ class ContentComponent extends PureComponent{
       return(
         <View>
             <View style={styles.juzz}>
-                <Text>{this.props.item.juzz}</Text>
-                <Text>{this.props.item.surat}</Text>
+                <Text style={styles.juzz_text}>{this.props.item.juzz}</Text>
+                <Text style={styles.juzz_text}>{this.props.item.surat}</Text>
             </View>
             <View style={styles.body}>
                 <ImageBackground source={require('../images/background.png')} style={styles.backGroundImage}>
@@ -100,6 +100,15 @@ class ContentComponent extends PureComponent{
     _onFinishedLoadingURLSubscription = null
 
     playSong = (url: string) => {
+        if(this.state.isLoading){
+            this.setState({
+                spinner: true
+            });
+            return;
+        }
+        this.setState({
+            isLoading: true
+        });
         this.setState({
             spinner: true
         });
@@ -109,7 +118,7 @@ class ContentComponent extends PureComponent{
                 spinner: false
             });
             this.setState({
-                isLoaded: true
+                isLoading: false
             });
             try {
                 SoundPlayer.play()
@@ -146,6 +155,7 @@ class ContentComponent extends PureComponent{
 
 
     playAyat(url: string, startTime: number, endTime: number) {
+        return;
         this.setState({
             spinner: true
         });
@@ -155,19 +165,22 @@ class ContentComponent extends PureComponent{
                 spinner: false
             });
             this.setState({
-                isLoaded: true
+                isLoading: false
             });
             try {
                 let duration = endTime - startTime;
-                alert("s: "+startTime+" e: "+endTime+" d: "+duration * 1000)
-                SoundPlayer.seek(startTime)
-                SoundPlayer.play()
+                //alert("s: "+startTime+" e: "+endTime+" d: "+duration * 1000);
+                SoundPlayer.seek(startTime);
+                SoundPlayer.play();this.setState({
+                    isPlaying: true
+                });
                 this.sleep(duration * 1000).then(() => {
                     this.stopSong();
                 });
-                this.setState({
-                    isPlaying: true
-                });
+                /*this.seekSound(startTime).then(() => {
+                    alert("seek finished : ");
+
+                });*/
             } catch (e) {
                 alert(`Roŋki aawtaade simoore nde, seŋo e internet !`, e)
             }
@@ -190,13 +203,15 @@ class ContentComponent extends PureComponent{
         return new Promise(resolve => setTimeout(resolve, ms));
     }
 
-    componentWillUnmount() {
-        //SoundPlayer.unmount();
-        this.setState({
-            isLoaded: true
+    seekSound(startTime) {
+        return new Promise(resolve => {
+            resolve(SoundPlayer.seek(startTime));
         });
     }
 
+    componentWillUnmount() {
+        //SoundPlayer.unmount();
+    }
 }
 
 export default ContentComponent;
@@ -259,7 +274,10 @@ const styles = StyleSheet.create({
         paddingLeft:5,
         paddingRight:5,
         flexDirection: 'row',
-        justifyContent: 'space-between',
+        justifyContent: 'space-between'
+    },
+    juzz_text: {
+        fontSize: 12,
     },
     backGroundImage: {
         width: '100%',

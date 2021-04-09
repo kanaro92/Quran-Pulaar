@@ -16,7 +16,7 @@ export default[
         "pr_ayat": "E innde alla Jurumdeero Jurmotooɗo",
         "img": require("./images/ayat/1.png"),
         "startTime": 10,
-        "endTime": 22
+        "endTime": 21
       },
       {
         "number": 2,
@@ -24,7 +24,7 @@ export default[
         "pr_ayat": "Jettooje ngoodanii Alla jom binnde",
         "img": require("./images/ayat/2.png"),
         "startTime": 22,
-        "endTime": 30
+        "endTime": 32
       },
       {
         "number": 3,
@@ -39,7 +39,7 @@ export default[
         "ar_ayat": "مَالِكِ يَوْمِ الدِّينِ",
         "pr_ayat": "Laamɗo ñalngu ñaawoore",
         "img": require("./images/ayat/4.png"),
-        "startTime": 39,
+        "startTime": 38,
         "endTime": 45
       },
       {
