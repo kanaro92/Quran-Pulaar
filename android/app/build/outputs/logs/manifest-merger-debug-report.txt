@@ -14,6 +14,7 @@ MERGED from [:react-native-safe-area-context] E:\kane\projects\quran-pulaar\node
 MERGED from [:react-native-sound-player] E:\kane\projects\quran-pulaar\node_modules\react-native-sound-player\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-11:12
 MERGED from [:react-native-svg] E:\kane\projects\quran-pulaar\node_modules\react-native-svg\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-9:12
 MERGED from [:react-native-vector-icons] E:\kane\projects\quran-pulaar\node_modules\react-native-vector-icons\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-11:12
+MERGED from [:rn-fetch-blob] E:\kane\projects\quran-pulaar\node_modules\rn-fetch-blob\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-47:12
 MERGED from [:react-native-gesture-handler] E:\kane\projects\quran-pulaar\node_modules\react-native-gesture-handler\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-11:12
 MERGED from [com.facebook.react:react-native:0.63.4] C:\Users\Admin\.gradle\caches\transforms-2\files-2.1\bc2791545bc707736fe2e088163b257d\jetified-react-native-0.63.4\AndroidManifest.xml:2:1-13:12
 MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] C:\Users\Admin\.gradle\caches\transforms-2\files-2.1\f9976ae113f170d60bfcc789044f411d\swiperefreshlayout-1.0.0\AndroidManifest.xml:17:1-22:12
@@ -79,12 +80,16 @@ uses-permission#android.permission.INTERNET
 ADDED from E:\kane\projects\quran-pulaar\android\app\src\main\AndroidManifest.xml:4:5-67
 MERGED from [com.facebook.flipper:flipper:0.54.0] C:\Users\Admin\.gradle\caches\transforms-2\files-2.1\65964e9f7bfb72b91eccda64c210a357\jetified-flipper-0.54.0\AndroidManifest.xml:15:5-67
 MERGED from [com.facebook.flipper:flipper:0.54.0] C:\Users\Admin\.gradle\caches\transforms-2\files-2.1\65964e9f7bfb72b91eccda64c210a357\jetified-flipper-0.54.0\AndroidManifest.xml:15:5-67
+MERGED from [:rn-fetch-blob] E:\kane\projects\quran-pulaar\node_modules\rn-fetch-blob\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:15:5-67
+MERGED from [:rn-fetch-blob] E:\kane\projects\quran-pulaar\node_modules\rn-fetch-blob\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:15:5-67
 	android:name
 		ADDED from E:\kane\projects\quran-pulaar\android\app\src\main\AndroidManifest.xml:4:22-64
 application
 ADDED from E:\kane\projects\quran-pulaar\android\app\src\main\AndroidManifest.xml:6:5-25:19
 MERGED from E:\kane\projects\quran-pulaar\android\app\src\main\AndroidManifest.xml:6:5-25:19
 MERGED from E:\kane\projects\quran-pulaar\android\app\src\main\AndroidManifest.xml:6:5-25:19
+MERGED from [:rn-fetch-blob] E:\kane\projects\quran-pulaar\node_modules\rn-fetch-blob\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:35:5-45:19
+MERGED from [:rn-fetch-blob] E:\kane\projects\quran-pulaar\node_modules\rn-fetch-blob\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:35:5-45:19
 MERGED from [com.facebook.react:react-native:0.63.4] C:\Users\Admin\.gradle\caches\transforms-2\files-2.1\bc2791545bc707736fe2e088163b257d\jetified-react-native-0.63.4\AndroidManifest.xml:11:5-20
 MERGED from [com.facebook.react:react-native:0.63.4] C:\Users\Admin\.gradle\caches\transforms-2\files-2.1\bc2791545bc707736fe2e088163b257d\jetified-react-native-0.63.4\AndroidManifest.xml:11:5-20
 MERGED from [com.facebook.soloader:soloader:0.9.0] C:\Users\Admin\.gradle\caches\transforms-2\files-2.1\27cba7a2a9f830755c19701dfabadd68\jetified-soloader-0.9.0\AndroidManifest.xml:11:5-20
@@ -167,6 +172,8 @@ MERGED from [:react-native-svg] E:\kane\projects\quran-pulaar\node_modules\react
 MERGED from [:react-native-svg] E:\kane\projects\quran-pulaar\node_modules\react-native-svg\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-7:41
 MERGED from [:react-native-vector-icons] E:\kane\projects\quran-pulaar\node_modules\react-native-vector-icons\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-9:41
 MERGED from [:react-native-vector-icons] E:\kane\projects\quran-pulaar\node_modules\react-native-vector-icons\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-9:41
+MERGED from [:rn-fetch-blob] E:\kane\projects\quran-pulaar\node_modules\rn-fetch-blob\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-9:41
+MERGED from [:rn-fetch-blob] E:\kane\projects\quran-pulaar\node_modules\rn-fetch-blob\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-9:41
 MERGED from [:react-native-gesture-handler] E:\kane\projects\quran-pulaar\node_modules\react-native-gesture-handler\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-9:41
 MERGED from [:react-native-gesture-handler] E:\kane\projects\quran-pulaar\node_modules\react-native-gesture-handler\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-9:41
 MERGED from [com.facebook.react:react-native:0.63.4] C:\Users\Admin\.gradle\caches\transforms-2\files-2.1\bc2791545bc707736fe2e088163b257d\jetified-react-native-0.63.4\AndroidManifest.xml:7:5-9:41
@@ -263,5 +270,39 @@ ADDED from E:\kane\projects\quran-pulaar\android\app\src\debug\AndroidManifest.x
 		ADDED from E:\kane\projects\quran-pulaar\android\app\src\debug\AndroidManifest.xml:5:22-75
 uses-permission#android.permission.ACCESS_WIFI_STATE
 ADDED from [com.facebook.flipper:flipper:0.54.0] C:\Users\Admin\.gradle\caches\transforms-2\files-2.1\65964e9f7bfb72b91eccda64c210a357\jetified-flipper-0.54.0\AndroidManifest.xml:16:5-76
+MERGED from [:rn-fetch-blob] E:\kane\projects\quran-pulaar\node_modules\rn-fetch-blob\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:30:5-76
+MERGED from [:rn-fetch-blob] E:\kane\projects\quran-pulaar\node_modules\rn-fetch-blob\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:30:5-76
 	android:name
 		ADDED from [com.facebook.flipper:flipper:0.54.0] C:\Users\Admin\.gradle\caches\transforms-2\files-2.1\65964e9f7bfb72b91eccda64c210a357\jetified-flipper-0.54.0\AndroidManifest.xml:16:22-73
+uses-permission#com.android.vending.CHECK_LICENSE
+ADDED from [:rn-fetch-blob] E:\kane\projects\quran-pulaar\node_modules\rn-fetch-blob\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:12:5-73
+	android:name
+		ADDED from [:rn-fetch-blob] E:\kane\projects\quran-pulaar\node_modules\rn-fetch-blob\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:12:22-70
+uses-permission#android.permission.WAKE_LOCK
+ADDED from [:rn-fetch-blob] E:\kane\projects\quran-pulaar\node_modules\rn-fetch-blob\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:21:5-68
+	android:name
+		ADDED from [:rn-fetch-blob] E:\kane\projects\quran-pulaar\node_modules\rn-fetch-blob\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:21:22-65
+uses-permission#android.permission.ACCESS_NETWORK_STATE
+ADDED from [:rn-fetch-blob] E:\kane\projects\quran-pulaar\node_modules\rn-fetch-blob\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:27:5-79
+	android:name
+		ADDED from [:rn-fetch-blob] E:\kane\projects\quran-pulaar\node_modules\rn-fetch-blob\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:27:22-76
+uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
+ADDED from [:rn-fetch-blob] E:\kane\projects\quran-pulaar\node_modules\rn-fetch-blob\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:33:5-81
+	android:name
+		ADDED from [:rn-fetch-blob] E:\kane\projects\quran-pulaar\node_modules\rn-fetch-blob\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:33:22-78
+provider#com.RNFetchBlob.Utils.FileProvider
+ADDED from [:rn-fetch-blob] E:\kane\projects\quran-pulaar\node_modules\rn-fetch-blob\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:36:9-44:20
+	android:grantUriPermissions
+		ADDED from [:rn-fetch-blob] E:\kane\projects\quran-pulaar\node_modules\rn-fetch-blob\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:40:13-47
+	android:authorities
+		ADDED from [:rn-fetch-blob] E:\kane\projects\quran-pulaar\node_modules\rn-fetch-blob\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:38:13-60
+	android:exported
+		ADDED from [:rn-fetch-blob] E:\kane\projects\quran-pulaar\node_modules\rn-fetch-blob\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:39:13-37
+	android:name
+		ADDED from [:rn-fetch-blob] E:\kane\projects\quran-pulaar\node_modules\rn-fetch-blob\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:37:13-62
+meta-data#android.support.FILE_PROVIDER_PATHS
+ADDED from [:rn-fetch-blob] E:\kane\projects\quran-pulaar\node_modules\rn-fetch-blob\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:41:13-43:58
+	android:resource
+		ADDED from [:rn-fetch-blob] E:\kane\projects\quran-pulaar\node_modules\rn-fetch-blob\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:43:17-55
+	android:name
+		ADDED from [:rn-fetch-blob] E:\kane\projects\quran-pulaar\node_modules\rn-fetch-blob\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:42:17-67

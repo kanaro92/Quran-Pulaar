@@ -16,22 +16,22 @@ export default[
         "pr_ayat": "E innde alla Jurumdeero Jurmotooɗo",
         "img": require("./images/ayat/1.png"),
         "startTime": 10,
-        "endTime": 21
+        "endTime": 22
       },
       {
         "number": 2,
         "ar_ayat": "الْحَمْدُ لِلَّهِ رَبِّ الْعَالَمِينَ",
         "pr_ayat": "Jettooje ngoodanii Alla jom binnde",
         "img": require("./images/ayat/2.png"),
-        "startTime": 22,
-        "endTime": 32
+        "startTime": 21,
+        "endTime": 31
       },
       {
         "number": 3,
         "ar_ayat": "الرَّحْمَنِ الرَّحِيمِ",
         "pr_ayat": "Jurumdeero Jurmotooɗo",
         "img": require("./images/ayat/3.png"),
-        "startTime": 31,
+        "startTime": 30,
         "endTime": 38
       },
       {
@@ -48,23 +48,23 @@ export default[
         "pr_ayat": "Ko aan tan min ndewata e ko aan tan min mballikintoo",
         "img": require("./images/ayat/5.png"),
         "startTime": 45,
-        "endTime": 55
+        "endTime": 56
       },
       {
         "number": 6,
         "ar_ayat": "اهْدِنَا الصِّرَاطَ الْمُسْتَقِيمَ",
         "pr_ayat": "Hanndo min e laawol pooccingol",
         "img": require("./images/ayat/6.png"),
-        "startTime": 55,
-        "endTime": 65
+        "startTime": 56,
+        "endTime": 64
       },
       {
         "number": 7,
         "ar_ayat": "صِرَاطَ الَّذِينَ أَنْعَمْتَ عَلَيْهِمْ غَيْرِ الْمَغْضُوبِ عَلَيْهِمْ وَلَا الضَّالِّينَ",
         "pr_ayat": "Laawol ɓeen ɓe ndakmitɗaa tawi ngonaa tikkanaaɓe tee ɓe ngonaa majjuɓe",
         "img": require("./images/ayat/7.png"),
-        "startTime": 1,
-        "endTime": 2
+        "startTime": 64,
+        "endTime": 88
       }
     ]
   },

@@ -23,6 +23,8 @@ import com.johnsonsu.rnsoundplayer.RNSoundPlayerPackage;
 import com.horcrux.svg.SvgPackage;
 // react-native-vector-icons
 import com.oblador.vectoricons.VectorIconsPackage;
+// rn-fetch-blob
+import com.RNFetchBlob.RNFetchBlobPackage;
 // react-native-gesture-handler
 import com.swmansion.gesturehandler.react.RNGestureHandlerPackage;
 
@@ -76,6 +78,7 @@ public class PackageList {
       new RNSoundPlayerPackage(),
       new SvgPackage(),
       new VectorIconsPackage(),
+      new RNFetchBlobPackage(),
       new RNGestureHandlerPackage()
     ));
   }

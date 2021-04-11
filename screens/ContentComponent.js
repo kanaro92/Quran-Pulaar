@@ -1,147 +1,161 @@
 import React, {PureComponent, useRef} from 'react';
 import {
     Image, Animated, Text, View, Dimensions,
-    StyleSheet, ImageBackground, ScrollView, TouchableOpacity
+    StyleSheet, ImageBackground, ScrollView, TouchableOpacity, PermissionsAndroid, Platform
 } from 'react-native';
 import {FontAwesomeIcon} from '@fortawesome/react-native-fontawesome';
 import {faBookmark, faPlay, faPauseCircle} from '@fortawesome/free-solid-svg-icons';
 import SoundPlayer from 'react-native-sound-player';
 import Spinner from 'react-native-loading-spinner-overlay';
 import {Badge} from 'react-native-elements';
+import RNFetchBlob from "rn-fetch-blob";
 
 const {width, height} = Dimensions.get('screen');
 const imageW = width * 1;
 const imageH = imageW;
 
-class ContentComponent extends PureComponent{
-    constructor(){
+class ContentComponent extends PureComponent {
+    constructor() {
         super();
         this.state = {
             isPlaying: false,
             isLoading: false,
             spinner: false,
         }
-      }
+    }
 
-    render(){
-      return(
-        <View>
-            <View style={styles.juzz}>
-                <Text style={styles.juzz_text}>{this.props.item.juzz}</Text>
-                <Text style={styles.juzz_text}>{this.props.item.surat}</Text>
-            </View>
-            <View style={styles.body}>
-                <ImageBackground source={require('../images/background.png')} style={styles.backGroundImage}>
-                    <View style={styles.play_icon}>
-                        {this.state.isPlaying ?
-                            <FontAwesomeIcon icon={faPauseCircle} size={20} color={"#24561F"} onPress={() => this.stopSong()}/> :
-                            <FontAwesomeIcon icon={faPlay} size={20} color={"#24561F"} onPress={() => this.playSong(this.props.item.ayat_url)}/>
-                        }
-                    </View>
-                    <View style={styles.title_view}>
-                        <ImageBackground style={styles.bg_surat} source={require('../images/bg_sourate.jpeg')}>
-                            <View style={styles.surat_title_view}>
-                                <Text style={styles.surat_title_text}>{this.props.item.surat_title}</Text>
-                                {this.props.item.ayat_img != "" ?
-                                    <Image source={this.props.item.ayat_img} style={styles.ayat_image}/>:
-                                    <Text></Text>
-                                }
-                            </View>
-                        </ImageBackground>
-                    </View>
-                    <View style={styles.content}>
-                        <ScrollView>
-                            {this.props.item.ayat.map(ayat => {
-                                return <View style={styles.ayat_content}>
-                                    <TouchableOpacity
-                                        style={styles.touchable_ayat}
-                                        onPress={() =>
-                                            this.playAyat(
-                                                this.props.item.ayat_url,
-                                                ayat.startTime,
-                                                ayat.endTime,
-                                            )}
-                                    >
-                                        <Text selectable={true} style={styles.ayat_text}>{ayat.ar_ayat}</Text>
-                                        <Text selectable={true} style={styles.ayat_text}>{ayat.pr_ayat}</Text>
-                                        <Image source={ayat.img} style={styles.ayat_image}/>
-                                    </TouchableOpacity>
-                                </View>;
-                            })}
-                        </ScrollView>
-                    </View>
-                    <View style={styles.footer}>
-                        <Text></Text>
-                        <Text style={styles.footer_text}>{this.props.item.page_number}</Text>
-                        <View>
-                            <FontAwesomeIcon icon={faBookmark} size={20} color={"#24561F"}/>
-                            <Badge
-                                value="+"
-                                status="success"
-                                badgeStyle={styles.badge}
-                                textStyle={styles.badgeText}
-                                containerStyle={{ position: 'absolute', top: 0, left: -3 }}
-                            />
+    render() {
+        return (
+            <View>
+                <View style={styles.juzz}>
+                    <Text style={styles.juzz_text}>{this.props.item.juzz}</Text>
+                    <Text style={styles.juzz_text}>{this.props.item.surat}</Text>
+                </View>
+                <View style={styles.body}>
+                    <ImageBackground source={require('../images/background.png')} style={styles.backGroundImage}>
+                        <View style={styles.play_icon}>
+                            {this.state.isPlaying ?
+                                <FontAwesomeIcon icon={faPauseCircle} size={20} color={"#24561F"}
+                                                 onPress={() => this.stopSong()}/> :
+                                <FontAwesomeIcon icon={faPlay} size={20} color={"#24561F"}
+                                                 onPress={() => this.playSourate(this.props.item.ayat_url)}/>
+                            }
                         </View>
-                    </View>
-                </ImageBackground>
+                        <View style={styles.title_view}>
+                            <ImageBackground style={styles.bg_surat} source={require('../images/bg_sourate.jpeg')}>
+                                <View style={styles.surat_title_view}>
+                                    <Text style={styles.surat_title_text}>{this.props.item.surat_title}</Text>
+                                    {this.props.item.ayat_img != "" ?
+                                        <Image source={this.props.item.ayat_img} style={styles.ayat_image}/> :
+                                        <Text></Text>
+                                    }
+                                </View>
+                            </ImageBackground>
+                        </View>
+                        <View style={styles.content}>
+                            <ScrollView>
+                                {this.props.item.ayat.map(ayat => {
+                                    return <View style={styles.ayat_content}>
+                                        <TouchableOpacity
+                                            style={styles.touchable_ayat}
+                                            onPress={() =>
+                                                this.playAyat(
+                                                    this.props.item.ayat_url,
+                                                    ayat.startTime,
+                                                    ayat.endTime,
+                                                )}
+                                        >
+                                            <Text selectable={true} style={styles.ayat_text}>{ayat.ar_ayat}</Text>
+                                            <Text selectable={true} style={styles.ayat_text}>{ayat.pr_ayat}</Text>
+                                            <Image source={ayat.img} style={styles.ayat_image}/>
+                                        </TouchableOpacity>
+                                    </View>;
+                                })}
+                            </ScrollView>
+                        </View>
+                        <View style={styles.footer}>
+                            <Text></Text>
+                            <Text style={styles.footer_text}>{this.props.item.page_number}</Text>
+                            <View>
+                                <FontAwesomeIcon icon={faBookmark} size={20} color={"#24561F"}/>
+                                <Badge
+                                    value="+"
+                                    status="success"
+                                    badgeStyle={styles.badge}
+                                    textStyle={styles.badgeText}
+                                    containerStyle={{position: 'absolute', top: 0, left: -3}}
+                                />
+                            </View>
+                        </View>
+                    </ImageBackground>
+                </View>
+                <Spinner
+                    visible={this.state.spinner}
+                    textContent={'Ina aawto simoore nde...'}
+                    textStyle={styles.spinnerTextStyle}
+                />
             </View>
-            <Spinner
-                visible={this.state.spinner}
-                textContent={'Ina aawto simoore nde...'}
-                textStyle={styles.spinnerTextStyle}
-            />
-        </View>
 
-      );
+        );
     }
 
     _onFinishedPlayingSubscription = null
-    _onFinishedLoadingURLSubscription = null
 
-    playSong = (url: string) => {
-        if(this.state.isLoading){
-            this.setState({
-                spinner: true
-            });
-            return;
-        }
-        this.setState({
-            isLoading: true
-        });
-        this.setState({
-            spinner: true
-        });
-
-        this._onFinishedLoadingURLSubscription = SoundPlayer.addEventListener('FinishedLoadingURL', () => {
-            this.setState({
-                spinner: false
-            });
-            this.setState({
-                isLoading: false
-            });
-            try {
-                SoundPlayer.play()
+    playSourate = (url: string) => {
+        let fileName = url.substring(30, url.length - 4);
+        let filePath = RNFetchBlob.fs.dirs.DocumentDir + '/' + fileName;
+        RNFetchBlob.fs.exists(filePath + '.mp3').then(res => {
+            //todo if file exist compare size
+            if (res) {
+                this._onFinishedPlayingSubscription = SoundPlayer.addEventListener('FinishedPlaying', () => {
+                    this._onFinishedPlayingSubscription.remove();
+                    this.setState({
+                        isPlaying: false
+                    });
+                });
+                SoundPlayer.playSoundFile(fileName, 'mp3');
                 this.setState({
                     isPlaying: true
                 });
-            } catch (e) {
-                alert(`Roŋki aawtaade simoore nde, seŋo e internet !`, e)
+            } else {
+                this.downloadSourate(url, null, null)
             }
-            this._onFinishedLoadingURLSubscription.remove();
-        } );
-        this._onFinishedPlayingSubscription = SoundPlayer.addEventListener('FinishedPlaying', () => {
-            this._onFinishedPlayingSubscription.remove();
-            //SoundPlayer.unmount();
-            this.setState({
-                isPlaying: false
-            });
-        } )
-        try{
-            SoundPlayer.loadUrl(url);
-        } catch (e) {
-            alert(`Roŋki aawtaade simoore nde, seŋo e internet !`, e)
-        }
+        }).catch(reason => {
+            alert(`Roŋki aawtaade simoore nde, seŋo e internet !`);
+        })
+    }
+
+    playAyat(url: string, startTime: number, endTime: number) {
+        let fileName = url.substring(30, url.length - 4);
+        let filePath = RNFetchBlob.fs.dirs.DocumentDir + '/' + fileName;
+        RNFetchBlob.fs.exists(filePath + '.mp3').then(res => {
+            //todo if file exist compare size
+            if (res) {
+                this._onFinishedPlayingSubscription = SoundPlayer.addEventListener('FinishedPlaying', () => {
+                    this._onFinishedPlayingSubscription.remove();
+                    this.setState({
+                        isPlaying: false
+                    });
+                });
+                SoundPlayer.playSoundFile(fileName, 'mp3');
+                let duration = endTime - startTime;
+                SoundPlayer.seek(startTime);
+                this.sleep(duration * 1000).then(() => {
+                    this.stopSong();
+                });
+                this.setState({
+                    isPlaying: true
+                });
+            } else {
+                this.downloadSourate(url, startTime, endTime)
+            }
+        }).catch(reason => {
+            alert(`Roŋki aawtaade simoore nde, seŋo e internet !`);
+        })
+    }
+
+    sleep(ms) {
+        return new Promise(resolve => setTimeout(resolve, ms));
     }
 
     stopSong = () => {
@@ -150,67 +164,43 @@ class ContentComponent extends PureComponent{
             isPlaying: false
         });
         this._onFinishedPlayingSubscription.remove();
-        this._onFinishedLoadingURLSubscription.remove();
     }
 
-
-    playAyat(url: string, startTime: number, endTime: number) {
-        return;
-        this.setState({
-            spinner: true
-        });
-        this._onFinishedLoadingURLSubscription = SoundPlayer.addEventListener('FinishedLoadingURL', () => {
-            this._onFinishedLoadingURLSubscription.remove();
-            this.setState({
-                spinner: false
-            });
-            this.setState({
-                isLoading: false
-            });
-            try {
-                let duration = endTime - startTime;
-                //alert("s: "+startTime+" e: "+endTime+" d: "+duration * 1000);
-                SoundPlayer.seek(startTime);
-                SoundPlayer.play();this.setState({
-                    isPlaying: true
+    downloadSourate(url: string, startTime: number, endTime: number) {
+        let fileName = url.substring(30, url.length - 4);
+        const {fs: {dirs}} = RNFetchBlob
+        const PATH_TO_LIST = dirs.DocumentDir
+        const dest = `${PATH_TO_LIST}/${fileName}.mp3`
+        this.downtask = RNFetchBlob.config({
+            IOSBackgroundTask: true, // required for both upload
+            IOSDownloadTask: true, // Use instead of IOSDownloadTask if uploading
+            path: dest,
+            fileCache: true
+        })
+            .fetch('GET', url, {})
+            .progress((receivedStr, totalStr) => {
+                // Do any things
+                this.setState({
+                    spinner: true
                 });
-                this.sleep(duration * 1000).then(() => {
-                    this.stopSong();
+            }).then(value => {
+                this.setState({
+                    spinner: false
                 });
-                /*this.seekSound(startTime).then(() => {
-                    alert("seek finished : ");
-
-                });*/
-            } catch (e) {
-                alert(`Roŋki aawtaade simoore nde, seŋo e internet !`, e)
-            }
-        } )
-        this._onFinishedPlayingSubscription = this._onFinishedPlayingSubscription = SoundPlayer.addEventListener('FinishedPlaying', () => {
-            this._onFinishedPlayingSubscription.remove();
-            //SoundPlayer.unmount();
-            this.setState({
-                isPlaying: false
-            });
-        } )
-        try{
-            SoundPlayer.loadUrl(url);
-        } catch (e) {
-            alert(`Roŋki aawtaade simoore nde, seŋo e internet !`, e)
-        }
-    }
-
-    sleep(ms) {
-        return new Promise(resolve => setTimeout(resolve, ms));
-    }
-
-    seekSound(startTime) {
-        return new Promise(resolve => {
-            resolve(SoundPlayer.seek(startTime));
-        });
+                if (startTime && endTime) {
+                    this.playAyat(url, startTime, endTime);
+                } else {
+                    this.playSourate(url);
+                }
+            })
+        this.downtask.catch(async err => {
+            // Check error
+            alert(`Roŋki aawtaade simoore nde, seŋo e internet !`)
+        })
     }
 
     componentWillUnmount() {
-        //SoundPlayer.unmount();
+        SoundPlayer.unmount();
     }
 }
 
@@ -271,8 +261,8 @@ const styles = StyleSheet.create({
         fontSize: 16,
     },
     juzz: {
-        paddingLeft:5,
-        paddingRight:5,
+        paddingLeft: 5,
+        paddingRight: 5,
         flexDirection: 'row',
         justifyContent: 'space-between'
     },
@@ -299,13 +289,13 @@ const styles = StyleSheet.create({
     footer: {
         flexDirection: 'row',
         justifyContent: 'space-between',
-        marginLeft:10,
+        marginLeft: 10,
         borderTopWidth: 3,
         paddingTop: 2,
         paddingLeft: 5,
         paddingRight: 5,
         borderColor: '#4dbf81',
-        width:'95%',
+        width: '95%',
         borderRadius: 10
     },
     footer_text: {

@@ -2,13 +2,16 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Quran.iml" filepath="$PROJECT_DIR$/.idea/modules/Quran.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/Quran.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/Quran.app.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/-1148334818/Quran.react-native-gesture-handler.iml" filepath="$PROJECT_DIR$/.idea/modules/-1148334818/Quran.react-native-gesture-handler.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/1918651239/Quran.react-native-restart.iml" filepath="$PROJECT_DIR$/.idea/modules/1918651239/Quran.react-native-restart.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/1938457543/Quran.react-native-sound-player.iml" filepath="$PROJECT_DIR$/.idea/modules/1938457543/Quran.react-native-sound-player.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/-1501592900/Quran.react-native-svg.iml" filepath="$PROJECT_DIR$/.idea/modules/-1501592900/Quran.react-native-svg.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/-1650290824/Quran.react-native-vector-icons.iml" filepath="$PROJECT_DIR$/.idea/modules/-1650290824/Quran.react-native-vector-icons.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Quran_Pulaar.iml" filepath="$PROJECT_DIR$/.idea/modules/Quran_Pulaar.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/Quran_Pulaar.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/Quran_Pulaar.app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/-1532204583/Quran_Pulaar.react-native-community_masked-view.iml" filepath="$PROJECT_DIR$/.idea/modules/-1532204583/Quran_Pulaar.react-native-community_masked-view.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/-1148334818/Quran_Pulaar.react-native-gesture-handler.iml" filepath="$PROJECT_DIR$/.idea/modules/-1148334818/Quran_Pulaar.react-native-gesture-handler.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/1918651239/Quran_Pulaar.react-native-restart.iml" filepath="$PROJECT_DIR$/.idea/modules/1918651239/Quran_Pulaar.react-native-restart.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/908203527/Quran_Pulaar.react-native-safe-area-context.iml" filepath="$PROJECT_DIR$/.idea/modules/908203527/Quran_Pulaar.react-native-safe-area-context.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/1938457543/Quran_Pulaar.react-native-sound-player.iml" filepath="$PROJECT_DIR$/.idea/modules/1938457543/Quran_Pulaar.react-native-sound-player.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/-1501592900/Quran_Pulaar.react-native-svg.iml" filepath="$PROJECT_DIR$/.idea/modules/-1501592900/Quran_Pulaar.react-native-svg.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/-1650290824/Quran_Pulaar.react-native-vector-icons.iml" filepath="$PROJECT_DIR$/.idea/modules/-1650290824/Quran_Pulaar.react-native-vector-icons.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/-1597421887/Quran_Pulaar.rn-fetch-blob.iml" filepath="$PROJECT_DIR$/.idea/modules/-1597421887/Quran_Pulaar.rn-fetch-blob.iml" />
     </modules>
   </component>
 </project>
