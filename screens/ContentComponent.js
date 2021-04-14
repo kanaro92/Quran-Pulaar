@@ -117,6 +117,9 @@ class ContentComponent extends PureComponent {
                 this.setState({
                     isPlaying: true
                 });
+                this.setState({
+                    spinner: false
+                });
             } else {
                 this.downloadSourate(url, null, null)
             }
@@ -146,6 +149,9 @@ class ContentComponent extends PureComponent {
                 this.setState({
                     isPlaying: true
                 });
+                this.setState({
+                    spinner: false
+                });
             } else {
                 this.downloadSourate(url, startTime, endTime)
             }
@@ -167,6 +173,9 @@ class ContentComponent extends PureComponent {
     }
 
     downloadSourate(url: string, startTime: number, endTime: number) {
+        this.setState({
+            spinner: true
+        });
         let fileName = url.substring(30, url.length - 4);
         const {fs: {dirs}} = RNFetchBlob
         const PATH_TO_LIST = dirs.DocumentDir
@@ -195,7 +204,10 @@ class ContentComponent extends PureComponent {
             })
         this.downtask.catch(async err => {
             // Check error
-            alert(`Roŋki aawtaade simoore nde, seŋo e internet !`)
+            this.setState({
+                spinner: false
+            });
+            alert(`Roŋki aawtaade simoore nde, seŋo e internet !`);
         })
     }
 
