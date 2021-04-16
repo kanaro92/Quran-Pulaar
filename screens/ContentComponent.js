@@ -33,16 +33,16 @@ class ContentComponent extends PureComponent {
                                 <FontAwesomeIcon icon={faPauseCircle} size={25} color={"#24561F"}
                                                  onPress={() => this.stopSong()}/> :
                                 <FontAwesomeIcon icon={faPlay} size={25} color={"#24561F"}
-                                                 onPress={() => this.playSourate(this.props.item.ayat_url)}/>
+                                                 onPress={() => this.playSourate(this.props.item.ayat_url, this.props.item.size)}/>
                             }
                         </View>
                         <View style={styles.title_view}>
                             <ImageBackground style={styles.bg_surat} source={require('../images/bg_sourate.jpeg')}>
                                 <View style={styles.surat_title_view}>
                                     <Text style={styles.surat_title_text}>{this.props.item.surat_title}</Text>
-                                    {this.props.item.ayat_img != "" ?
+                                    {this.props.item.ayat_img !== "" ?
                                         <Image source={this.props.item.ayat_img} style={styles.ayat_image}/> :
-                                        <Text></Text>
+                                        <Text/>
                                     }
                                 </View>
                             </ImageBackground>
@@ -58,6 +58,7 @@ class ContentComponent extends PureComponent {
                                                     this.props.item.ayat_url,
                                                     ayat.startTime,
                                                     ayat.endTime,
+                                                    this.props.item.size
                                                 )}
                                         >
                                             <Text selectable={true} style={styles.ayat_text}>{ayat.ar_ayat}</Text>
@@ -69,7 +70,7 @@ class ContentComponent extends PureComponent {
                             </ScrollView>
                         </View>
                         <View style={styles.footer}>
-                            <Text></Text>
+                            <Text/>
                             <Text style={styles.footer_text}>{this.props.item.page_number}</Text>
                             <View>
                                 <FontAwesomeIcon icon={faBookmark} size={20} color={"#24561F"}/>
@@ -96,59 +97,83 @@ class ContentComponent extends PureComponent {
 
     _onFinishedPlayingSubscription = null
 
-    playSourate = (url: string) => {
+    playSourate = (url: string, size: number) => {
         let fileName = url.substring(30, url.length - 4);
         let filePath = RNFetchBlob.fs.dirs.DocumentDir + '/' + fileName;
         RNFetchBlob.fs.exists(filePath + '.mp3').then(res => {
             //todo if file exist compare size
             if (res) {
-                this._onFinishedPlayingSubscription = SoundPlayer.addEventListener('FinishedPlaying', () => {
-                    this._onFinishedPlayingSubscription.remove();
-                    this.setState({
-                        isPlaying: false
-                    });
-                });
-                SoundPlayer.playSoundFile(fileName, 'mp3');
-                this.setState({
-                    isPlaying: true
-                });
-                this.setState({
-                    spinner: false
-                });
+                //comparing files size
+                RNFetchBlob.fs.stat(filePath + '.mp3')
+                    .then((stats) => {
+                        let existingSize = stats.size / (1024 * 1024);
+                        if (existingSize.toFixed(1) == size) {
+                            this._onFinishedPlayingSubscription = SoundPlayer.addEventListener('FinishedPlaying', () => {
+                                this._onFinishedPlayingSubscription.remove();
+                                this.setState({
+                                    isPlaying: false
+                                });
+                            });
+                            SoundPlayer.playSoundFile(fileName, 'mp3');
+                            this.setState({
+                                isPlaying: true
+                            });
+                            this.setState({
+                                spinner: false
+                            });
+                        }else {
+                            this.downloadSourate(url, null, null, size);
+                        }
+                    })
+                    .catch((err) => {
+                        alert(`Waɗi caɗeele !`);
+                    })
             } else {
-                this.downloadSourate(url, null, null)
+                this.downloadSourate(url, null, null, size);
             }
         }).catch(reason => {
             alert(`Roŋki aawtaade simoore nde, seŋo e internet !`);
         })
     }
 
-    playAyat(url: string, startTime: number, endTime: number) {
+    playAyat(url: string, startTime: number, endTime: number, size: number) {
         let fileName = url.substring(30, url.length - 4);
         let filePath = RNFetchBlob.fs.dirs.DocumentDir + '/' + fileName;
         RNFetchBlob.fs.exists(filePath + '.mp3').then(res => {
             //todo if file exist compare size
             if (res) {
-                this._onFinishedPlayingSubscription = SoundPlayer.addEventListener('FinishedPlaying', () => {
-                    this._onFinishedPlayingSubscription.remove();
-                    this.setState({
-                        isPlaying: false
-                    });
-                });
-                SoundPlayer.playSoundFile(fileName, 'mp3');
-                let duration = endTime - startTime;
-                SoundPlayer.seek(startTime);
-                this.sleep(duration * 1000).then(() => {
-                    this.stopSong();
-                });
-                this.setState({
-                    isPlaying: true
-                });
-                this.setState({
-                    spinner: false
-                });
+                //comparing files size
+                RNFetchBlob.fs.stat(filePath + '.mp3')
+                    .then((stats) => {
+                        let existingSize = stats.size / (1024 * 1024);
+                        if (existingSize.toFixed(1) == size) {
+                            this._onFinishedPlayingSubscription = SoundPlayer.addEventListener('FinishedPlaying', () => {
+                                this._onFinishedPlayingSubscription.remove();
+                                this.setState({
+                                    isPlaying: false
+                                });
+                            });
+                            SoundPlayer.playSoundFile(fileName, 'mp3');
+                            let duration = endTime - startTime;
+                            SoundPlayer.seek(startTime);
+                            this.sleep(duration * 1000).then(() => {
+                                this.stopSong();
+                            });
+                            this.setState({
+                                isPlaying: true
+                            });
+                            this.setState({
+                                spinner: false
+                            });
+                        }else {
+                            this.downloadSourate(url, startTime, endTime, size);
+                        }
+                    })
+                    .catch((err) => {
+                        alert(`Waɗi caɗeele !`);
+                    })
             } else {
-                this.downloadSourate(url, startTime, endTime)
+                this.downloadSourate(url, startTime, endTime, size)
             }
         }).catch(reason => {
             alert(`Roŋki aawtaade simoore nde, seŋo e internet !`);
@@ -167,7 +192,7 @@ class ContentComponent extends PureComponent {
         this._onFinishedPlayingSubscription.remove();
     }
 
-    downloadSourate(url: string, startTime: number, endTime: number) {
+    downloadSourate(url: string, startTime: number, endTime: number, size: number) {
         this.setState({
             spinner: true
         });
@@ -192,9 +217,9 @@ class ContentComponent extends PureComponent {
                     spinner: false
                 });
                 if (startTime && endTime) {
-                    this.playAyat(url, startTime, endTime);
+                    this.playAyat(url, startTime, endTime, size);
                 } else {
-                    this.playSourate(url);
+                    this.playSourate(url, size);
                 }
             })
         this.downtask.catch(async err => {

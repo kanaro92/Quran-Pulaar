@@ -9,6 +9,7 @@ export default[
     "ayat_img": require("./images/ayat/7.png"),
     "ayat_url": "http://abousy.com/quran_audio/1_Fatiha.mp3",
     "page_number": 1,
+    "size": 1.3,
     "ayat": [
       {
         "number": 1,
@@ -78,6 +79,7 @@ export default[
     "ayat_img": require("./images/ayat/40.png"),
     "ayat_url": "http://abousy.com/quran_audio/78_AlNaba.mp3",
     "page_number": 2,
+    "size": 5.7,
     "ayat": [
       {
         "number": 0,
@@ -419,6 +421,7 @@ export default[
     "ayat_img": require("./images/ayat/46.png"),
     "ayat_url": "http://abousy.com/quran_audio/79_AlAnNaziat.mp3",
     "page_number": 3,
+    "size": 6.0,
     "ayat": [
       {
         "number": 0,
@@ -808,6 +811,7 @@ export default[
     "ayat_img": require("./images/ayat/42.png"),
     "ayat_url": "http://abousy.com/quran_audio/80_AlAbasa.mp3",
     "page_number": 4,
+    "size": 4.7,
     "ayat": [
       {
         "number": 0,
@@ -1165,6 +1169,7 @@ export default[
     "ayat_img": require("./images/ayat/29.png"),
     "ayat_url": "http://abousy.com/quran_audio/81_AlTakwir.mp3",
     "page_number": 5,
+    "size": 4.5,
     "ayat": [
       {
         "number": 0,
@@ -1418,6 +1423,7 @@ export default[
     "ayat_img": require("./images/ayat/19.png"),
     "ayat_url": "http://abousy.com/quran_audio/82_AlInfitar.mp3",
     "page_number": 6,
+    "size": 3.2,
     "ayat": [
       {
         "number": 0,
@@ -1591,6 +1597,7 @@ export default[
     "ayat_img": require("./images/ayat/36.png"),
     "ayat_url": "http://abousy.com/quran_audio/83_AlMoutafifin.mp3",
     "page_number": 7,
+    "size": 6.4,
     "ayat": [
       {
         "number": 0,
@@ -1900,6 +1907,7 @@ export default[
     "ayat_img": require("./images/ayat/25.png"),
     "ayat_url": "http://abousy.com/quran_audio/84_AlInchiqaq.mp3",
     "page_number": 8,
+    "size": 3.7,
     "ayat": [
       {
         "number": 0,
@@ -2121,6 +2129,7 @@ export default[
     "ayat_img": require("./images/ayat/22.png"),
     "ayat_url": "http://abousy.com/quran_audio/85_AlBourouj.mp3",
     "page_number": 9,
+    "size": 3.7,
     "ayat": [
       {
         "number": 0,
@@ -2318,6 +2327,7 @@ export default[
     "ayat_img": require("./images/ayat/17.png"),
     "ayat_url": "http://abousy.com/quran_audio/86_AlTariq.mp3",
     "page_number": 10,
+    "size": 2.2,
     "ayat": [
       {
         "number": 0,
@@ -2475,6 +2485,7 @@ export default[
     "ayat_img": require("./images/ayat/19.png"),
     "ayat_url": "http://abousy.com/quran_audio/87_AlAlah.mp3",
     "page_number": 11,
+    "size": 2.4,
     "ayat": [
       {
         "number": 0,
@@ -2648,6 +2659,7 @@ export default[
     "ayat_img": require("./images/ayat/26.png"),
     "ayat_url": "http://abousy.com/quran_audio/88_AlGhachiyah.mp3",
     "page_number": 12,
+    "size": 3.2,
     "ayat": [
       {
         "number": 0,
@@ -2877,6 +2889,7 @@ export default[
     "ayat_img": require("./images/ayat/30.png"),
     "ayat_url": "http://abousy.com/quran_audio/89_AlFajr.mp3",
     "page_number": 13,
+    "size": 4.4,
     "ayat": [
       {
         "number": 0,
@@ -3138,6 +3151,7 @@ export default[
     "ayat_img": require("./images/ayat/20.png"),
     "ayat_url": "http://abousy.com/quran_audio/90_AlBalad.mp3",
     "page_number": 14,
+    "size": 2.6,
     "ayat": [
       {
         "number": 0,
@@ -3319,6 +3333,7 @@ export default[
     "ayat_img": require("./images/ayat/15.png"),
     "ayat_url": "http://abousy.com/quran_audio/91_AlAchchams.mp3",
     "page_number": 15,
+    "size": 2.0,
     "ayat": [
       {
         "number": 0,
@@ -3460,6 +3475,7 @@ export default[
     "ayat_img": require("./images/ayat/21.png"),
     "ayat_url": "http://abousy.com/quran_audio/92_AlLail.mp3",
     "page_number": 16,
+    "size": 2.6,
     "ayat": [
       {
         "number": 0,
@@ -3649,6 +3665,7 @@ export default[
     "ayat_img": require("./images/ayat/11.png"),
     "ayat_url": "http://abousy.com/quran_audio/93_AlDouha.mp3",
     "page_number": 17,
+    "size": 1.5,
     "ayat": [
       {
         "number": 0,
@@ -3758,6 +3775,7 @@ export default[
     "ayat_img": require("./images/ayat/8.png"),
     "ayat_url": "http://abousy.com/quran_audio/94_AlAchcharh.mp3",
     "page_number": 18,
+    "size": 0.983,
     "ayat": [
       {
         "number": 0,
@@ -3843,6 +3861,7 @@ export default[
     "ayat_img": require("./images/ayat/8.png"),
     "ayat_url": "http://abousy.com/quran_audio/95_ATTin.mp3",
     "page_number": 19,
+    "size": 1.3,
     "ayat": [
       {
         "number": 0,
@@ -3928,6 +3947,7 @@ export default[
     "ayat_img": require("./images/ayat/19.png"),
     "ayat_url": "http://abousy.com/quran_audio/96_AlAlaq.mp3",
     "page_number": 20,
+    "size": 2.3,
     "ayat": [
       {
         "number": 0,
@@ -4101,6 +4121,7 @@ export default[
     "ayat_img": require("./images/ayat/5.png"),
     "ayat_url": "http://abousy.com/quran_audio/97_AlQadr.mp3",
     "page_number": 21,
+    "size": 1.02,
     "ayat": [
       {
         "number": 0,
@@ -4162,6 +4183,7 @@ export default[
     "ayat_img": require("./images/ayat/8.png"),
     "ayat_url": "http://abousy.com/quran_audio/98_AlBaiyinah.mp3",
     "page_number": 22,
+    "size": 2.9,
     "ayat": [
       {
         "number": 0,
@@ -4247,6 +4269,7 @@ export default[
     "ayat_img": require("./images/ayat/8.png"),
     "ayat_url": "http://abousy.com/quran_audio/99_AlZalzalah.mp3 ",
     "page_number": 23,
+    "size": 1.3,
     "ayat": [
       {
         "number": 0,
@@ -4332,6 +4355,7 @@ export default[
     "ayat_img": require("./images/ayat/10.png"),
     "ayat_url": "http://abousy.com/quran_audio/100_AlAdiyat.mp3",
     "page_number": 24,
+    "size": 1.4,
     "ayat": [
       {
         "number": 0,
@@ -4441,6 +4465,7 @@ export default[
     "ayat_img": require("./images/ayat/10.png"),
     "ayat_url": "http://abousy.com/quran_audio/101_AlQariah.mp3",
     "page_number": 25,
+    "size": 1.3,
     "ayat": [
       {
         "number": 0,
@@ -4550,6 +4575,7 @@ export default[
     "ayat_img": require("./images/ayat/8.png"),
     "ayat_url": "http://abousy.com/quran_audio/102_AtTakasour.mp3",
     "page_number": 26,
+    "size": 1.2,
     "ayat": [
       {
         "number": 0,
@@ -4635,6 +4661,7 @@ export default[
     "ayat_img": require("./images/ayat/3.png"),
     "ayat_url": "http://abousy.com/quran_audio/103_AlAsr.mp3",
     "page_number": 27,
+    "size": 0.569,
     "ayat": [
       {
         "number": 0,
@@ -4680,6 +4707,7 @@ export default[
     "ayat_img": require("./images/ayat/9.png"),
     "ayat_url": "http://abousy.com/quran_audio/104_AlHumazah.mp3",
     "page_number": 28,
+    "size": 1.1,
     "ayat": [
       {
         "number": 0,
@@ -4773,6 +4801,7 @@ export default[
     "ayat_img": require("./images/ayat/5.png"),
     "ayat_url": "http://abousy.com/quran_audio/105_AlFil.mp3",
     "page_number": 29,
+    "size": 0.822,
     "ayat": [
       {
         "number": 0,
@@ -4834,6 +4863,7 @@ export default[
     "ayat_img": require("./images/ayat/4.png"),
     "ayat_url": "http://abousy.com/quran_audio/106_Qourach.mp3",
     "page_number": 30,
+    "size": 0.779,
     "ayat": [
       {
         "number": 0,
@@ -4887,6 +4917,7 @@ export default[
     "ayat_img": require("./images/ayat/7.png"),
     "ayat_url": "http://abousy.com/quran_audio/107_AlMahoun.mp3",
     "page_number": 31,
+    "size": 1.017,
     "ayat": [
       {
         "number": 0,
@@ -4964,6 +4995,7 @@ export default[
     "ayat_img": require("./images/ayat/3.png"),
     "ayat_url": "http://abousy.com/quran_audio/108_AlKawsar.mp3",
     "page_number": 32,
+    "size": 0.502,
     "ayat": [
       {
         "number": 0,
@@ -5009,6 +5041,7 @@ export default[
     "ayat_img": require("./images/ayat/6.png"),
     "ayat_url": "http://abousy.com/quran_audio/109_AlKafiroun.mp3",
     "page_number": 33,
+    "size": 1.1,
     "ayat": [
       {
         "number": 0,
@@ -5078,6 +5111,7 @@ export default[
     "ayat_img": require("./images/ayat/3.png"),
     "ayat_url": "http://abousy.com/quran_audio/110_AnNasr.mp3",
     "page_number": 34,
+    "size": 0.69,
     "ayat": [
       {
         "number": 0,
@@ -5123,6 +5157,7 @@ export default[
     "ayat_img": require("./images/ayat/5.png"),
     "ayat_url": "http://abousy.com/quran_audio/111_AlMasad.mp3",
     "page_number": 35,
+    "size": 0.8,
     "ayat": [
       {
         "number": 0,
@@ -5184,6 +5219,7 @@ export default[
     "ayat_img": require("./images/ayat/4.png"),
     "ayat_url": "http://abousy.com/quran_audio/112_AlIkhlas.mp3",
     "page_number": 36,
+    "size": 0.5,
     "ayat": [
       {
         "number": 0,
@@ -5237,6 +5273,7 @@ export default[
     "ayat_img": require("./images/ayat/5.png"),
     "ayat_url": "http://abousy.com/quran_audio/113_AlFalaq.mp3",
     "page_number": 37,
+    "size": 0.68,
     "ayat": [
       {
         "number": 0,
@@ -5298,6 +5335,7 @@ export default[
     "ayat_img": require("./images/ayat/6.png"),
     "ayat_url": "http://abousy.com/quran_audio/114_AnNas.mp3",
     "page_number": 38,
+    "size": 0.863,
     "ayat": [
       {
         "number": 0,
