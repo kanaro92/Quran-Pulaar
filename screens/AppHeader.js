@@ -1,12 +1,14 @@
-import React, { Component } from 'react';
-import { View, StyleSheet, Button, Text } from 'react-native';
-import { FontAwesomeIcon } from '@fortawesome/react-native-fontawesome';
-import { faBook , faBookmark, faTools, faInfoCircle } from '@fortawesome/free-solid-svg-icons';
+import React, {Component} from 'react';
+import {Dimensions, StyleSheet, View} from 'react-native';
+import {FontAwesomeIcon} from '@fortawesome/react-native-fontawesome';
+import {faBook, faBookmark, faInfoCircle, faTools} from '@fortawesome/free-solid-svg-icons';
 import RBSheet from "react-native-raw-bottom-sheet";
 import InfoComponent from './InfoComponent';
 import BookMarkComponent from './BookMarkComponent';
 import PageComponent from './PageComponent';
 import ToolComponent from './ToolComponent';
+
+const {width, height} = Dimensions.get('screen');
 
 class AppHeader extends Component{
     constructor(){
@@ -33,7 +35,7 @@ class AppHeader extends Component{
             ref={ref => {
               this.infoRBSheet = ref;
             }}
-            height={400}
+            height={height -  130}
             openDuration={250}
             closeOnDragDown={true}
             customStyles={{
@@ -50,8 +52,9 @@ class AppHeader extends Component{
             ref={ref => {
               this.bookMarkRBSheet = ref;
             }}
-            height={300}
+            height={height -  130}
             openDuration={250}
+            closeOnDragDown={true}
             customStyles={{
               container: {
                 justifyContent: "center",
@@ -66,8 +69,9 @@ class AppHeader extends Component{
               ref={ref => {
                 this.pageRBSheet = ref;
               }}
-              height={300}
+              height={height -  130}
               openDuration={250}
+              closeOnDragDown={true}
               customStyles={{
                 container: {
                   justifyContent: "center",
@@ -82,8 +86,9 @@ class AppHeader extends Component{
               ref={ref => {
                 this.toolsRBSheet = ref;
               }}
-              height={300}
+              height={height -  130}
               openDuration={250}
+              closeOnDragDown={true}
               customStyles={{
                 container: {
                   justifyContent: "center",

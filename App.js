@@ -1,9 +1,5 @@
 import React, {Component} from 'react';
-import {
-    Image, Animated, View,
-    StyleSheet , SafeAreaView
-} from 'react-native';
-import RNRestart from 'react-native-restart';
+import {Animated, Image, SafeAreaView, StyleSheet, View} from 'react-native';
 import sourates from './sourates';
 import AppHeader from './screens/AppHeader';
 import Content from './screens/ContentComponent';

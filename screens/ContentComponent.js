@@ -1,18 +1,13 @@
-import React, {PureComponent, useRef} from 'react';
-import {
-    Image, Animated, Text, View, Dimensions,
-    StyleSheet, ImageBackground, ScrollView, TouchableOpacity, PermissionsAndroid, Platform
-} from 'react-native';
+import React, {PureComponent} from 'react';
+import {Dimensions, Image, ImageBackground, ScrollView, StyleSheet, Text, TouchableOpacity, View} from 'react-native';
 import {FontAwesomeIcon} from '@fortawesome/react-native-fontawesome';
-import {faBookmark, faPlay, faPauseCircle} from '@fortawesome/free-solid-svg-icons';
+import {faBookmark, faPauseCircle, faPlay} from '@fortawesome/free-solid-svg-icons';
 import SoundPlayer from 'react-native-sound-player';
 import Spinner from 'react-native-loading-spinner-overlay';
 import {Badge} from 'react-native-elements';
 import RNFetchBlob from "rn-fetch-blob";
 
 const {width, height} = Dimensions.get('screen');
-const imageW = width * 1;
-const imageH = imageW;
 
 class ContentComponent extends PureComponent {
     constructor() {
@@ -35,9 +30,9 @@ class ContentComponent extends PureComponent {
                     <ImageBackground source={require('../images/background.png')} style={styles.backGroundImage}>
                         <View style={styles.play_icon}>
                             {this.state.isPlaying ?
-                                <FontAwesomeIcon icon={faPauseCircle} size={20} color={"#24561F"}
+                                <FontAwesomeIcon icon={faPauseCircle} size={25} color={"#24561F"}
                                                  onPress={() => this.stopSong()}/> :
-                                <FontAwesomeIcon icon={faPlay} size={20} color={"#24561F"}
+                                <FontAwesomeIcon icon={faPlay} size={25} color={"#24561F"}
                                                  onPress={() => this.playSourate(this.props.item.ayat_url)}/>
                             }
                         </View>
