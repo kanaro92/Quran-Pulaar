@@ -1,30 +1,72 @@
-import React, { Component } from 'react';
-import { View, StyleSheet, Text } from 'react-native';
-import { ScrollView } from 'react-native-gesture-handler';
+import React, {Component} from 'react';
+import {View, StyleSheet, Text} from 'react-native';
+import {ScrollView} from 'react-native-gesture-handler';
 
-class InfoComponent extends Component{
-    constructor(){
+class InfoComponent extends Component {
+    constructor() {
         super();
-      }
-
-    render(){
-      return(
-        <View>
-          <ScrollView style={styles.container}>
-              <Text>
-                  Info
-              </Text>
-          </ScrollView>
-        </View>
-        
-      );
     }
-  }
-  
-  export default InfoComponent;
 
-  const styles = StyleSheet.create({
+    render() {
+        return (
+            <View>
+                <ScrollView style={styles.container}>
+                    <Text style={styles.title_text}>بِسْمِ اللَّهِ الرَّحْمَنِ الرَّحِيمِ</Text>
+                    <Text/>
+                    <Text style={styles.text}>يعتمد هذا التطبيق على كتاب القرآن الكريم الذي ترجمه السيد <Text
+                        style={styles.bold_text}>أبو سي</Text> بلغة بولار فولفولد.
+                        التطبيق مقدم من <Text style={styles.bold_text}>كان همات موسى</Text> يحتوي على الجزء 30 (من سورة
+                        النباء إلى سورة الناس) مكتوبًا ومسموعًا.
+                    </Text>
+                    <Text/>
+                    <Text/>
+                    <Text style={styles.title_text}>E innde Alla Jurumdeero Jurmotooɗo</Text>
+                    <Text/>
+                    <Text style={styles.text}>
+                        Ngal jaaɓngal tuugnii ko e deftere Quraan teddunde nde ceerno <Text style={styles.bold_text}>Abuu
+                        Sih</Text> firi he ɗemngal Pulaar Fulfulde.
+                        Baañnjitiiɗo deftere nde e mbaaydi jaaɓngal ko <Text style={styles.bold_text}>Kan Hammaat
+                        Muusa</Text>.
+                        Ina tawee e nder jaaɓngal ngal tumbutere 30 (tuggude simoore An-Nabai "kumpitaali" haa simoore
+                        An-Naasi "Yimɓe") e mbaydi binndol e sawtowol.
+                    </Text>
+                    <Text/>
+                    <Text style={styles.title_text}>Jokkondir / اتصل</Text>
+                    <Text/>
+                    <Text style={styles.contacts}>Abuu Sih - أبو سي</Text>
+                    <Text style={styles.contacts}>atumansy6@gmail.com</Text>
+                    <Text style={styles.contacts}>+221773091782</Text>
+                    <Text/>
+                    <Text style={styles.contacts}>Kan Hammaat - كان همات </Text>
+                    <Text style={styles.contacts}>kanesatiki@gmail.com</Text>
+                    <Text style={styles.contacts}>+22248682865</Text>
+                </ScrollView>
+            </View>
+
+        );
+    }
+}
+
+export default InfoComponent;
+
+const styles = StyleSheet.create({
     container: {
-      flex: 1,
-    }
-  })
+        flex: 1
+    },
+    title_text: {
+        textAlign: 'center',
+        fontWeight: 'bold',
+        fontSize: 16,
+    },
+    text: {
+        textAlign: 'center',
+        fontSize: 16,
+    },
+    bold_text: {
+        fontWeight: 'bold',
+    },
+    contacts: {
+        textAlign: 'center',
+        fontSize: 14,
+    },
+})
