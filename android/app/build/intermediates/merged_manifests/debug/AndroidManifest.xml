@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.quran"
+    package="mr.quran_pulaar"
     android:versionCode="1"
     android:versionName="1.0" >
 
@@ -25,18 +25,18 @@
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
 
     <application
-        android:name="com.quran.MainApplication"
+        android:name="mr.quran_pulaar.MainApplication"
         android:allowBackup="false"
         android:appComponentFactory="androidx.core.app.CoreComponentFactory"
         android:debuggable="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
-        android:roundIcon="@mipmap/ic_launcher_round"
+        android:roundIcon="@mipmap/ic_launcher"
         android:testOnly="true"
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true" >
         <activity
-            android:name="com.quran.MainActivity"
+            android:name="mr.quran_pulaar.MainActivity"
             android:configChanges="keyboard|keyboardHidden|orientation|screenSize|uiMode"
             android:label="@string/app_name"
             android:launchMode="singleTask"
@@ -51,7 +51,7 @@
 
         <provider
             android:name="com.RNFetchBlob.Utils.FileProvider"
-            android:authorities="com.quran.provider"
+            android:authorities="mr.quran_pulaar.provider"
             android:exported="false"
             android:grantUriPermissions="true" >
             <meta-data

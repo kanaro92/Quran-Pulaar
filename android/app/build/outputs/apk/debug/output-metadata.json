@@ -4,7 +4,7 @@
     "type": "APK",
     "kind": "Directory"
   },
-  "applicationId": "com.quran",
+  "applicationId": "mr.quran_pulaar",
   "variantName": "processDebugResources",
   "elements": [
     {

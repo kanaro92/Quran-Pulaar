@@ -129,7 +129,7 @@ android {
     }
 
     defaultConfig {
-        applicationId "com.quran"
+        applicationId "mr.quran_pulaar"
         minSdkVersion rootProject.ext.minSdkVersion
         targetSdkVersion rootProject.ext.targetSdkVersion
         versionCode 1
