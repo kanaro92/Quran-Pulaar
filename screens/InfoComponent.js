@@ -13,10 +13,10 @@ class InfoComponent extends Component {
                 <ScrollView style={styles.container}>
                     <Text style={styles.title_text}>بِسْمِ اللَّهِ الرَّحْمَنِ الرَّحِيمِ</Text>
                     <Text/>
-                    <Text style={styles.text}>يعتمد هذا التطبيق على كتاب القرآن الكريم الذي ترجمه السيد <Text
-                        style={styles.bold_text}>أبو سي</Text> بلغة بولار فولفولد.
-                        التطبيق مقدم من <Text style={styles.bold_text}>كان همات موسى</Text> يحتوي على الجزء 30 (من سورة
-                        النباء إلى سورة الناس) مكتوبًا ومسموعًا.
+                    <Text style={styles.text}>
+                        يستند هذا التطبيق على ترجمة القرآن الكريم للسيد <Text style={styles.bold_text}>أبو سي</Text> بلغة بولار فولفولد.
+                        التطبيق مقدم من <Text style={styles.bold_text}>همات موسى كان</Text> ويحتوي على الجزء 30 (من سورة النباء إلى سورة الناس) مرئياً وصوتيًا.
+
                     </Text>
                     <Text/>
                     <Text/>
