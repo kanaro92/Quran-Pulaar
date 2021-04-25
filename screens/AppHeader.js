@@ -18,16 +18,16 @@ class AppHeader extends Component{
     render(){
       return(
         <View style={styles.header}>
-          <FontAwesomeIcon icon={faInfoCircle} size={28} color={"#24561F"}
+          <FontAwesomeIcon icon={faInfoCircle} size={25} color={"#24561F"}
             onPress={() => this.infoRBSheet.open()}
           />
-          <FontAwesomeIcon icon={faBookmark} size={25} color={"#24561F"}
+          <FontAwesomeIcon icon={faBookmark} size={22} color={"#24561F"}
             onPress={() => this.bookMarkRBSheet.open()}
           />
-          <FontAwesomeIcon icon={faBook} size={25} color={"#24561F"}
+          <FontAwesomeIcon icon={faBook} size={22} color={"#24561F"}
             onPress={() => this.pageRBSheet.open()}
           />
-          <FontAwesomeIcon icon={faTools} size={25} color={"#24561F"}
+          <FontAwesomeIcon icon={faTools} size={22} color={"#24561F"}
             onPress={() => this.toolsRBSheet.open()}
           />
 
@@ -111,7 +111,7 @@ class AppHeader extends Component{
       flex: 1
     },
     header: {
-      height: 40,
+      height: 30,
       paddingVertical: 8,
       paddingHorizontal: 25,
       flexDirection: 'row',
