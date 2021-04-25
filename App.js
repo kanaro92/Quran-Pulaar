@@ -7,10 +7,6 @@ import Content from './screens/ContentComponent';
 class QuranPulaarApp extends Component {
     constructor() {
         super();
-        this.state = {
-            isPlaying: false,
-            spinner: false,
-        }
     }
 
     //const scrollX = React.useRef(new Animated.Value(0)).current

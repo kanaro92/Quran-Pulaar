@@ -3,9 +3,9 @@ import {Dimensions, Image, ImageBackground, ScrollView, StyleSheet, Text, Toucha
 import {FontAwesomeIcon} from '@fortawesome/react-native-fontawesome';
 import {faBookmark, faPauseCircle, faPlay} from '@fortawesome/free-solid-svg-icons';
 import SoundPlayer from 'react-native-sound-player';
-import Spinner from 'react-native-loading-spinner-overlay';
 import {Badge} from 'react-native-elements';
 import RNFetchBlob from "rn-fetch-blob";
+import * as Progress from 'react-native-progress';
 
 const {width, height} = Dimensions.get('screen');
 
@@ -14,8 +14,12 @@ class ContentComponent extends PureComponent {
         super();
         this.state = {
             isPlaying: false,
-            isLoading: false,
+            isDownloading: false,
             spinner: false,
+            isRefresh: false,
+            receivedByte: 0,
+            totalByte: 0,
+            progressNumber: 0,
         }
     }
 
@@ -29,11 +33,30 @@ class ContentComponent extends PureComponent {
                 <View style={styles.body}>
                     <ImageBackground source={require('../images/background.png')} style={styles.backGroundImage}>
                         <View style={styles.play_icon}>
-                            {this.state.isPlaying ?
-                                <FontAwesomeIcon icon={faPauseCircle} size={25} color={"#24561F"}
-                                                 onPress={() => this.stopSong()}/> :
-                                <FontAwesomeIcon icon={faPlay} size={25} color={"#24561F"}
-                                                 onPress={() => this.playSourate(this.props.item.ayat_url, this.props.item.size)}/>
+                            {this.state.spinner ?
+                                <View style={styles.progress_view}>
+                                    <Text>Ina aawto simoore nde...</Text>
+                                    <View style={styles.spinner_view}>
+                                        <Text><Progress.Bar color={'green'} progress={this.state.progressNumber}
+                                                            width={150}/></Text>
+                                        <Text> {this.state.receivedByte}Mb / {this.state.totalByte}Mb</Text>
+                                    </View>
+                                </View> :
+                                <View>
+                                    {this.state.isRefresh ?
+                                        <Text>
+                                            <Progress.CircleSnail color={'green'}/>
+                                        </Text> :
+                                        <View>
+                                            {this.state.isPlaying ?
+                                                <FontAwesomeIcon icon={faPauseCircle} size={25} color={"#24561F"}
+                                                                 onPress={() => this.stopSong()}/> :
+                                                <FontAwesomeIcon icon={faPlay} size={25} color={"#24561F"}
+                                                                 onPress={() => this.playSourate(this.props.item.ayat_url, this.props.item.size)}/>
+                                            }
+                                        </View>
+                                    }
+                                </View>
                             }
                         </View>
                         <View style={styles.title_view}>
@@ -85,11 +108,6 @@ class ContentComponent extends PureComponent {
                         </View>
                     </ImageBackground>
                 </View>
-                <Spinner
-                    visible={this.state.spinner}
-                    textContent={'Ina aawto simoore nde...'}
-                    textStyle={styles.spinnerTextStyle}
-                />
             </View>
 
         );
@@ -98,16 +116,18 @@ class ContentComponent extends PureComponent {
     _onFinishedPlayingSubscription = null
 
     playSourate = (url: string, size: number) => {
+        this.setState({
+            isPlaying: false
+        });
         let fileName = url.substring(30, url.length - 4);
         let filePath = RNFetchBlob.fs.dirs.DocumentDir + '/' + fileName;
         RNFetchBlob.fs.exists(filePath + '.mp3').then(res => {
-            //todo if file exist compare size
             if (res) {
                 //comparing files size
                 RNFetchBlob.fs.stat(filePath + '.mp3')
                     .then((stats) => {
-                        let existingSize = stats.size / (1024 * 1024);
-                        if (existingSize.toFixed(1) == size) {
+                        let existingSize = stats.size / 1024;
+                        if (existingSize.toFixed(0) == size || existingSize.toFixed(0) >= size - 4) {
                             this._onFinishedPlayingSubscription = SoundPlayer.addEventListener('FinishedPlaying', () => {
                                 this._onFinishedPlayingSubscription.remove();
                                 this.setState({
@@ -121,7 +141,7 @@ class ContentComponent extends PureComponent {
                             this.setState({
                                 spinner: false
                             });
-                        }else {
+                        } else {
                             this.downloadSourate(url, null, null, size);
                         }
                     })
@@ -138,15 +158,17 @@ class ContentComponent extends PureComponent {
 
     playAyat(url: string, startTime: number, endTime: number, size: number) {
         let fileName = url.substring(30, url.length - 4);
+        if (fileName != "1_Fatiha") {
+            return;
+        }
         let filePath = RNFetchBlob.fs.dirs.DocumentDir + '/' + fileName;
         RNFetchBlob.fs.exists(filePath + '.mp3').then(res => {
-            //todo if file exist compare size
             if (res) {
                 //comparing files size
                 RNFetchBlob.fs.stat(filePath + '.mp3')
                     .then((stats) => {
-                        let existingSize = stats.size / (1024 * 1024);
-                        if (existingSize.toFixed(1) == size) {
+                        let existingSize = stats.size / 1024;
+                        if (existingSize.toFixed(0) == size || existingSize.toFixed(0) >= size - 4) {
                             this._onFinishedPlayingSubscription = SoundPlayer.addEventListener('FinishedPlaying', () => {
                                 this._onFinishedPlayingSubscription.remove();
                                 this.setState({
@@ -165,7 +187,7 @@ class ContentComponent extends PureComponent {
                             this.setState({
                                 spinner: false
                             });
-                        }else {
+                        } else {
                             this.downloadSourate(url, startTime, endTime, size);
                         }
                     })
@@ -194,6 +216,9 @@ class ContentComponent extends PureComponent {
 
     downloadSourate(url: string, startTime: number, endTime: number, size: number) {
         this.setState({
+            isDownloading: true
+        });
+        this.setState({
             spinner: true
         });
         let fileName = url.substring(30, url.length - 4);
@@ -210,22 +235,42 @@ class ContentComponent extends PureComponent {
             .progress((receivedStr, totalStr) => {
                 // Do any things
                 this.setState({
-                    spinner: true
+                    receivedByte: (receivedStr / (1024 * 1024)).toFixed(2)
+                });
+                this.setState({
+                    totalByte: (totalStr / (1024 * 1024)).toFixed(2)
+                });
+                this.setState({
+                    progressNumber: this.state.receivedByte / this.state.totalByte
                 });
             }).then(value => {
                 this.setState({
+                    isDownloading: false
+                });
+                this.setState({
                     spinner: false
                 });
-                if (startTime && endTime) {
-                    this.playAyat(url, startTime, endTime, size);
-                } else {
-                    this.playSourate(url, size);
-                }
+                this.setState({
+                    isRefresh: true
+                });
+                this.sleep(1000).then(() => {
+                    this.setState({
+                        isRefresh: false
+                    });
+                    if (startTime && endTime) {
+                        this.playAyat(url, startTime, endTime, size);
+                    } else {
+                        this.playSourate(url, size);
+                    }
+                });
             })
         this.downtask.catch(async err => {
             // Check error
             this.setState({
                 spinner: false
+            });
+            this.setState({
+                isDownloading: false
             });
             alert(`Roŋki aawtaade simoore nde, seŋo e internet !`);
         })
@@ -300,6 +345,17 @@ const styles = StyleSheet.create({
     },
     juzz_text: {
         fontSize: 12,
+    },
+    progress_view: {
+        alignItems: 'center',
+    },
+    spinner_view: {
+        display: 'flex',
+        flexWrap: 'nowrap',
+        flexDirection: 'row',
+        justifyContent: 'space-between',
+        alignItems: 'center',
+        alignContent: 'stretch'
     },
     backGroundImage: {
         width: '100%',
