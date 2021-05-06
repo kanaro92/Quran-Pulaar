@@ -15,6 +15,7 @@
     "@fortawesome/free-solid-svg-icons": "^5.15.2",
     "@fortawesome/react-native-fontawesome": "^0.2.6",
     "@react-native-community/art": "github:react-native-community/art",
+    "@react-native-community/async-storage": "^1.12.1",
     "@react-native-community/masked-view": "^0.1.10",
     "babel-plugin-react-native-classname-to-style": "^1.2.2",
     "babel-plugin-react-native-platform-specific-extensions": "^1.1.1",
@@ -31,7 +32,8 @@
     "react-native-sound-player": "^0.10.6",
     "react-native-svg": "^12.1.0",
     "react-native-vector-icons": "^7.1.0",
-    "rn-fetch-blob": "^0.12.0"
+    "rn-fetch-blob": "^0.12.0",
+    "rxjs": "^6.6.7"
   },
   "devDependencies": {
     "@babel/core": "^7.8.4",

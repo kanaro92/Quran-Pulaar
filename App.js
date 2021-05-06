@@ -1,16 +1,15 @@
 import React, {Component} from 'react';
-import {Animated, Image, SafeAreaView, StyleSheet, View} from 'react-native';
+import {Animated, Button, Image, SafeAreaView, StyleSheet, View} from 'react-native';
 import sourates from './sourates';
 import AppHeader from './screens/AppHeader';
 import Content from './screens/ContentComponent';
+import {appService} from './service/app-service';
 
 class QuranPulaarApp extends Component {
     constructor() {
         super();
     }
 
-    //const scrollX = React.useRef(new Animated.Value(0)).current
-    //RNRestart.Restart();
     render() {
         return (
             <SafeAreaView style={styles.container}>
@@ -30,7 +29,11 @@ class QuranPulaarApp extends Component {
                 <AppHeader/>
                 <Animated.FlatList
                     data={sourates}
-                    keyExtractor={(_, index) => index}
+                    ref={(ref) => {
+                        this.flatListRef = ref;
+                    }}
+                    initialNumToRender={40}
+                    keyExtractor={item => item.surat_number.toString()}
                     horizontal
                     pagingEnabled
                     renderItem={({item}) => {
@@ -41,6 +44,24 @@ class QuranPulaarApp extends Component {
                 />
             </SafeAreaView>
         );
+    }
+
+    scrollToIndex = (index: number) => {
+        this.flatListRef.scrollToIndex({animated: true, index: index});
+    }
+
+    componentDidMount() {
+        // subscribe to home component messages
+        this.subscription = appService.getIndexSubject().subscribe(index => {
+            if (index) {
+                this.scrollToIndex(index);
+            }
+        });
+    }
+
+    componentWillUnmount() {
+        // unsubscribe to ensure no memory leaks
+        this.subscription.unsubscribe();
     }
 }
 

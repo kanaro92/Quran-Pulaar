@@ -9,6 +9,7 @@ MERGED from [com.facebook.flipper:flipper:0.54.0] C:\Users\Admin\.gradle\caches\
 MERGED from [com.facebook.flipper:flipper-network-plugin:0.54.0] C:\Users\Admin\.gradle\caches\transforms-2\files-2.1\1ccf5404a19dd8dfc71a79ded5fc2f71\jetified-flipper-network-plugin-0.54.0\AndroidManifest.xml:8:1-15:12
 MERGED from [com.facebook.flipper:flipper-fresco-plugin:0.54.0] C:\Users\Admin\.gradle\caches\transforms-2\files-2.1\bb8b170fbcc3d1138ac6fff54d397530\jetified-flipper-fresco-plugin-0.54.0\AndroidManifest.xml:8:1-15:12
 MERGED from [:react-native-community_art] E:\kane\projects\quran-pulaar\node_modules\@react-native-community\art\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-9:12
+MERGED from [:react-native-community_async-storage] E:\kane\projects\quran-pulaar\node_modules\@react-native-community\async-storage\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-9:12
 MERGED from [:react-native-community_masked-view] E:\kane\projects\quran-pulaar\node_modules\@react-native-community\masked-view\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-9:12
 MERGED from [:react-native-restart] E:\kane\projects\quran-pulaar\node_modules\react-native-restart\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-11:12
 MERGED from [:react-native-safe-area-context] E:\kane\projects\quran-pulaar\node_modules\react-native-safe-area-context\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-9:12
@@ -163,6 +164,8 @@ MERGED from [com.facebook.flipper:flipper-fresco-plugin:0.54.0] C:\Users\Admin\.
 MERGED from [com.facebook.flipper:flipper-fresco-plugin:0.54.0] C:\Users\Admin\.gradle\caches\transforms-2\files-2.1\bb8b170fbcc3d1138ac6fff54d397530\jetified-flipper-fresco-plugin-0.54.0\AndroidManifest.xml:11:5-13:41
 MERGED from [:react-native-community_art] E:\kane\projects\quran-pulaar\node_modules\@react-native-community\art\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-7:41
 MERGED from [:react-native-community_art] E:\kane\projects\quran-pulaar\node_modules\@react-native-community\art\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-7:41
+MERGED from [:react-native-community_async-storage] E:\kane\projects\quran-pulaar\node_modules\@react-native-community\async-storage\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-7:41
+MERGED from [:react-native-community_async-storage] E:\kane\projects\quran-pulaar\node_modules\@react-native-community\async-storage\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-7:41
 MERGED from [:react-native-community_masked-view] E:\kane\projects\quran-pulaar\node_modules\@react-native-community\masked-view\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-7:41
 MERGED from [:react-native-community_masked-view] E:\kane\projects\quran-pulaar\node_modules\@react-native-community\masked-view\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-7:41
 MERGED from [:react-native-restart] E:\kane\projects\quran-pulaar\node_modules\react-native-restart\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-9:41
