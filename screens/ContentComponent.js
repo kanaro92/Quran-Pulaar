@@ -308,7 +308,6 @@ class ContentComponent extends PureComponent {
     }
 
     bookmark = async (sourate) => {
-        alert(sourate.page_number)
         try {
             let bookmarks = [];
             let itemToSave = {

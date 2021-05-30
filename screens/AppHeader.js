@@ -108,6 +108,7 @@ class AppHeader extends Component{
         this.subscription = appService.getIndexSubject().subscribe(index => {
             if (index) {
                 this.pageRBSheet.close();
+                this.bookMarkRBSheet.close();
             }
         });
     }

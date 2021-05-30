@@ -1,0 +1,106 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="mr.quran_pulaar"
+4    android:versionCode="2"
+5    android:versionName="1.1" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="16"
+8-->E:\kane\projects\quran-pulaar\android\app\src\main\AndroidManifest.xml
+9        android:targetSdkVersion="29" />
+9-->E:\kane\projects\quran-pulaar\android\app\src\main\AndroidManifest.xml
+10
+11    <uses-permission android:name="android.permission.INTERNET" />
+11-->E:\kane\projects\quran-pulaar\android\app\src\main\AndroidManifest.xml:4:5-67
+11-->E:\kane\projects\quran-pulaar\android\app\src\main\AndroidManifest.xml:4:22-64
+12
+13    <!-- Required to access Google Play Licensing -->
+14    <uses-permission android:name="com.android.vending.CHECK_LICENSE" />
+14-->[:rn-fetch-blob] E:\kane\projects\quran-pulaar\node_modules\rn-fetch-blob\android\build\intermediates\library_manifest\release\AndroidManifest.xml:12:5-73
+14-->[:rn-fetch-blob] E:\kane\projects\quran-pulaar\node_modules\rn-fetch-blob\android\build\intermediates\library_manifest\release\AndroidManifest.xml:12:22-70
+15    <!--
+16         Required to keep CPU alive while downloading files
+17        (NOT to keep screen awake)
+18    -->
+19    <uses-permission android:name="android.permission.WAKE_LOCK" />
+19-->[:rn-fetch-blob] E:\kane\projects\quran-pulaar\node_modules\rn-fetch-blob\android\build\intermediates\library_manifest\release\AndroidManifest.xml:21:5-68
+19-->[:rn-fetch-blob] E:\kane\projects\quran-pulaar\node_modules\rn-fetch-blob\android\build\intermediates\library_manifest\release\AndroidManifest.xml:21:22-65
+20    <!--
+21         Required to poll the state of the network connection
+22        and respond to changes
+23    -->
+24    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" /> <!-- Required to check whether Wi-Fi is enabled -->
+24-->[:rn-fetch-blob] E:\kane\projects\quran-pulaar\node_modules\rn-fetch-blob\android\build\intermediates\library_manifest\release\AndroidManifest.xml:27:5-79
+24-->[:rn-fetch-blob] E:\kane\projects\quran-pulaar\node_modules\rn-fetch-blob\android\build\intermediates\library_manifest\release\AndroidManifest.xml:27:22-76
+25    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" /> <!-- Required to read and write the expansion files on shared storage -->
+25-->[:rn-fetch-blob] E:\kane\projects\quran-pulaar\node_modules\rn-fetch-blob\android\build\intermediates\library_manifest\release\AndroidManifest.xml:30:5-76
+25-->[:rn-fetch-blob] E:\kane\projects\quran-pulaar\node_modules\rn-fetch-blob\android\build\intermediates\library_manifest\release\AndroidManifest.xml:30:22-73
+26    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+26-->[:rn-fetch-blob] E:\kane\projects\quran-pulaar\node_modules\rn-fetch-blob\android\build\intermediates\library_manifest\release\AndroidManifest.xml:33:5-81
+26-->[:rn-fetch-blob] E:\kane\projects\quran-pulaar\node_modules\rn-fetch-blob\android\build\intermediates\library_manifest\release\AndroidManifest.xml:33:22-78
+27
+28    <application
+28-->E:\kane\projects\quran-pulaar\android\app\src\main\AndroidManifest.xml:6:5-26:19
+29        android:name="mr.quran_pulaar.MainApplication"
+29-->E:\kane\projects\quran-pulaar\android\app\src\main\AndroidManifest.xml:7:9-40
+30        android:allowBackup="false"
+30-->E:\kane\projects\quran-pulaar\android\app\src\main\AndroidManifest.xml:8:9-36
+31        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+31-->[androidx.core:core:1.0.1] C:\Users\Admin\.gradle\caches\transforms-2\files-2.1\dac7c929999869c7ee463730017e00e4\core-1.0.1\AndroidManifest.xml:22:18-86
+32        android:icon="@mipmap/ic_launcher"
+32-->E:\kane\projects\quran-pulaar\android\app\src\main\AndroidManifest.xml:9:9-43
+33        android:label="@string/app_name"
+33-->E:\kane\projects\quran-pulaar\android\app\src\main\AndroidManifest.xml:10:9-41
+34        android:roundIcon="@mipmap/ic_launcher"
+34-->E:\kane\projects\quran-pulaar\android\app\src\main\AndroidManifest.xml:11:9-48
+35        android:theme="@style/AppTheme"
+35-->E:\kane\projects\quran-pulaar\android\app\src\main\AndroidManifest.xml:12:9-40
+36        android:usesCleartextTraffic="true" >
+36-->E:\kane\projects\quran-pulaar\android\app\src\main\AndroidManifest.xml:13:9-44
+37        <activity
+37-->E:\kane\projects\quran-pulaar\android\app\src\main\AndroidManifest.xml:14:9-24:20
+38            android:name="mr.quran_pulaar.MainActivity"
+38-->E:\kane\projects\quran-pulaar\android\app\src\main\AndroidManifest.xml:15:13-41
+39            android:configChanges="keyboard|keyboardHidden|orientation|screenSize|uiMode"
+39-->E:\kane\projects\quran-pulaar\android\app\src\main\AndroidManifest.xml:16:13-90
+40            android:label="@string/app_name"
+40-->E:\kane\projects\quran-pulaar\android\app\src\main\AndroidManifest.xml:17:13-45
+41            android:launchMode="singleTask"
+41-->E:\kane\projects\quran-pulaar\android\app\src\main\AndroidManifest.xml:18:13-44
+42            android:windowSoftInputMode="adjustResize" >
+42-->E:\kane\projects\quran-pulaar\android\app\src\main\AndroidManifest.xml:19:13-55
+43            <intent-filter>
+43-->E:\kane\projects\quran-pulaar\android\app\src\main\AndroidManifest.xml:20:13-23:29
+44                <action android:name="android.intent.action.MAIN" />
+44-->E:\kane\projects\quran-pulaar\android\app\src\main\AndroidManifest.xml:21:17-69
+44-->E:\kane\projects\quran-pulaar\android\app\src\main\AndroidManifest.xml:21:25-66
+45
+46                <category android:name="android.intent.category.LAUNCHER" />
+46-->E:\kane\projects\quran-pulaar\android\app\src\main\AndroidManifest.xml:22:17-77
+46-->E:\kane\projects\quran-pulaar\android\app\src\main\AndroidManifest.xml:22:27-74
+47            </intent-filter>
+48        </activity>
+49        <activity android:name="com.facebook.react.devsupport.DevSettingsActivity" />
+49-->E:\kane\projects\quran-pulaar\android\app\src\main\AndroidManifest.xml:25:9-86
+49-->E:\kane\projects\quran-pulaar\android\app\src\main\AndroidManifest.xml:25:19-83
+50
+51        <provider
+51-->[:rn-fetch-blob] E:\kane\projects\quran-pulaar\node_modules\rn-fetch-blob\android\build\intermediates\library_manifest\release\AndroidManifest.xml:36:9-44:20
+52            android:name="com.RNFetchBlob.Utils.FileProvider"
+52-->[:rn-fetch-blob] E:\kane\projects\quran-pulaar\node_modules\rn-fetch-blob\android\build\intermediates\library_manifest\release\AndroidManifest.xml:37:13-62
+53            android:authorities="mr.quran_pulaar.provider"
+53-->[:rn-fetch-blob] E:\kane\projects\quran-pulaar\node_modules\rn-fetch-blob\android\build\intermediates\library_manifest\release\AndroidManifest.xml:38:13-60
+54            android:exported="false"
+54-->[:rn-fetch-blob] E:\kane\projects\quran-pulaar\node_modules\rn-fetch-blob\android\build\intermediates\library_manifest\release\AndroidManifest.xml:39:13-37
+55            android:grantUriPermissions="true" >
+55-->[:rn-fetch-blob] E:\kane\projects\quran-pulaar\node_modules\rn-fetch-blob\android\build\intermediates\library_manifest\release\AndroidManifest.xml:40:13-47
+56            <meta-data
+56-->[:rn-fetch-blob] E:\kane\projects\quran-pulaar\node_modules\rn-fetch-blob\android\build\intermediates\library_manifest\release\AndroidManifest.xml:41:13-43:58
+57                android:name="android.support.FILE_PROVIDER_PATHS"
+57-->[:rn-fetch-blob] E:\kane\projects\quran-pulaar\node_modules\rn-fetch-blob\android\build\intermediates\library_manifest\release\AndroidManifest.xml:42:17-67
+58                android:resource="@xml/provider_paths" />
+58-->[:rn-fetch-blob] E:\kane\projects\quran-pulaar\node_modules\rn-fetch-blob\android\build\intermediates\library_manifest\release\AndroidManifest.xml:43:17-55
+59        </provider>
+60    </application>
+61
+62</manifest>

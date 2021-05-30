@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 import {View, StyleSheet, Text, FlatList, TouchableOpacity} from 'react-native';
 import {ScrollView} from 'react-native-gesture-handler';
 import AsyncStorage from "@react-native-community/async-storage";
+import {appService} from "../service/app-service";
 
 export let bookmarksList;
 bookmarksList = [];
@@ -65,6 +66,10 @@ class BookMarkComponent extends Component {
         } catch (error) {
             alert(error)
         }
+    }
+
+    onItemSelect(page_number) {
+        appService.setIndexSubject(page_number - 1);
     }
 
     componentDidMount() {
