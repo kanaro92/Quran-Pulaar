@@ -3,7 +3,7 @@ import {View, StyleSheet, Text, FlatList, TouchableOpacity} from 'react-native';
 import {ScrollView} from 'react-native-gesture-handler';
 import AsyncStorage from "@react-native-community/async-storage";
 import {appService} from "../service/app-service";
-
+    
 export let bookmarksList;
 bookmarksList = [];
 

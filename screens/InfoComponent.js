@@ -15,7 +15,7 @@ class InfoComponent extends Component {
                     <Text/>
                     <Text style={styles.text}>
                         يستند هذا التطبيق على ترجمة القرآن الكريم للسيد <Text style={styles.bold_text}>أبو سي</Text> بلغة بولار فولفولد.
-                        التطبيق مقدم من <Text style={styles.bold_text}>همات موسى كان</Text> ويحتوي على الجزء 30 (من سورة النباء إلى سورة الناس) مرئياً وصوتيًا.
+                        التطبيق مقدم من <Text style={styles.bold_text}>همات موسى كان</Text>.
 
                     </Text>
                     <Text/>
@@ -27,8 +27,6 @@ class InfoComponent extends Component {
                         Sih</Text> firi he ɗemngal Pulaar Fulfulde.
                         Baañnjitiiɗo deftere nde e mbaaydi jaaɓngal ko <Text style={styles.bold_text}>Kan Hammaat
                         Muusa</Text>.
-                        Ina tawee e nder jaaɓngal ngal tumbutere 30 (tuggude simoore An-Nabai "kumpitaali" haa simoore
-                        An-Naasi "Yimɓe") e mbaydi binndol e sawtowol.
                     </Text>
                     <Text/>
                     <Text style={styles.title_text}>Jokkondir / اتصل</Text>

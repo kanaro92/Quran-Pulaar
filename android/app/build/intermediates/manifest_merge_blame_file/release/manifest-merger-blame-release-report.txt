@@ -85,22 +85,39 @@
 49-->E:\kane\projects\quran-pulaar\android\app\src\main\AndroidManifest.xml:25:19-83
 50
 51        <provider
-51-->[:rn-fetch-blob] E:\kane\projects\quran-pulaar\node_modules\rn-fetch-blob\android\build\intermediates\library_manifest\release\AndroidManifest.xml:36:9-44:20
-52            android:name="com.RNFetchBlob.Utils.FileProvider"
-52-->[:rn-fetch-blob] E:\kane\projects\quran-pulaar\node_modules\rn-fetch-blob\android\build\intermediates\library_manifest\release\AndroidManifest.xml:37:13-62
-53            android:authorities="mr.quran_pulaar.provider"
-53-->[:rn-fetch-blob] E:\kane\projects\quran-pulaar\node_modules\rn-fetch-blob\android\build\intermediates\library_manifest\release\AndroidManifest.xml:38:13-60
+51-->[:react-native-webview] E:\kane\projects\quran-pulaar\node_modules\react-native-webview\android\build\intermediates\library_manifest\release\AndroidManifest.xml:12:9-20:20
+52            android:name="com.reactnativecommunity.webview.RNCWebViewFileProvider"
+52-->[:react-native-webview] E:\kane\projects\quran-pulaar\node_modules\react-native-webview\android\build\intermediates\library_manifest\release\AndroidManifest.xml:13:13-83
+53            android:authorities="mr.quran_pulaar.fileprovider"
+53-->[:react-native-webview] E:\kane\projects\quran-pulaar\node_modules\react-native-webview\android\build\intermediates\library_manifest\release\AndroidManifest.xml:14:13-64
 54            android:exported="false"
-54-->[:rn-fetch-blob] E:\kane\projects\quran-pulaar\node_modules\rn-fetch-blob\android\build\intermediates\library_manifest\release\AndroidManifest.xml:39:13-37
+54-->[:react-native-webview] E:\kane\projects\quran-pulaar\node_modules\react-native-webview\android\build\intermediates\library_manifest\release\AndroidManifest.xml:15:13-37
 55            android:grantUriPermissions="true" >
-55-->[:rn-fetch-blob] E:\kane\projects\quran-pulaar\node_modules\rn-fetch-blob\android\build\intermediates\library_manifest\release\AndroidManifest.xml:40:13-47
+55-->[:react-native-webview] E:\kane\projects\quran-pulaar\node_modules\react-native-webview\android\build\intermediates\library_manifest\release\AndroidManifest.xml:16:13-47
 56            <meta-data
-56-->[:rn-fetch-blob] E:\kane\projects\quran-pulaar\node_modules\rn-fetch-blob\android\build\intermediates\library_manifest\release\AndroidManifest.xml:41:13-43:58
+56-->[:react-native-webview] E:\kane\projects\quran-pulaar\node_modules\react-native-webview\android\build\intermediates\library_manifest\release\AndroidManifest.xml:17:13-19:63
 57                android:name="android.support.FILE_PROVIDER_PATHS"
-57-->[:rn-fetch-blob] E:\kane\projects\quran-pulaar\node_modules\rn-fetch-blob\android\build\intermediates\library_manifest\release\AndroidManifest.xml:42:17-67
-58                android:resource="@xml/provider_paths" />
-58-->[:rn-fetch-blob] E:\kane\projects\quran-pulaar\node_modules\rn-fetch-blob\android\build\intermediates\library_manifest\release\AndroidManifest.xml:43:17-55
+57-->[:react-native-webview] E:\kane\projects\quran-pulaar\node_modules\react-native-webview\android\build\intermediates\library_manifest\release\AndroidManifest.xml:18:17-67
+58                android:resource="@xml/file_provider_paths" />
+58-->[:react-native-webview] E:\kane\projects\quran-pulaar\node_modules\react-native-webview\android\build\intermediates\library_manifest\release\AndroidManifest.xml:19:17-60
 59        </provider>
-60    </application>
-61
-62</manifest>
+60        <provider
+60-->[:rn-fetch-blob] E:\kane\projects\quran-pulaar\node_modules\rn-fetch-blob\android\build\intermediates\library_manifest\release\AndroidManifest.xml:36:9-44:20
+61            android:name="com.RNFetchBlob.Utils.FileProvider"
+61-->[:rn-fetch-blob] E:\kane\projects\quran-pulaar\node_modules\rn-fetch-blob\android\build\intermediates\library_manifest\release\AndroidManifest.xml:37:13-62
+62            android:authorities="mr.quran_pulaar.provider"
+62-->[:rn-fetch-blob] E:\kane\projects\quran-pulaar\node_modules\rn-fetch-blob\android\build\intermediates\library_manifest\release\AndroidManifest.xml:38:13-60
+63            android:exported="false"
+63-->[:rn-fetch-blob] E:\kane\projects\quran-pulaar\node_modules\rn-fetch-blob\android\build\intermediates\library_manifest\release\AndroidManifest.xml:39:13-37
+64            android:grantUriPermissions="true" >
+64-->[:rn-fetch-blob] E:\kane\projects\quran-pulaar\node_modules\rn-fetch-blob\android\build\intermediates\library_manifest\release\AndroidManifest.xml:40:13-47
+65            <meta-data
+65-->[:react-native-webview] E:\kane\projects\quran-pulaar\node_modules\react-native-webview\android\build\intermediates\library_manifest\release\AndroidManifest.xml:17:13-19:63
+66                android:name="android.support.FILE_PROVIDER_PATHS"
+66-->[:react-native-webview] E:\kane\projects\quran-pulaar\node_modules\react-native-webview\android\build\intermediates\library_manifest\release\AndroidManifest.xml:18:17-67
+67                android:resource="@xml/provider_paths" />
+67-->[:react-native-webview] E:\kane\projects\quran-pulaar\node_modules\react-native-webview\android\build\intermediates\library_manifest\release\AndroidManifest.xml:19:17-60
+68        </provider>
+69    </application>
+70
+71</manifest>
