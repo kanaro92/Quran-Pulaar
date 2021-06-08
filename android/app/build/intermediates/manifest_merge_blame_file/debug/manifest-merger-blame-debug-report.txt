@@ -1,6 +1,6 @@
 1<?xml version="1.0" encoding="utf-8"?>
 2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
-3    package="mr.quran_pulaar"
+3    package="mr.quran_teddudo_pulaar"
 4    android:versionCode="3"
 5    android:versionName="1.2" >
 6
@@ -40,7 +40,7 @@
 26
 27    <application
 27-->E:\kane\projects\quran-pulaar\android\app\src\main\AndroidManifest.xml:6:5-26:19
-28        android:name="mr.quran_pulaar.MainApplication"
+28        android:name="mr.quran_teddudo_pulaar.MainApplication"
 28-->E:\kane\projects\quran-pulaar\android\app\src\main\AndroidManifest.xml:7:9-40
 29        android:allowBackup="false"
 29-->E:\kane\projects\quran-pulaar\android\app\src\main\AndroidManifest.xml:8:9-36
@@ -59,7 +59,7 @@
 36-->E:\kane\projects\quran-pulaar\android\app\src\main\AndroidManifest.xml:13:9-44
 37        <activity
 37-->E:\kane\projects\quran-pulaar\android\app\src\main\AndroidManifest.xml:14:9-24:20
-38            android:name="mr.quran_pulaar.MainActivity"
+38            android:name="mr.quran_teddudo_pulaar.MainActivity"
 38-->E:\kane\projects\quran-pulaar\android\app\src\main\AndroidManifest.xml:15:13-41
 39            android:configChanges="keyboard|keyboardHidden|orientation|screenSize|uiMode"
 39-->E:\kane\projects\quran-pulaar\android\app\src\main\AndroidManifest.xml:16:13-90
@@ -88,7 +88,7 @@
 51-->[:react-native-webview] E:\kane\projects\quran-pulaar\node_modules\react-native-webview\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:12:9-20:20
 52            android:name="com.reactnativecommunity.webview.RNCWebViewFileProvider"
 52-->[:react-native-webview] E:\kane\projects\quran-pulaar\node_modules\react-native-webview\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:13:13-83
-53            android:authorities="mr.quran_pulaar.fileprovider"
+53            android:authorities="mr.quran_teddudo_pulaar.fileprovider"
 53-->[:react-native-webview] E:\kane\projects\quran-pulaar\node_modules\react-native-webview\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:14:13-64
 54            android:exported="false"
 54-->[:react-native-webview] E:\kane\projects\quran-pulaar\node_modules\react-native-webview\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:15:13-37
@@ -105,7 +105,7 @@
 60-->[:rn-fetch-blob] E:\kane\projects\quran-pulaar\node_modules\rn-fetch-blob\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:36:9-44:20
 61            android:name="com.RNFetchBlob.Utils.FileProvider"
 61-->[:rn-fetch-blob] E:\kane\projects\quran-pulaar\node_modules\rn-fetch-blob\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:37:13-62
-62            android:authorities="mr.quran_pulaar.provider"
+62            android:authorities="mr.quran_teddudo_pulaar.provider"
 62-->[:rn-fetch-blob] E:\kane\projects\quran-pulaar\node_modules\rn-fetch-blob\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:38:13-60
 63            android:exported="false"
 63-->[:rn-fetch-blob] E:\kane\projects\quran-pulaar\node_modules\rn-fetch-blob\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:39:13-37

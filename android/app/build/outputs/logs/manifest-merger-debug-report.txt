@@ -63,9 +63,9 @@ INJECTED from E:\kane\projects\quran-pulaar\android\app\src\debug\AndroidManifes
 INJECTED from E:\kane\projects\quran-pulaar\android\app\src\debug\AndroidManifest.xml:2:1-8:12
 INJECTED from E:\kane\projects\quran-pulaar\android\app\src\debug\AndroidManifest.xml:2:1-8:12
 	package
-		ADDED from E:\kane\projects\quran-pulaar\android\app\src\main\AndroidManifest.xml:2:5-30
+		ADDED from E:\kane\projects\quran-pulaar\android\app\src\main\AndroidManifest.xml:2:5-38
 		INJECTED from E:\kane\projects\quran-pulaar\android\app\src\main\AndroidManifest.xml
-		ADDED from E:\kane\projects\quran-pulaar\android\app\src\main\AndroidManifest.xml:2:5-30
+		ADDED from E:\kane\projects\quran-pulaar\android\app\src\main\AndroidManifest.xml:2:5-38
 		INJECTED from E:\kane\projects\quran-pulaar\android\app\src\debug\AndroidManifest.xml
 	android:versionName
 		INJECTED from E:\kane\projects\quran-pulaar\android\app\src\main\AndroidManifest.xml
@@ -129,7 +129,7 @@ MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] C:\Users\Ad
 	android:name
 		ADDED from E:\kane\projects\quran-pulaar\android\app\src\main\AndroidManifest.xml:7:9-40
 		ADDED from E:\kane\projects\quran-pulaar\android\app\src\main\AndroidManifest.xml:7:9-40
-activity#mr.quran_pulaar.MainActivity
+activity#mr.quran_teddudo_pulaar.MainActivity
 ADDED from E:\kane\projects\quran-pulaar\android\app\src\main\AndroidManifest.xml:14:9-24:20
 	android:label
 		ADDED from E:\kane\projects\quran-pulaar\android\app\src\main\AndroidManifest.xml:17:13-45
