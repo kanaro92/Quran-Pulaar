@@ -1,9 +1,9 @@
-mr/quran_pulaar/MainActivity.java
- mr.quran_pulaar.MainActivity
-mr/quran_pulaar/BuildConfig.java
- mr.quran_pulaar.BuildConfig
+mr/quran_teddudo_pulaar/MainActivity.java
+ mr.quran_teddudo_pulaar.MainActivity
+mr/quran_teddudo_pulaar/BuildConfig.java
+ mr.quran_teddudo_pulaar.BuildConfig
+mr/quran_teddudo_pulaar/MainApplication.java
+ mr.quran_teddudo_pulaar.MainApplication
+ mr.quran_teddudo_pulaar.MainApplication$1
 com/facebook/react/PackageList.java
  com.facebook.react.PackageList
-mr/quran_pulaar/MainApplication.java
- mr.quran_pulaar.MainApplication
- mr.quran_pulaar.MainApplication$1

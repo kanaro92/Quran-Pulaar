@@ -129,11 +129,11 @@ android {
     }
 
     defaultConfig {
-        applicationId "mr.quran_pulaar"
+        applicationId "mr.quran_teddudo_pulaar"
         minSdkVersion rootProject.ext.minSdkVersion
         targetSdkVersion rootProject.ext.targetSdkVersion
-        versionCode 2
-        versionName "1.1"
+        versionCode 3
+        versionName "1.2"
     }
     splits {
         abi {

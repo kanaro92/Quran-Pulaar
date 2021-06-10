@@ -7,6 +7,7 @@ import InfoComponent from './InfoComponent';
 import BookMarkComponent from './BookMarkComponent';
 import PageComponent from './PageComponent';
 import ToolComponent from './ToolComponent';
+import {appService} from "../service/app-service";
 
 const {width, height} = Dimensions.get('screen');
 
@@ -18,7 +19,7 @@ class AppHeader extends Component{
     render(){
       return(
         <View style={styles.header}>
-          <FontAwesomeIcon icon={faInfoCircle} size={25} color={"#24561F"}
+          <FontAwesomeIcon icon={faInfoCircle} size={26} color={"#24561F"}
             onPress={() => this.infoRBSheet.open()}
           />
           <FontAwesomeIcon icon={faBookmark} size={22} color={"#24561F"}
@@ -101,6 +102,20 @@ class AppHeader extends Component{
         </View>
 
       );
+    }
+    componentDidMount() {
+        // subscribe to home component messages
+        this.subscription = appService.getIndexSubject().subscribe(index => {
+            if (index) {
+                this.pageRBSheet.close();
+                this.bookMarkRBSheet.close();
+            }
+        });
+    }
+
+    componentWillUnmount() {
+        // unsubscribe to ensure no memory leaks
+        this.subscription.unsubscribe();
     }
   }
 

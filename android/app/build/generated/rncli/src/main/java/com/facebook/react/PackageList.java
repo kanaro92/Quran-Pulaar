@@ -13,6 +13,8 @@ import java.util.ArrayList;
 
 // @react-native-community/art
 import com.reactnativecommunity.art.ARTPackage;
+// @react-native-community/async-storage
+import com.reactnativecommunity.asyncstorage.AsyncStoragePackage;
 // @react-native-community/masked-view
 import org.reactnative.maskedview.RNCMaskedViewPackage;
 // react-native-restart
@@ -25,6 +27,8 @@ import com.johnsonsu.rnsoundplayer.RNSoundPlayerPackage;
 import com.horcrux.svg.SvgPackage;
 // react-native-vector-icons
 import com.oblador.vectoricons.VectorIconsPackage;
+// react-native-webview
+import com.reactnativecommunity.webview.RNCWebViewPackage;
 // rn-fetch-blob
 import com.RNFetchBlob.RNFetchBlobPackage;
 // react-native-gesture-handler
@@ -75,12 +79,14 @@ public class PackageList {
     return new ArrayList<>(Arrays.<ReactPackage>asList(
       new MainReactPackage(mConfig),
       new ARTPackage(),
+      new AsyncStoragePackage(),
       new RNCMaskedViewPackage(),
       new RestartPackage(),
       new SafeAreaContextPackage(),
       new RNSoundPlayerPackage(),
       new SvgPackage(),
       new VectorIconsPackage(),
+      new RNCWebViewPackage(),
       new RNFetchBlobPackage(),
       new RNGestureHandlerPackage()
     ));

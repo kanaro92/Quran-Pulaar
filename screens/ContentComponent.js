@@ -1,11 +1,22 @@
 import React, {PureComponent} from 'react';
-import {Dimensions, Image, ImageBackground, ScrollView, StyleSheet, Text, TouchableOpacity, View} from 'react-native';
+import {
+    Alert,
+    Dimensions,
+    Image,
+    ImageBackground,
+    ScrollView,
+    StyleSheet,
+    Text,
+    TouchableOpacity,
+    View
+} from 'react-native';
 import {FontAwesomeIcon} from '@fortawesome/react-native-fontawesome';
 import {faBookmark, faPauseCircle, faPlay} from '@fortawesome/free-solid-svg-icons';
 import SoundPlayer from 'react-native-sound-player';
 import {Badge} from 'react-native-elements';
 import RNFetchBlob from "rn-fetch-blob";
 import * as Progress from 'react-native-progress';
+import AsyncStorage from "@react-native-community/async-storage";
 
 const {width, height} = Dimensions.get('screen');
 
@@ -14,11 +25,11 @@ class ContentComponent extends PureComponent {
         super();
         this.state = {
             isPlaying: false,
+            isPaused: false,
             isDownloading: false,
             spinner: false,
             isRefresh: false,
             receivedByte: 0,
-            totalByte: 0,
             progressNumber: 0,
         }
     }
@@ -39,7 +50,7 @@ class ContentComponent extends PureComponent {
                                     <View style={styles.spinner_view}>
                                         <Text><Progress.Bar color={'green'} progress={this.state.progressNumber}
                                                             width={150}/></Text>
-                                        <Text> {this.state.receivedByte}Mb / {this.state.totalByte}Mb</Text>
+                                        <Text> {this.state.receivedByte}/{(this.props.item.size / 1024).toFixed(2)}Mb</Text>
                                     </View>
                                 </View> :
                                 <View>
@@ -50,11 +61,12 @@ class ContentComponent extends PureComponent {
                                         <View>
                                             {this.state.isPlaying ?
                                                 <FontAwesomeIcon icon={faPauseCircle} size={25} color={"#24561F"}
-                                                                 onPress={() => this.stopSong()}/> :
+                                                                 onPress={() => this.pauseSong()}/> :
                                                 <FontAwesomeIcon icon={faPlay} size={25} color={"#24561F"}
                                                                  onPress={() => this.playSourate(this.props.item.ayat_url, this.props.item.size)}/>
                                             }
                                         </View>
+
                                     }
                                 </View>
                             }
@@ -62,11 +74,12 @@ class ContentComponent extends PureComponent {
                         <View style={styles.title_view}>
                             <ImageBackground style={styles.bg_surat} source={require('../images/bg_sourate.jpeg')}>
                                 <View style={styles.surat_title_view}>
-                                    <Text style={styles.surat_title_text}>{this.props.item.surat_title}</Text>
+                                    <Text style={styles.pr_title_text}>{this.props.item.pr_title} </Text>
                                     {this.props.item.ayat_img !== "" ?
                                         <Image source={this.props.item.ayat_img} style={styles.ayat_image}/> :
                                         <Text/>
                                     }
+                                    <Text style={styles.ar_title_text}> {this.props.item.ar_title} </Text>
                                 </View>
                             </ImageBackground>
                         </View>
@@ -95,7 +108,7 @@ class ContentComponent extends PureComponent {
                         <View style={styles.footer}>
                             <Text/>
                             <Text style={styles.footer_text}>{this.props.item.page_number}</Text>
-                            <View>
+                            <TouchableOpacity onPress={() => this.bookmark(this.props.item)}>
                                 <FontAwesomeIcon icon={faBookmark} size={20} color={"#24561F"}/>
                                 <Badge
                                     value="+"
@@ -104,7 +117,7 @@ class ContentComponent extends PureComponent {
                                     textStyle={styles.badgeText}
                                     containerStyle={{position: 'absolute', top: 0, left: -3}}
                                 />
-                            </View>
+                            </TouchableOpacity>
                         </View>
                     </ImageBackground>
                 </View>
@@ -119,6 +132,16 @@ class ContentComponent extends PureComponent {
         this.setState({
             isPlaying: false
         });
+        if(this.state.isPaused){
+            SoundPlayer.resume();
+            this.setState({
+                isPlaying: true
+            });
+            this.setState({
+                isPaused: false
+            });
+            return;
+        }
         let fileName = url.substring(30, url.length - 4);
         let filePath = RNFetchBlob.fs.dirs.DocumentDir + '/' + fileName;
         RNFetchBlob.fs.exists(filePath + '.mp3').then(res => {
@@ -146,13 +169,13 @@ class ContentComponent extends PureComponent {
                         }
                     })
                     .catch((err) => {
-                        alert(`Waɗi caɗeele !`);
+                        Alert.alert("Kabaaru", "Waɗi caɗeele !");
                     })
             } else {
                 this.downloadSourate(url, null, null, size);
             }
         }).catch(reason => {
-            alert(`Roŋki aawtaade simoore nde, seŋo e internet !`);
+            Alert.alert("Kabaaru", "Roŋki aawtaade simoore nde, seŋo e internet !");
         })
     }
 
@@ -192,18 +215,29 @@ class ContentComponent extends PureComponent {
                         }
                     })
                     .catch((err) => {
-                        alert(`Waɗi caɗeele !`);
+                        Alert.alert("Kabaaru", "Waɗi caɗeele !");
                     })
             } else {
                 this.downloadSourate(url, startTime, endTime, size)
             }
         }).catch(reason => {
-            alert(`Roŋki aawtaade simoore nde, seŋo e internet !`);
+            Alert.alert("Kabaaru", "Roŋki aawtaade simoore nde, seŋo e internet !");
         })
     }
 
     sleep(ms) {
         return new Promise(resolve => setTimeout(resolve, ms));
+    }
+
+    pauseSong = () => {
+        SoundPlayer.pause();
+        this.setState({
+            isPlaying: false
+        });
+        this.setState({
+            isPaused: true
+        });
+        this._onFinishedPlayingSubscription.remove();
     }
 
     stopSong = () => {
@@ -238,10 +272,7 @@ class ContentComponent extends PureComponent {
                     receivedByte: (receivedStr / (1024 * 1024)).toFixed(2)
                 });
                 this.setState({
-                    totalByte: (totalStr / (1024 * 1024)).toFixed(2)
-                });
-                this.setState({
-                    progressNumber: this.state.receivedByte / this.state.totalByte
+                    progressNumber: this.state.receivedByte / (size / 1024).toFixed(2)
                 });
             }).then(value => {
                 this.setState({
@@ -272,8 +303,39 @@ class ContentComponent extends PureComponent {
             this.setState({
                 isDownloading: false
             });
-            alert(`Roŋki aawtaade simoore nde, seŋo e internet !`);
+            Alert.alert("Kabaaru", "Roŋki aawtaade simoore nde, seŋo e internet !");
         })
+    }
+
+    bookmark = async (sourate) => {
+        try {
+            let bookmarks = [];
+            let itemToSave = {
+                page_number: sourate.page_number,
+                ar_title: sourate.ar_title,
+                pr_title: sourate.pr_title,
+            }
+            const values = await AsyncStorage.getItem('bookmarks');
+            if(values !== null) {
+                bookmarks = JSON.parse(values);
+                console.log(bookmarks);
+            }
+            if(bookmarks.length !== 0){
+                const item = bookmarks.find(value => value.page_number === sourate.page_number);
+                if(item){
+                    const index = bookmarks.indexOf(item);
+                    bookmarks.splice(index, 1);
+
+                }else {
+                    bookmarks.push(itemToSave);
+                }
+            }else {
+                bookmarks.push(itemToSave);
+            }
+            await AsyncStorage.setItem('bookmarks', JSON.stringify(bookmarks));
+        }catch (error) {
+            alert(error)
+        }
     }
 
     componentWillUnmount() {
@@ -331,9 +393,13 @@ const styles = StyleSheet.create({
         alignContent: 'stretch',
         paddingTop: 8
     },
-    surat_title_text: {
+    ar_title_text: {
         marginTop: 5,
-        paddingRight: 5,
+        fontWeight: 'bold',
+        fontSize: 19,
+    },
+    pr_title_text: {
+        marginTop: 5,
         fontWeight: 'bold',
         fontSize: 16,
     },

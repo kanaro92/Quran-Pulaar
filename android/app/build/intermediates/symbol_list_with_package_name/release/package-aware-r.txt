@@ -1,4 +1,4 @@
-mr.quran_pulaar
+mr.quran_teddudo_pulaar
 anim abc_fade_in
 anim abc_fade_out
 anim abc_grow_fade_in_from_bottom
@@ -648,7 +648,17 @@ drawable images_ayat_43
 drawable images_ayat_44
 drawable images_ayat_45
 drawable images_ayat_46
+drawable images_ayat_47
+drawable images_ayat_48
+drawable images_ayat_49
 drawable images_ayat_5
+drawable images_ayat_50
+drawable images_ayat_51
+drawable images_ayat_52
+drawable images_ayat_53
+drawable images_ayat_54
+drawable images_ayat_55
+drawable images_ayat_56
 drawable images_ayat_6
 drawable images_ayat_7
 drawable images_ayat_8
@@ -1427,5 +1437,6 @@ styleable Toolbar android_gravity android_minHeight buttonGravity collapseConten
 styleable View android_theme android_focusable paddingEnd paddingStart theme
 styleable ViewBackgroundHelper android_background backgroundTint backgroundTintMode
 styleable ViewStubCompat android_id android_layout android_inflatedId
+xml file_provider_paths
 xml provider_paths
 xml rn_dev_preferences

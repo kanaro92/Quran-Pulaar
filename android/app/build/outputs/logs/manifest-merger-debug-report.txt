@@ -9,12 +9,14 @@ MERGED from [com.facebook.flipper:flipper:0.54.0] C:\Users\Admin\.gradle\caches\
 MERGED from [com.facebook.flipper:flipper-network-plugin:0.54.0] C:\Users\Admin\.gradle\caches\transforms-2\files-2.1\1ccf5404a19dd8dfc71a79ded5fc2f71\jetified-flipper-network-plugin-0.54.0\AndroidManifest.xml:8:1-15:12
 MERGED from [com.facebook.flipper:flipper-fresco-plugin:0.54.0] C:\Users\Admin\.gradle\caches\transforms-2\files-2.1\bb8b170fbcc3d1138ac6fff54d397530\jetified-flipper-fresco-plugin-0.54.0\AndroidManifest.xml:8:1-15:12
 MERGED from [:react-native-community_art] E:\kane\projects\quran-pulaar\node_modules\@react-native-community\art\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-9:12
+MERGED from [:react-native-community_async-storage] E:\kane\projects\quran-pulaar\node_modules\@react-native-community\async-storage\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-9:12
 MERGED from [:react-native-community_masked-view] E:\kane\projects\quran-pulaar\node_modules\@react-native-community\masked-view\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-9:12
 MERGED from [:react-native-restart] E:\kane\projects\quran-pulaar\node_modules\react-native-restart\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-11:12
 MERGED from [:react-native-safe-area-context] E:\kane\projects\quran-pulaar\node_modules\react-native-safe-area-context\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-9:12
 MERGED from [:react-native-sound-player] E:\kane\projects\quran-pulaar\node_modules\react-native-sound-player\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-11:12
 MERGED from [:react-native-svg] E:\kane\projects\quran-pulaar\node_modules\react-native-svg\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-9:12
 MERGED from [:react-native-vector-icons] E:\kane\projects\quran-pulaar\node_modules\react-native-vector-icons\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-11:12
+MERGED from [:react-native-webview] E:\kane\projects\quran-pulaar\node_modules\react-native-webview\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-23:12
 MERGED from [:rn-fetch-blob] E:\kane\projects\quran-pulaar\node_modules\rn-fetch-blob\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-47:12
 MERGED from [:react-native-gesture-handler] E:\kane\projects\quran-pulaar\node_modules\react-native-gesture-handler\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-11:12
 MERGED from [com.facebook.react:react-native:0.63.4] C:\Users\Admin\.gradle\caches\transforms-2\files-2.1\bc2791545bc707736fe2e088163b257d\jetified-react-native-0.63.4\AndroidManifest.xml:2:1-13:12
@@ -61,9 +63,9 @@ INJECTED from E:\kane\projects\quran-pulaar\android\app\src\debug\AndroidManifes
 INJECTED from E:\kane\projects\quran-pulaar\android\app\src\debug\AndroidManifest.xml:2:1-8:12
 INJECTED from E:\kane\projects\quran-pulaar\android\app\src\debug\AndroidManifest.xml:2:1-8:12
 	package
-		ADDED from E:\kane\projects\quran-pulaar\android\app\src\main\AndroidManifest.xml:2:5-30
+		ADDED from E:\kane\projects\quran-pulaar\android\app\src\main\AndroidManifest.xml:2:5-38
 		INJECTED from E:\kane\projects\quran-pulaar\android\app\src\main\AndroidManifest.xml
-		ADDED from E:\kane\projects\quran-pulaar\android\app\src\main\AndroidManifest.xml:2:5-30
+		ADDED from E:\kane\projects\quran-pulaar\android\app\src\main\AndroidManifest.xml:2:5-38
 		INJECTED from E:\kane\projects\quran-pulaar\android\app\src\debug\AndroidManifest.xml
 	android:versionName
 		INJECTED from E:\kane\projects\quran-pulaar\android\app\src\main\AndroidManifest.xml
@@ -89,6 +91,8 @@ application
 ADDED from E:\kane\projects\quran-pulaar\android\app\src\main\AndroidManifest.xml:6:5-26:19
 MERGED from E:\kane\projects\quran-pulaar\android\app\src\main\AndroidManifest.xml:6:5-26:19
 MERGED from E:\kane\projects\quran-pulaar\android\app\src\main\AndroidManifest.xml:6:5-26:19
+MERGED from [:react-native-webview] E:\kane\projects\quran-pulaar\node_modules\react-native-webview\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:11:5-21:19
+MERGED from [:react-native-webview] E:\kane\projects\quran-pulaar\node_modules\react-native-webview\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:11:5-21:19
 MERGED from [:rn-fetch-blob] E:\kane\projects\quran-pulaar\node_modules\rn-fetch-blob\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:35:5-45:19
 MERGED from [:rn-fetch-blob] E:\kane\projects\quran-pulaar\node_modules\rn-fetch-blob\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:35:5-45:19
 MERGED from [com.facebook.react:react-native:0.63.4] C:\Users\Admin\.gradle\caches\transforms-2\files-2.1\bc2791545bc707736fe2e088163b257d\jetified-react-native-0.63.4\AndroidManifest.xml:11:5-20
@@ -125,7 +129,7 @@ MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] C:\Users\Ad
 	android:name
 		ADDED from E:\kane\projects\quran-pulaar\android\app\src\main\AndroidManifest.xml:7:9-40
 		ADDED from E:\kane\projects\quran-pulaar\android\app\src\main\AndroidManifest.xml:7:9-40
-activity#mr.quran_pulaar.MainActivity
+activity#mr.quran_teddudo_pulaar.MainActivity
 ADDED from E:\kane\projects\quran-pulaar\android\app\src\main\AndroidManifest.xml:14:9-24:20
 	android:label
 		ADDED from E:\kane\projects\quran-pulaar\android\app\src\main\AndroidManifest.xml:17:13-45
@@ -163,6 +167,8 @@ MERGED from [com.facebook.flipper:flipper-fresco-plugin:0.54.0] C:\Users\Admin\.
 MERGED from [com.facebook.flipper:flipper-fresco-plugin:0.54.0] C:\Users\Admin\.gradle\caches\transforms-2\files-2.1\bb8b170fbcc3d1138ac6fff54d397530\jetified-flipper-fresco-plugin-0.54.0\AndroidManifest.xml:11:5-13:41
 MERGED from [:react-native-community_art] E:\kane\projects\quran-pulaar\node_modules\@react-native-community\art\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-7:41
 MERGED from [:react-native-community_art] E:\kane\projects\quran-pulaar\node_modules\@react-native-community\art\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-7:41
+MERGED from [:react-native-community_async-storage] E:\kane\projects\quran-pulaar\node_modules\@react-native-community\async-storage\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-7:41
+MERGED from [:react-native-community_async-storage] E:\kane\projects\quran-pulaar\node_modules\@react-native-community\async-storage\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-7:41
 MERGED from [:react-native-community_masked-view] E:\kane\projects\quran-pulaar\node_modules\@react-native-community\masked-view\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-7:41
 MERGED from [:react-native-community_masked-view] E:\kane\projects\quran-pulaar\node_modules\@react-native-community\masked-view\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-7:41
 MERGED from [:react-native-restart] E:\kane\projects\quran-pulaar\node_modules\react-native-restart\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-9:41
@@ -175,6 +181,8 @@ MERGED from [:react-native-svg] E:\kane\projects\quran-pulaar\node_modules\react
 MERGED from [:react-native-svg] E:\kane\projects\quran-pulaar\node_modules\react-native-svg\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-7:41
 MERGED from [:react-native-vector-icons] E:\kane\projects\quran-pulaar\node_modules\react-native-vector-icons\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-9:41
 MERGED from [:react-native-vector-icons] E:\kane\projects\quran-pulaar\node_modules\react-native-vector-icons\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-webview] E:\kane\projects\quran-pulaar\node_modules\react-native-webview\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-webview] E:\kane\projects\quran-pulaar\node_modules\react-native-webview\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-9:41
 MERGED from [:rn-fetch-blob] E:\kane\projects\quran-pulaar\node_modules\rn-fetch-blob\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-9:41
 MERGED from [:rn-fetch-blob] E:\kane\projects\quran-pulaar\node_modules\rn-fetch-blob\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-9:41
 MERGED from [:react-native-gesture-handler] E:\kane\projects\quran-pulaar\node_modules\react-native-gesture-handler\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-9:41
@@ -277,6 +285,22 @@ MERGED from [:rn-fetch-blob] E:\kane\projects\quran-pulaar\node_modules\rn-fetch
 MERGED from [:rn-fetch-blob] E:\kane\projects\quran-pulaar\node_modules\rn-fetch-blob\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:30:5-76
 	android:name
 		ADDED from [com.facebook.flipper:flipper:0.54.0] C:\Users\Admin\.gradle\caches\transforms-2\files-2.1\65964e9f7bfb72b91eccda64c210a357\jetified-flipper-0.54.0\AndroidManifest.xml:16:22-73
+provider#com.reactnativecommunity.webview.RNCWebViewFileProvider
+ADDED from [:react-native-webview] E:\kane\projects\quran-pulaar\node_modules\react-native-webview\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:12:9-20:20
+	android:grantUriPermissions
+		ADDED from [:react-native-webview] E:\kane\projects\quran-pulaar\node_modules\react-native-webview\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:16:13-47
+	android:authorities
+		ADDED from [:react-native-webview] E:\kane\projects\quran-pulaar\node_modules\react-native-webview\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:14:13-64
+	android:exported
+		ADDED from [:react-native-webview] E:\kane\projects\quran-pulaar\node_modules\react-native-webview\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:15:13-37
+	android:name
+		ADDED from [:react-native-webview] E:\kane\projects\quran-pulaar\node_modules\react-native-webview\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:13:13-83
+meta-data#android.support.FILE_PROVIDER_PATHS
+ADDED from [:react-native-webview] E:\kane\projects\quran-pulaar\node_modules\react-native-webview\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:17:13-19:63
+	android:resource
+		ADDED from [:react-native-webview] E:\kane\projects\quran-pulaar\node_modules\react-native-webview\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:19:17-60
+	android:name
+		ADDED from [:react-native-webview] E:\kane\projects\quran-pulaar\node_modules\react-native-webview\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:18:17-67
 uses-permission#com.android.vending.CHECK_LICENSE
 ADDED from [:rn-fetch-blob] E:\kane\projects\quran-pulaar\node_modules\rn-fetch-blob\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:12:5-73
 	android:name
@@ -303,9 +327,3 @@ ADDED from [:rn-fetch-blob] E:\kane\projects\quran-pulaar\node_modules\rn-fetch-
 		ADDED from [:rn-fetch-blob] E:\kane\projects\quran-pulaar\node_modules\rn-fetch-blob\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:39:13-37
 	android:name
 		ADDED from [:rn-fetch-blob] E:\kane\projects\quran-pulaar\node_modules\rn-fetch-blob\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:37:13-62
-meta-data#android.support.FILE_PROVIDER_PATHS
-ADDED from [:rn-fetch-blob] E:\kane\projects\quran-pulaar\node_modules\rn-fetch-blob\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:41:13-43:58
-	android:resource
-		ADDED from [:rn-fetch-blob] E:\kane\projects\quran-pulaar\node_modules\rn-fetch-blob\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:43:17-55
-	android:name
-		ADDED from [:rn-fetch-blob] E:\kane\projects\quran-pulaar\node_modules\rn-fetch-blob\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:42:17-67
