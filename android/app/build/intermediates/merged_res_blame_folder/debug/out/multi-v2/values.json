@@ -1,25 +1,8 @@
 {
     "logs": [
         {
-            "outputFile": "E:\\kane\\projects\\quran-pulaar\\android\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values\\values.xml",
+            "outputFile": "E:\\kane\\projects\\mobile\\Quran-Pulaar\\android\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values\\values.xml",
             "map": [
-                {
-                    "source": "E:\\kane\\projects\\quran-pulaar\\android\\app\\build\\generated\\res\\resValues\\debug\\values\\gradleResValues.xml",
-                    "from": {
-                        "startLines": "6,8",
-                        "startColumns": "4,4",
-                        "startOffsets": "161,269",
-                        "endColumns": "63,68",
-                        "endOffsets": "220,333"
-                    },
-                    "to": {
-                        "startLines": "262,263",
-                        "startColumns": "4,4",
-                        "startOffsets": "16930,16994",
-                        "endColumns": "63,68",
-                        "endOffsets": "16989,17058"
-                    }
-                },
                 {
                     "source": "C:\\Users\\Admin\\.gradle\\caches\\transforms-2\\files-2.1\\bc2791545bc707736fe2e088163b257d\\jetified-react-native-0.63.4\\res\\values\\values.xml",
                     "from": {
@@ -57,6 +40,23 @@
                     }
                 },
                 {
+                    "source": "E:\\kane\\projects\\mobile\\Quran-Pulaar\\android\\app\\src\\main\\res\\values\\strings.xml",
+                    "from": {
+                        "startLines": "1",
+                        "startColumns": "4",
+                        "startOffsets": "16",
+                        "endColumns": "49",
+                        "endOffsets": "61"
+                    },
+                    "to": {
+                        "startLines": "293",
+                        "startColumns": "4",
+                        "startOffsets": "19072",
+                        "endColumns": "49",
+                        "endOffsets": "19117"
+                    }
+                },
+                {
                     "source": "C:\\Users\\Admin\\.gradle\\caches\\transforms-2\\files-2.1\\6675e3ed29e7fe045baff3b88f9bbbcb\\jetified-drawee-2.2.0\\res\\values\\values.xml",
                     "from": {
                         "startLines": "2,141",
@@ -73,25 +73,6 @@
                         "endLines": "2924,3344",
                         "endColumns": "22,22",
                         "endOffsets": "185437,205541"
-                    }
-                },
-                {
-                    "source": "E:\\kane\\projects\\quran-pulaar\\android\\app\\src\\main\\res\\values\\styles.xml",
-                    "from": {
-                        "startLines": "3",
-                        "startColumns": "4",
-                        "startOffsets": "57",
-                        "endLines": "6",
-                        "endColumns": "12",
-                        "endOffsets": "237"
-                    },
-                    "to": {
-                        "startLines": "362",
-                        "startColumns": "4",
-                        "startOffsets": "25440",
-                        "endLines": "365",
-                        "endColumns": "12",
-                        "endOffsets": "25617"
                     }
                 },
                 {
@@ -133,6 +114,23 @@
                     }
                 },
                 {
+                    "source": "E:\\kane\\projects\\mobile\\Quran-Pulaar\\android\\app\\build\\generated\\res\\resValues\\debug\\values\\gradleResValues.xml",
+                    "from": {
+                        "startLines": "6,8",
+                        "startColumns": "4,4",
+                        "startOffsets": "161,269",
+                        "endColumns": "63,68",
+                        "endOffsets": "220,333"
+                    },
+                    "to": {
+                        "startLines": "262,263",
+                        "startColumns": "4,4",
+                        "startOffsets": "16930,16994",
+                        "endColumns": "63,68",
+                        "endOffsets": "16989,17058"
+                    }
+                },
+                {
                     "source": "C:\\Users\\Admin\\.gradle\\caches\\transforms-2\\files-2.1\\7f3965b4f5235273164a4cb8d86e6a3b\\jetified-appcompat-resources-1.1.0\\res\\values\\values.xml",
                     "from": {
                         "startLines": "2,29,36,47,74",
@@ -152,20 +150,22 @@
                     }
                 },
                 {
-                    "source": "E:\\kane\\projects\\quran-pulaar\\android\\app\\src\\main\\res\\values\\strings.xml",
+                    "source": "E:\\kane\\projects\\mobile\\Quran-Pulaar\\android\\app\\src\\main\\res\\values\\styles.xml",
                     "from": {
-                        "startLines": "1",
+                        "startLines": "3",
                         "startColumns": "4",
-                        "startOffsets": "17",
-                        "endColumns": "49",
-                        "endOffsets": "62"
+                        "startOffsets": "54",
+                        "endLines": "6",
+                        "endColumns": "12",
+                        "endOffsets": "231"
                     },
                     "to": {
-                        "startLines": "293",
+                        "startLines": "362",
                         "startColumns": "4",
-                        "startOffsets": "19072",
-                        "endColumns": "49",
-                        "endOffsets": "19117"
+                        "startOffsets": "25440",
+                        "endLines": "365",
+                        "endColumns": "12",
+                        "endOffsets": "25617"
                     }
                 }
             ]

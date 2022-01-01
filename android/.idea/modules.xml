@@ -4,6 +4,8 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/quran-pulaar.iml" filepath="$PROJECT_DIR$/.idea/modules/quran-pulaar.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/quran-pulaar.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/quran-pulaar.app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/-684760862/quran-pulaar.react-native-community_art.iml" filepath="$PROJECT_DIR$/.idea/modules/-684760862/quran-pulaar.react-native-community_art.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/-97042199/quran-pulaar.react-native-community_async-storage.iml" filepath="$PROJECT_DIR$/.idea/modules/-97042199/quran-pulaar.react-native-community_async-storage.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/-1532204583/quran-pulaar.react-native-community_masked-view.iml" filepath="$PROJECT_DIR$/.idea/modules/-1532204583/quran-pulaar.react-native-community_masked-view.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/-1148334818/quran-pulaar.react-native-gesture-handler.iml" filepath="$PROJECT_DIR$/.idea/modules/-1148334818/quran-pulaar.react-native-gesture-handler.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/1918651239/quran-pulaar.react-native-restart.iml" filepath="$PROJECT_DIR$/.idea/modules/1918651239/quran-pulaar.react-native-restart.iml" />
@@ -11,6 +13,7 @@
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/1938457543/quran-pulaar.react-native-sound-player.iml" filepath="$PROJECT_DIR$/.idea/modules/1938457543/quran-pulaar.react-native-sound-player.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/-1501592900/quran-pulaar.react-native-svg.iml" filepath="$PROJECT_DIR$/.idea/modules/-1501592900/quran-pulaar.react-native-svg.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/-1650290824/quran-pulaar.react-native-vector-icons.iml" filepath="$PROJECT_DIR$/.idea/modules/-1650290824/quran-pulaar.react-native-vector-icons.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/-627666268/quran-pulaar.react-native-webview.iml" filepath="$PROJECT_DIR$/.idea/modules/-627666268/quran-pulaar.react-native-webview.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/-1597421887/quran-pulaar.rn-fetch-blob.iml" filepath="$PROJECT_DIR$/.idea/modules/-1597421887/quran-pulaar.rn-fetch-blob.iml" />
     </modules>
   </component>

@@ -124,12 +124,15 @@
     <orderEntry type="library" name="Gradle: com.facebook.fresco:nativeimagetranscoder:2.2.0@aar" level="project" />
     <orderEntry type="library" name="Gradle: com.facebook.fresco:imagepipeline-okhttp3:2.0.0@aar" level="project" />
     <orderEntry type="library" name="Gradle: org.webkit:android-jsc:r245459@aar" level="project" />
+    <orderEntry type="module" module-name="quran-pulaar.react-native-community_art" />
     <orderEntry type="module" module-name="quran-pulaar.react-native-restart" />
+    <orderEntry type="module" module-name="quran-pulaar.react-native-community_async-storage" />
     <orderEntry type="module" module-name="quran-pulaar.react-native-community_masked-view" />
     <orderEntry type="module" module-name="quran-pulaar.react-native-safe-area-context" />
     <orderEntry type="module" module-name="quran-pulaar.react-native-sound-player" />
     <orderEntry type="module" module-name="quran-pulaar.react-native-svg" />
     <orderEntry type="module" module-name="quran-pulaar.react-native-vector-icons" />
+    <orderEntry type="module" module-name="quran-pulaar.react-native-webview" />
     <orderEntry type="module" module-name="quran-pulaar.rn-fetch-blob" />
     <orderEntry type="module" module-name="quran-pulaar.react-native-gesture-handler" />
   </component>

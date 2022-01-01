@@ -1,4 +1,4 @@
-#Tue Jun 08 13:28:53 GMT 2021
-base.0=E\:\\kane\\projects\\quran-pulaar\\android\\app\\build\\intermediates\\dex\\debug\\mergeDexDebug\\classes.dex
+#Sat Jan 01 12:40:42 GMT 2022
+base.0=E\:\\kane\\projects\\mobile\\Quran-Pulaar\\android\\app\\build\\intermediates\\dex\\debug\\mergeDexDebug\\classes.dex
 path.0=classes.dex
 renamed.0=classes.dex
