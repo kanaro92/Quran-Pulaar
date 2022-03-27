@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "E:\\kane\\projects\\quran-pulaar\\android\\app\\build\\intermediates\\incremental\\mergeReleaseResources\\merged.dir\\values-vi\\values-vi.xml",
+            "outputFile": "E:\\kane\\projects\\mobile\\Quran-Pulaar\\android\\app\\build\\intermediates\\incremental\\mergeReleaseResources\\merged.dir\\values-vi\\values-vi.xml",
             "map": [
                 {
                     "source": "C:\\Users\\Admin\\.gradle\\caches\\transforms-2\\files-2.1\\dac7c929999869c7ee463730017e00e4\\core-1.0.1\\res\\values-vi\\values-vi.xml",

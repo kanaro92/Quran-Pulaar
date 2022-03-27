@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "E:\\kane\\projects\\quran-pulaar\\android\\app\\build\\intermediates\\incremental\\mergeReleaseResources\\merged.dir\\values\\values.xml",
+            "outputFile": "E:\\kane\\projects\\mobile\\Quran-Pulaar\\android\\app\\build\\intermediates\\incremental\\mergeReleaseResources\\merged.dir\\values\\values.xml",
             "map": [
                 {
                     "source": "C:\\Users\\Admin\\.gradle\\caches\\transforms-2\\files-2.1\\dac7c929999869c7ee463730017e00e4\\core-1.0.1\\res\\values\\values.xml",
@@ -42,7 +42,24 @@
                     }
                 },
                 {
-                    "source": "E:\\kane\\projects\\quran-pulaar\\android\\app\\build\\generated\\res\\resValues\\release\\values\\gradleResValues.xml",
+                    "source": "E:\\kane\\projects\\mobile\\Quran-Pulaar\\android\\app\\src\\main\\res\\values\\strings.xml",
+                    "from": {
+                        "startLines": "1",
+                        "startColumns": "4",
+                        "startOffsets": "16",
+                        "endColumns": "49",
+                        "endOffsets": "61"
+                    },
+                    "to": {
+                        "startLines": "263",
+                        "startColumns": "4",
+                        "startOffsets": "17441",
+                        "endColumns": "49",
+                        "endOffsets": "17486"
+                    }
+                },
+                {
+                    "source": "E:\\kane\\projects\\mobile\\Quran-Pulaar\\android\\app\\build\\generated\\res\\resValues\\release\\values\\gradleResValues.xml",
                     "from": {
                         "startLines": "6,8",
                         "startColumns": "4,4",
@@ -97,25 +114,6 @@
                     }
                 },
                 {
-                    "source": "E:\\kane\\projects\\quran-pulaar\\android\\app\\src\\main\\res\\values\\styles.xml",
-                    "from": {
-                        "startLines": "3",
-                        "startColumns": "4",
-                        "startOffsets": "57",
-                        "endLines": "6",
-                        "endColumns": "12",
-                        "endOffsets": "237"
-                    },
-                    "to": {
-                        "startLines": "332",
-                        "startColumns": "4",
-                        "startOffsets": "23809",
-                        "endLines": "335",
-                        "endColumns": "12",
-                        "endOffsets": "23986"
-                    }
-                },
-                {
                     "source": "C:\\Users\\Admin\\.gradle\\caches\\transforms-2\\files-2.1\\ca65e356d1c9867f9600266c00461428\\coordinatorlayout-1.0.0\\res\\values\\values.xml",
                     "from": {
                         "startLines": "2,102,3,13",
@@ -135,20 +133,22 @@
                     }
                 },
                 {
-                    "source": "E:\\kane\\projects\\quran-pulaar\\android\\app\\src\\main\\res\\values\\strings.xml",
+                    "source": "E:\\kane\\projects\\mobile\\Quran-Pulaar\\android\\app\\src\\main\\res\\values\\styles.xml",
                     "from": {
-                        "startLines": "1",
+                        "startLines": "3",
                         "startColumns": "4",
-                        "startOffsets": "17",
-                        "endColumns": "49",
-                        "endOffsets": "62"
+                        "startOffsets": "54",
+                        "endLines": "6",
+                        "endColumns": "12",
+                        "endOffsets": "231"
                     },
                     "to": {
-                        "startLines": "263",
+                        "startLines": "332",
                         "startColumns": "4",
-                        "startOffsets": "17441",
-                        "endColumns": "49",
-                        "endOffsets": "17486"
+                        "startOffsets": "23809",
+                        "endLines": "335",
+                        "endColumns": "12",
+                        "endOffsets": "23986"
                     }
                 }
             ]

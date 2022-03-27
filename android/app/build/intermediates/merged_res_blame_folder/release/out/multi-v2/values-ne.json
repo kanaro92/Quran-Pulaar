@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "E:\\kane\\projects\\quran-pulaar\\android\\app\\build\\intermediates\\incremental\\mergeReleaseResources\\merged.dir\\values-ne\\values-ne.xml",
+            "outputFile": "E:\\kane\\projects\\mobile\\Quran-Pulaar\\android\\app\\build\\intermediates\\incremental\\mergeReleaseResources\\merged.dir\\values-ne\\values-ne.xml",
             "map": [
                 {
                     "source": "C:\\Users\\Admin\\.gradle\\caches\\transforms-2\\files-2.1\\493a6dfc60386fe38f06245ce2c3641d\\appcompat-1.0.2\\res\\values-ne\\values-ne.xml",

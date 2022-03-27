@@ -17,10 +17,14 @@ import com.reactnativecommunity.art.ARTPackage;
 import com.reactnativecommunity.asyncstorage.AsyncStoragePackage;
 // @react-native-community/masked-view
 import org.reactnative.maskedview.RNCMaskedViewPackage;
+// react-native-prompt-android
+import im.shimo.react.prompt.RNPromptPackage;
 // react-native-restart
 import com.reactnativerestart.RestartPackage;
 // react-native-safe-area-context
 import com.th3rdwave.safeareacontext.SafeAreaContextPackage;
+// react-native-screens
+import com.swmansion.rnscreens.RNScreensPackage;
 // react-native-sound-player
 import com.johnsonsu.rnsoundplayer.RNSoundPlayerPackage;
 // react-native-svg
@@ -81,8 +85,10 @@ public class PackageList {
       new ARTPackage(),
       new AsyncStoragePackage(),
       new RNCMaskedViewPackage(),
+      new RNPromptPackage(),
       new RestartPackage(),
       new SafeAreaContextPackage(),
+      new RNScreensPackage(),
       new RNSoundPlayerPackage(),
       new SvgPackage(),
       new VectorIconsPackage(),

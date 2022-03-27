@@ -12,12 +12,15 @@
           <set>
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/app" />
+            <option value="$PROJECT_DIR$/../node_modules/@powerdesigninc/react-native-prompt/android" />
             <option value="$PROJECT_DIR$/../node_modules/@react-native-community/art/android" />
             <option value="$PROJECT_DIR$/../node_modules/@react-native-community/async-storage/android" />
             <option value="$PROJECT_DIR$/../node_modules/@react-native-community/masked-view/android" />
             <option value="$PROJECT_DIR$/../node_modules/react-native-gesture-handler/android" />
+            <option value="$PROJECT_DIR$/../node_modules/react-native-prompt-android/android" />
             <option value="$PROJECT_DIR$/../node_modules/react-native-restart/android" />
             <option value="$PROJECT_DIR$/../node_modules/react-native-safe-area-context/android" />
+            <option value="$PROJECT_DIR$/../node_modules/react-native-screens/android" />
             <option value="$PROJECT_DIR$/../node_modules/react-native-sound-player/android" />
             <option value="$PROJECT_DIR$/../node_modules/react-native-svg/android" />
             <option value="$PROJECT_DIR$/../node_modules/react-native-vector-icons/android" />

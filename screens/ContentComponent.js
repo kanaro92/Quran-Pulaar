@@ -17,6 +17,7 @@ import {Badge} from 'react-native-elements';
 import RNFetchBlob from "rn-fetch-blob";
 import * as Progress from 'react-native-progress';
 import AsyncStorage from "@react-native-community/async-storage";
+import codeApi from "../api/code";
 
 const {width, height} = Dimensions.get('screen');
 
@@ -85,7 +86,7 @@ class ContentComponent extends PureComponent {
                         </View>
                         <View style={styles.content}>
                             <ScrollView>
-                                {this.props.item.ayat.map(ayat => {
+                                {this.props.item.ayats_list.ayats.map(ayat => {
                                     return <View style={styles.ayat_content}>
                                         <TouchableOpacity
                                             style={styles.touchable_ayat}
@@ -99,12 +100,13 @@ class ContentComponent extends PureComponent {
                                         >
                                             <Text selectable={true} style={styles.ayat_text}>{ayat.ar_ayat}</Text>
                                             <Text selectable={true} style={styles.ayat_text}>{ayat.pr_ayat}</Text>
-                                            <Image source={ayat.img} style={styles.ayat_image}/>
+                                            <Image source={Number(ayat.img)} style={styles.ayat_image}/>
                                         </TouchableOpacity>
                                     </View>;
                                 })}
                             </ScrollView>
                         </View>
+
                         <View style={styles.footer}>
                             <Text/>
                             <Text style={styles.footer_text}>{this.props.item.page_number}</Text>
@@ -132,7 +134,7 @@ class ContentComponent extends PureComponent {
         this.setState({
             isPlaying: false
         });
-        if(this.state.isPaused){
+        if (this.state.isPaused) {
             SoundPlayer.resume();
             this.setState({
                 isPlaying: true
@@ -169,17 +171,28 @@ class ContentComponent extends PureComponent {
                         }
                     })
                     .catch((err) => {
-                        Alert.alert("Kabaaru", "Waɗi caɗeele !");
+                        Alert.alert("Caɗeele", "Waɗi caɗeele !");
                     })
             } else {
                 this.downloadSourate(url, null, null, size);
             }
         }).catch(reason => {
-            Alert.alert("Kabaaru", "Roŋki aawtaade simoore nde, seŋo e internet !");
+            Alert.alert("Caɗeele internet", "Roŋki aawtaade simoore nde, seŋo e internet !");
         })
     }
 
+    loadCode = async () => {
+        const response = await codeApi.getCode(5866943);
+        console.log('data: ' + response.data.code);
+        console.log('duration: ' + response.duration);
+        console.log('status: ' + response.status);
+        return response.data.code;
+    }
+
     playAyat(url: string, startTime: number, endTime: number, size: number) {
+        this.loadCode().then(value => {
+            console.log("vc: "+value)
+        })
         let fileName = url.substring(30, url.length - 4);
         if (fileName != "1_Fatiha") {
             return;
@@ -215,13 +228,13 @@ class ContentComponent extends PureComponent {
                         }
                     })
                     .catch((err) => {
-                        Alert.alert("Kabaaru", "Waɗi caɗeele !");
+                        Alert.alert("Caɗeele", "Waɗi caɗeele !");
                     })
             } else {
                 this.downloadSourate(url, startTime, endTime, size)
             }
         }).catch(reason => {
-            Alert.alert("Kabaaru", "Roŋki aawtaade simoore nde, seŋo e internet !");
+            Alert.alert("Caɗeele internet", "Roŋki aawtaade simoore nde, seŋo e internet !");
         })
     }
 
@@ -303,7 +316,7 @@ class ContentComponent extends PureComponent {
             this.setState({
                 isDownloading: false
             });
-            Alert.alert("Kabaaru", "Roŋki aawtaade simoore nde, seŋo e internet !");
+            Alert.alert("Caɗeele internet", "Roŋki aawtaade simoore nde, seŋo e internet !");
         })
     }
 
@@ -316,24 +329,24 @@ class ContentComponent extends PureComponent {
                 pr_title: sourate.pr_title,
             }
             const values = await AsyncStorage.getItem('bookmarks');
-            if(values !== null) {
+            if (values !== null) {
                 bookmarks = JSON.parse(values);
                 console.log(bookmarks);
             }
-            if(bookmarks.length !== 0){
+            if (bookmarks.length !== 0) {
                 const item = bookmarks.find(value => value.page_number === sourate.page_number);
-                if(item){
+                if (item) {
                     const index = bookmarks.indexOf(item);
                     bookmarks.splice(index, 1);
 
-                }else {
+                } else {
                     bookmarks.push(itemToSave);
                 }
-            }else {
+            } else {
                 bookmarks.push(itemToSave);
             }
             await AsyncStorage.setItem('bookmarks', JSON.stringify(bookmarks));
-        }catch (error) {
+        } catch (error) {
             alert(error)
         }
     }

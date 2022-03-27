@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "E:\\kane\\projects\\mobile\\Quran-Pulaar\\android\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-is\\values-is.xml",
+            "outputFile": "C:\\Users\\Admin\\Desktop\\mobile\\Quran\\Quran-Pulaar\\android\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-is\\values-is.xml",
             "map": [
                 {
                     "source": "C:\\Users\\Admin\\.gradle\\caches\\transforms-2\\files-2.1\\9f7e7a548ad00e2e3c3268a409525997\\appcompat-1.1.0\\res\\values-is\\values-is.xml",
@@ -14,7 +14,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\Admin\\.gradle\\caches\\transforms-2\\files-2.1\\ae31cc97a3f9383e0242537d69427d3a\\core-1.1.0\\res\\values-is\\values-is.xml",
+                    "source": "C:\\Users\\Admin\\.gradle\\caches\\transforms-2\\files-2.1\\5c4786bccfbaefa0f187e0e56044e26d\\core-1.5.0\\res\\values-is\\values-is.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
