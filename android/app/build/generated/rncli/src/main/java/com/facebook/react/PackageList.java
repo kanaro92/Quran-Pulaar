@@ -17,6 +17,8 @@ import com.reactnativecommunity.art.ARTPackage;
 import com.reactnativecommunity.asyncstorage.AsyncStoragePackage;
 // @react-native-community/masked-view
 import org.reactnative.maskedview.RNCMaskedViewPackage;
+// react-native-device-info
+import com.learnium.RNDeviceInfo.RNDeviceInfo;
 // react-native-prompt-android
 import im.shimo.react.prompt.RNPromptPackage;
 // react-native-restart
@@ -85,6 +87,7 @@ public class PackageList {
       new ARTPackage(),
       new AsyncStoragePackage(),
       new RNCMaskedViewPackage(),
+      new RNDeviceInfo(),
       new RNPromptPackage(),
       new RestartPackage(),
       new SafeAreaContextPackage(),

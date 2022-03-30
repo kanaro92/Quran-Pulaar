@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import {Alert, Dimensions, FlatList, Image, ImageBackground, SafeAreaView, StyleSheet, View} from 'react-native';
+import {Alert, Dimensions, FlatList, Image, ImageBackground, SafeAreaView, StyleSheet, Text, View} from 'react-native';
 import allSourates from './sourates';
 import freeSourates from './free-sourates';
 import AppHeader from './screens/AppHeader';
@@ -10,6 +10,7 @@ import AsyncStorage from "@react-native-community/async-storage";
 import venteApi from "./api/vente";
 import {Bars} from 'react-native-loader';
 import {TIMEOUT_ERROR} from "apisauce";
+//import DeviceInfo from 'react-native-device-info';
 
 const {width, height} = Dimensions.get('screen');
 
@@ -25,6 +26,11 @@ class QuranPulaarApp extends Component {
         //Check code
         //this.storeData('quranCode', null);
         this.chekCode();
+
+        /*DeviceInfo.getFirstInstallTime().then((firstInstallTime) => {
+            console.log("i: "+firstInstallTime)
+            // Android: 1517681764528
+        });*/
     }
 
     render() {
@@ -39,6 +45,9 @@ class QuranPulaarApp extends Component {
                 </View>
                 {this.state.spinner ?
                     <ImageBackground source={require('./images/background.png')} style={styles.backGroundImage}>
+                        <View style={styles.title_view}>
+                            <Text style={styles.title_text}> Quran Pulaar - Abuu SIH</Text>
+                        </View>
                         <View style={styles.spinner_view}>
                             <Bars size={40} color="#60b17d" />
                         </View>
@@ -51,11 +60,12 @@ class QuranPulaarApp extends Component {
                             ref={(ref) => {
                                 this.flatListRef = ref;
                             }}
-                            initialNumToRender={40}
+                            initialNumToRender={4}
                             keyExtractor={item => item.surat_number.toString()}
                             horizontal
                             pagingEnabled
                             refreshing={this.isRefresh}
+                            inverted={-1}
                             renderItem={({item}) => {
                                 return <View>
                                     <Content item={item}/>
@@ -105,7 +115,7 @@ class QuranPulaarApp extends Component {
 
     chekCode() {
         this.getData('quranCode').then(value => {
-            alert(value)
+            //alert(value)
             console.log("quranCode: " + value);
             try {
                 if (value > 0) {
@@ -196,15 +206,28 @@ const styles = StyleSheet.create({
     container: {
         flex: 1
     },
+    title_view: {
+        display: 'flex',
+        flexDirection: 'row',
+        flexWrap: 'nowrap',
+        justifyContent: 'center',
+        alignItems: 'stretch',
+        alignContent: 'stretch',
+        paddingTop: height/3,
+    },
+    title_text: {
+        fontFamily: 'sans-serif-condensed',
+        fontWeight: 'bold',
+        fontSize: 25,
+    },
     spinner_view: {
         flexDirection: "row",
         justifyContent: "center",
-        paddingTop: height/3
     },
     backGroundImage: {
         width: '100%',
         height: '100%',
-        resizeMode: 'cover',
+        resizeMode: 'cover'
     }
 });
 

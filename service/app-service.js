@@ -5,6 +5,6 @@ export const appService = {
     getIndexSubject: () => indexSubject.asObservable(),
     setIndexSubject(index: any){
         indexSubject.next(index)
-    },
+    }
 };
 
