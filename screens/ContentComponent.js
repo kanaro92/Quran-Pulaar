@@ -11,13 +11,14 @@ import {
     View
 } from 'react-native';
 import {FontAwesomeIcon} from '@fortawesome/react-native-fontawesome';
-import {faBookmark, faPauseCircle, faPlay} from '@fortawesome/free-solid-svg-icons';
+import {faBookmark, faPauseCircle, faPlay, faFastForward, faBackward} from '@fortawesome/free-solid-svg-icons';
 import SoundPlayer from 'react-native-sound-player';
 import {Badge} from 'react-native-elements';
 import RNFetchBlob from "rn-fetch-blob";
 import * as Progress from 'react-native-progress';
 import AsyncStorage from "@react-native-community/async-storage";
 import codeApi from "../api/code";
+import {faFastBackward} from "@fortawesome/free-solid-svg-icons/faFastBackward";
 
 const {width, height} = Dimensions.get('screen');
 
@@ -59,13 +60,23 @@ class ContentComponent extends PureComponent {
                                         <Text>
                                             <Progress.CircleSnail color={'green'}/>
                                         </Text> :
-                                        <View>
+                                        <View style={styles.playing_icon_view}>
+                                            <View style={styles.backward_icon}>
+                                                <Text  style={styles.backward_seek_second}>10</Text>
+                                                <FontAwesomeIcon icon={faFastBackward} size={25} color={"#24561F"}
+                                                                 onPress={() => this.forward(false)} />
+                                            </View>
                                             {this.state.isPlaying ?
                                                 <FontAwesomeIcon icon={faPauseCircle} size={25} color={"#24561F"}
                                                                  onPress={() => this.pauseSong()}/> :
                                                 <FontAwesomeIcon icon={faPlay} size={25} color={"#24561F"}
                                                                  onPress={() => this.playSourate(this.props.item.ayat_url, this.props.item.size)}/>
                                             }
+                                            <View style={styles.forward_icon}>
+                                                <FontAwesomeIcon icon={faFastForward} size={25} color={"#24561F"}
+                                                                 onPress={() => this.forward(true)} />
+                                                <Text  style={styles.forward_seek_second}>10</Text>
+                                            </View>
                                         </View>
 
                                     }
@@ -152,7 +163,7 @@ class ContentComponent extends PureComponent {
                 RNFetchBlob.fs.stat(filePath + '.mp3')
                     .then((stats) => {
                         let existingSize = stats.size / 1024;
-                        if (existingSize.toFixed(0) == size || existingSize.toFixed(0) >= size - 4) {
+                        if (existingSize.toFixed(0) === size || existingSize.toFixed(0) >= size - 4) {
                             this._onFinishedPlayingSubscription = SoundPlayer.addEventListener('FinishedPlaying', () => {
                                 this._onFinishedPlayingSubscription.remove();
                                 this.setState({
@@ -181,20 +192,23 @@ class ContentComponent extends PureComponent {
         })
     }
 
-    loadCode = async () => {
-        const response = await codeApi.getCode(5866943);
-        console.log('data: ' + response.data.code);
-        console.log('duration: ' + response.duration);
-        console.log('status: ' + response.status);
-        return response.data.code;
+    forward = (isFast: boolean) => {
+        if (this.state.isPaused) {
+            return;
+        }
+        SoundPlayer.getInfo().then(value => {
+            console.log(value);
+            if(isFast){
+                SoundPlayer.seek(value.currentTime + 10);
+            } else {
+                SoundPlayer.seek(value.currentTime - 10);
+            }
+        });
     }
 
     playAyat(url: string, startTime: number, endTime: number, size: number) {
-        this.loadCode().then(value => {
-            console.log("vc: "+value)
-        })
         let fileName = url.substring(30, url.length - 4);
-        if (fileName != "1_Fatiha") {
+        if (fileName !== "1_Fatiha") {
             return;
         }
         let filePath = RNFetchBlob.fs.dirs.DocumentDir + '/' + fileName;
@@ -244,6 +258,9 @@ class ContentComponent extends PureComponent {
 
     pauseSong = () => {
         SoundPlayer.pause();
+        SoundPlayer.getInfo().then(value => {
+            console.log(value);
+        });
         this.setState({
             isPlaying: false
         });
@@ -482,5 +499,31 @@ const styles = StyleSheet.create({
     spinnerTextStyle: {
         color: '#FFF'
     },
+    playing_icon_view: {
+        display: 'flex',
+        flexDirection: 'row',
+        flexWrap: 'nowrap',
+        justifyContent: 'space-around',
+        alignItems: 'stretch',
+        alignContent: 'stretch'
+    },
+    backward_icon: {
+        display: 'flex',
+        flexDirection: 'row',
+        paddingRight: 20
+    },
+    forward_icon: {
+        display: 'flex',
+        flexDirection: 'row',
+        paddingLeft: 20,
+    },
+    forward_seek_second: {
+        fontSize: 18,
+        paddingLeft: 2
+    },
+    backward_seek_second: {
+        fontSize: 18,
+        paddingRight: 2
+    }
 });
 
